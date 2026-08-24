@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>John Manion</title>
+<meta name="description" content="John Manion builds independent apps for iOS, Android, and the web, including Topside Games and Topside Tools.">
+<link rel="canonical" href="https://manionjohn.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="John Manion">
+<meta property="og:description" content="Independent apps for iOS, Android, and the web.">
+<meta property="og:url" content="https://manionjohn.com/">
+<meta property="og:image" content="https://manionjohn.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="John Manion">
+<meta name="twitter:description" content="Independent apps for iOS, Android, and the web.">
+<meta name="twitter:image" content="https://manionjohn.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/og-image.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #FAF6EE; color: #1F1A14; }
@@ -25,7 +40,21 @@
   .app-desc { font-size: 13px; color: #7C6448; }
   .app-arrow { font-size: 18px; color: #C6B48E; }
 
-  .footer { padding: 2.5rem 2rem; text-align: center; border-top: 1px solid #E8D8BC; }
+  .links { padding: 1.5rem 2rem 0; max-width: 600px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+  .links a { font-size: 14px; color: #7C6448; border-bottom: 1px solid transparent; padding-bottom: 1px; transition: color .15s, border-color .15s; }
+  .links a:hover { color: #1F1A14; border-bottom-color: #C6B48E; }
+
+  .music { padding: 0.5rem 2rem 0; max-width: 600px; margin: 0 auto; }
+  .music-note { font-size: 13px; color: #7C6448; margin: -0.6rem 0 1.1rem; }
+  .tracks { list-style: none; }
+  .track { display: flex; align-items: center; gap: 0.9rem; padding: 0.7rem 1rem 0.7rem 0.75rem; background: #FEFCF8; border: 1px solid #E8D8BC; border-radius: 12px; margin-bottom: 8px; }
+  .track button { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #E8D8BC; background: #FAF6EE; color: #1F1A14; font-size: 12px; line-height: 1; cursor: pointer; display: grid; place-items: center; transition: background .15s, border-color .15s; }
+  .track button:hover { background: #F2EADA; border-color: #C6B48E; }
+  .track button:disabled { opacity: .45; cursor: default; }
+  .t-title { flex: 1; font-size: 15px; color: #1F1A14; }
+  .t-time { font-size: 13px; color: #A89070; font-variant-numeric: tabular-nums; }
+
+  .footer { padding: 2.5rem 2rem; text-align: center; border-top: 1px solid #E8D8BC; margin-top: 2.5rem; }
   .footer p { font-size: 13px; color: #A89070; }
 
   @media (prefers-color-scheme: dark) {
@@ -39,6 +68,14 @@
     .app-name { color: #FFE4C0; }
     .app-desc { color: #C88E5C; }
     .app-arrow { color: #6B4526; }
+    .links a { color: #C88E5C; }
+    .links a:hover { color: #FFE4C0; border-bottom-color: #6B4526; }
+    .music-note { color: #C88E5C; }
+    .track { background: #2E1A0C; border-color: #4A2A14; }
+    .track button { background: #1C1008; border-color: #4A2A14; color: #FFE4C0; }
+    .track button:hover { background: #3A2210; border-color: #6B4526; }
+    .t-title { color: #FFE4C0; }
+    .t-time { color: #A87848; }
     .footer { border-top-color: #4A2A14; }
     .footer p { color: #A87848; }
   }
@@ -49,6 +86,13 @@
 <div class="hero">
   <h1>John Manion</h1>
   <p>Independent apps for iOS, Android, and the web.</p>
+</div>
+
+<div class="links">
+  <a href="#" data-placeholder>LinkedIn</a>
+  <a href="#" data-placeholder>GitHub</a>
+  <a href="#" data-placeholder>Instagram</a>
+  <a href="/contact">Contact</a>
 </div>
 
 <div class="apps">
@@ -74,9 +118,67 @@
 
 </div>
 
+<div class="music">
+  <p class="apps-label">Music</p>
+  <p class="music-note">Unreleased. Recorded at home.</p>
+  <ol class="tracks">
+    <li class="track" data-src="music/01.mp3"><button type="button" aria-label="Play">&#9654;</button><span class="t-title">Untitled 1</span><span class="t-time">--:--</span></li>
+    <li class="track" data-src="music/02.mp3"><button type="button" aria-label="Play">&#9654;</button><span class="t-title">Untitled 2</span><span class="t-time">--:--</span></li>
+    <li class="track" data-src="music/03.mp3"><button type="button" aria-label="Play">&#9654;</button><span class="t-title">Untitled 3</span><span class="t-time">--:--</span></li>
+    <li class="track" data-src="music/04.mp3"><button type="button" aria-label="Play">&#9654;</button><span class="t-title">Untitled 4</span><span class="t-time">--:--</span></li>
+    <li class="track" data-src="music/05.mp3"><button type="button" aria-label="Play">&#9654;</button><span class="t-title">Untitled 5</span><span class="t-time">--:--</span></li>
+  </ol>
+  <audio id="player" preload="metadata"></audio>
+</div>
+
 <div class="footer">
   <p>© 2026 Manion &nbsp;·&nbsp; <a href="/contact">Contact</a></p>
 </div>
+
+<script>
+(function(){
+  var audio = document.getElementById('player');
+  if (!audio) return;
+  var rows = [].slice.call(document.querySelectorAll('.track'));
+  var current = null;
+
+  function fmt(t){
+    if (!isFinite(t)) return '--:--';
+    var m = Math.floor(t/60), s = Math.floor(t%60);
+    return m + ':' + (s<10?'0':'') + s;
+  }
+  function setIcon(row, playing){
+    row.querySelector('button').innerHTML = playing ? '&#10074;&#10074;' : '&#9654;';
+  }
+
+  // read durations without committing to playback
+  rows.forEach(function(row){
+    var probe = new Audio();
+    probe.preload = 'metadata';
+    probe.src = row.dataset.src;
+    probe.addEventListener('loadedmetadata', function(){
+      row.querySelector('.t-time').textContent = fmt(probe.duration);
+    });
+    probe.addEventListener('error', function(){
+      row.querySelector('button').disabled = true;
+      row.querySelector('.t-time').textContent = '--:--';
+    });
+  });
+
+  rows.forEach(function(row){
+    row.querySelector('button').addEventListener('click', function(){
+      if (current === row && !audio.paused){ audio.pause(); setIcon(row,false); return; }
+      if (current && current !== row) setIcon(current,false);
+      if (current !== row){ audio.src = row.dataset.src; current = row; }
+      audio.play().then(function(){ setIcon(row,true); }).catch(function(){
+        row.querySelector('button').disabled = true;
+      });
+    });
+  });
+
+  audio.addEventListener('ended', function(){ if (current) setIcon(current,false); });
+})();
+</script>
 
 </body>
 </html>
