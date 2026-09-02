@@ -178,5 +178,29 @@
 })();
 </script>
 
+<script>
+/* Secret gesture: press and hold the LinkedIn link for 5 seconds to open /interviewprep */
+(function(){
+  var link = document.querySelector('a[href*="linkedin.com"]');
+  if(!link) return;
+  var HOLD = 5000;
+  var holdTimer = null, fired = false;
+  link.style.webkitTouchCallout = 'none';
+  link.style.userSelect = 'none';
+  function start(e){
+    if(e.pointerType === 'mouse' && e.button !== 0) return;
+    fired = false;
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(function(){ fired = true; window.location.href = '/interviewprep'; }, HOLD);
+  }
+  function cancel(){ clearTimeout(holdTimer); holdTimer = null; }
+  link.addEventListener('pointerdown', start);
+  link.addEventListener('pointerup', cancel);
+  link.addEventListener('pointercancel', cancel);
+  link.addEventListener('pointerleave', cancel);
+  link.addEventListener('click', function(e){ if(fired){ e.preventDefault(); fired = false; } });
+  link.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+})();
+</script>
 </body>
 </html>
