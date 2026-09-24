@@ -257,7 +257,7 @@ function vHome(){
     h += '<div class="card"><h3>All lessons complete.</h3><p class="muted">Continue clearing the review queue, retake the diagnostic, and complete the Module 19 practice exams.</p></div>';
   }
   h += '<dl class="stats">';
-  h += '<div><dt>Lessons done</dt><dd>' + done + ' / ' + ready.length + '<small>' + all.length + ' in the full program</small></dd></div>';
+  h += '<div><dt>Lessons done</dt><dd>' + done + ' / ' + ready.length + '<small>' + pct(done, ready.length) + '% complete</small></dd></div>';
   h += '<div><dt>Review due</dt><dd>' + due + '<small>' + (due ? '<a href="#/review">Clear the queue</a>' : 'Nothing due') + '</small></dd></div>';
   h += '<div><dt>Diagnostic</dt><dd>' + (diag ? diag.score + '%' : 'Not taken') + '<small>' + (diag ? '<a href="#/diagnostic">Retake</a> after each phase' : '<a href="#/diagnostic">Take it</a>') + '</small></dd></div>';
   h += '<div><dt>Sync</dt><dd style="font-size:1rem;padding-top:4px">' + (Sync.on() ? 'Connected' : 'This device') + '<small><a href="#/settings">' + (Sync.on() ? 'Details' : 'Set up sync') + '</a></small></dd></div>';
