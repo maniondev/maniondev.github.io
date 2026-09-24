@@ -11,7 +11,7 @@ objectives: [
   'Follow compliance requirements for client materials'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Owners are busy and often skeptical of long reports. The best client materials say the most important thing first, in plain words, with numbers that mean something to the reader. If an owner reads only the first paragraph, they should still know what matters and what to do next.</p>
 </div>
 
@@ -38,8 +38,8 @@ body: `
 <li>Avoid promises or guarantees about outcomes (UDAAP, Lesson 1.4).</li>
 </ul>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>"Prepares client-ready summaries, recommendations, and materials" is a core responsibility. Your executive communication experience transfers well. The adjustment is writing for a business owner rather than a finance audience.</p></div>
 `,
 terms: [
@@ -84,7 +84,7 @@ objectives: [
   'Present a roadmap in a meeting'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The roadmap is the document the owner keeps. It shows where they are, where they want to go, what decisions lie ahead, and what happens first. It should be simple enough to put on a wall and complete enough to guide the next year.</p>
 </div>
 
@@ -99,7 +99,7 @@ body: `
 <li><b>Your team:</b> who does what, with contact information.</li>
 </ol>
 
-<h2>Visuals that work</h2>
+<h2>Visuals</h2>
 <ul>
 <li><b>Three-legs graphic:</b> three bars or a simple stool with each leg\'s rating.</li>
 <li><b>Value versus need chart:</b> the value range as a band and the required value as a line.</li>
@@ -108,7 +108,7 @@ body: `
 </ul>
 <p>Keep visuals simple, labeled directly, and readable in black and white.</p>
 
-<h2>Presenting it</h2>
+<h2>Presentation</h2>
 <ul>
 <li>Send it a day or two ahead only if the owner prefers to read first; many owners prefer to walk through it together.</li>
 <li>Start with their goals, then findings, then the plan.</li>
@@ -120,8 +120,8 @@ body: `
 <p>Printed copies still matter to many owners, especially older ones. A clean, printed roadmap in a folder often ends up on the owner\'s desk and gets shown to their spouse and CPA.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description mentions sharing "a clear roadmap overview." A consistent, well-designed roadmap template is also a strong example of "tools and best practices" for the practice.</p></div>
 `,
 terms: [
@@ -165,8 +165,8 @@ objectives: [
   'Send a clear follow-up and document the meeting properly'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Good meetings have a purpose, an agenda, and a clear record of what was decided and who will do what. The follow-up email, sent quickly, is often more valuable to the owner than the meeting itself because it turns conversation into commitments.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Good meetings have a purpose, an agenda, and a clear record of what was decided and who will do what. The follow-up email, sent quickly, is often more valuable to the owner than the meeting itself because it records decisions and who is responsible for each action.</p>
 </div>
 
 <h2>Before</h2>
@@ -199,8 +199,8 @@ body: `
 </div>
 <p>Then record the meeting in the bank\'s system: date, attendees, topics, decisions, action items, and any referrals or disclosures made. Keep notes factual and professional (Lesson 1.4).</p>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description emphasizes "follow-through and documentation" and "strong and organized follow-through and responsiveness." Fast, clear follow-up is one of the most visible signs of a reliable advisor, and reliability is part of the trust equation.</p></div>
 `,
 terms: [
@@ -245,7 +245,7 @@ objectives: [
   'Apply compliance considerations to events'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Client events bring owners together to learn and talk, which often leads to their first planning conversation. The event itself matters less than what happens before (inviting the right people) and after (following up personally). A great event with no follow-up is mostly a nice lunch.</p>
 </div>
 
@@ -292,8 +292,8 @@ body: `
 <p>Smaller, relationship-focused formats often work better here than large seminars: a dinner where owners talk story, or a panel of local owners who have been through a transition. Holding events on neighbor islands, or offering a virtual option, shows commitment beyond Honolulu.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Event planning and activation is a listed responsibility for both levels. Measuring events by the conversations and engagements they produce, as well as attendance, comes naturally from your FP&amp;A background.</p></div>
 `,
 terms: [

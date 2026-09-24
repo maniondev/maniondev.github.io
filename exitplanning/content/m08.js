@@ -11,12 +11,12 @@ objectives: [
   'Explain EPI\'s view that value creation and exit planning are the same work'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A business can be appealing to buyers and still not be ready to sell, and it can be well organized and still not be appealing. Buyers want both: a business with a strong future (attractive) that can be handed over without falling apart (ready). The Exit Planning Institute\'s methodology is built around improving both, whether or not the owner ever sells.</p>
 </div>
 <p class="small faint">This module presents EPI\'s framework as taught in its materials and in Walking to Destiny. Terminology used on the CEPA exam should be confirmed against EPI\'s current course materials.</p>
 
-<h2>Two different questions</h2>
+<h2>Definitions</h2>
 <p><b>Business attractiveness</b> asks: how appealing is this business to a buyer? Growth prospects, profitability, market position, recurring revenue, and industry trends drive it.</p>
 <p><b>Business readiness</b> asks: how prepared is the business to be transferred? Management depth, documented systems, clean financials, contracts, legal housekeeping, and the owner\'s role drive it.</p>
 <table>
@@ -25,11 +25,11 @@ body: `
 <tr><td><b>Low attractiveness</b></td><td>Few buyers and little transferable value. <i>Focus: fundamentals, and a realistic view of options including wind-down.</i></td><td>Well run but limited upside. Internal transfers or financial buyers may fit. <i>Focus: growth and attractiveness.</i></td></tr>
 </table>
 
-<h2>Where the value is</h2>
+<h2>Intangible value</h2>
 <p>For most private companies, the balance sheet explains only a small part of value. The rest is intangible: people, relationships, systems, reputation, and the expectation of future cash flow they create. Studies of large public companies have estimated that intangibles account for the large majority of market value. For your clients, the same idea shows up as goodwill: the part of the price above tangible assets.</p>
 <p>EPI organizes intangible value into the <b>Four Cs</b>: human, customer, structural, and social capital (Lesson 8.2). The point is practical: if most value is intangible, then most value can be built (or lost) through how the business is run.</p>
 
-<h2>Exit planning is value creation</h2>
+<h2>Value creation</h2>
 <p>EPI\'s methodology is called <b>Value Acceleration</b>. Its central argument is that the same actions that prepare a business for sale also make it more valuable, more profitable, and more enjoyable to own. The owner does not have to decide to sell before starting. The business becomes more valuable either way, and the owner gains options.</p>
 <p>EPI also describes a progression called the <b>Five Stages of Value Maturity</b>:</p>
 <ol>
@@ -43,7 +43,7 @@ body: `
 
 <div class="call example"><span class="tag">Worked example: placing a business on the grid</span>
 <p>A Honolulu IT managed services company: 12% annual growth, 70% of revenue under monthly contracts, strong margins. The owner does all sales, holds the key vendor certifications personally, and the books are kept on a cash basis by a part-time bookkeeper.</p>
-<p><b>Attractiveness: high.</b> Growth, recurring revenue, and margins are exactly what buyers want.</p>
+<p><b>Attractiveness: high.</b> Growth, recurring revenue, and margins are what buyers look for.</p>
 <p><b>Readiness: low.</b> Owner dependence in sales and certifications, and unreliable financials.</p>
 <p><b>Implication:</b> buyers would likely be interested now, but offers would include heavy earnouts, long transition requirements, and retrades. Eighteen to 24 months of work on readiness (a sales hire, transferring certifications to staff, accrual accounting with a reviewed statement) could improve both price and terms materially.</p>
 </div>
@@ -52,8 +52,8 @@ body: `
 <p>Many long-established Hawaii businesses score high on some attractiveness factors (strong local brand, loyal customers, limited competition due to the cost of entering the market) and low on readiness (owner dependence, informal systems built over decades). For these companies, readiness work is often the biggest lever.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Attractiveness and readiness are core EPI concepts and a natural structure for the business readiness part of an exit readiness assessment. Placing the business on this grid gives the owner a simple picture of where they stand and what kind of work comes next.</p></div>
 `,
 terms: [
@@ -102,7 +102,7 @@ objectives: [
   'Design improvement actions for each C'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The Four Cs are a checklist for the parts of a business that do not show up on the balance sheet but drive most of its value: its people, its customers, its systems, and its culture. Assessing each one shows where value is strong, where it is at risk, and what to work on.</p>
 </div>
 
@@ -158,8 +158,8 @@ body: `
 <p>Social capital is often a real strength for Hawaii businesses: long relationships, community reputation, and a sense of ohana among employees. It is also often tied closely to the owner and family. The work is usually to make that culture durable, so it survives a transition to a new leader or owner, rather than to create it.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The Four Cs are central to EPI\'s methodology and to the CEPA exam. They also give an exit readiness assessment a clear qualitative structure: each C becomes a section with ratings, evidence, and action items, which translates directly into the "themes and action items" named in the job description.</p></div>
 `,
 terms: [
@@ -208,7 +208,7 @@ objectives: [
   'Present the gaps to an owner as a planning tool'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Three simple comparisons tell an owner where they stand. How much more profit would the business make if it performed like the best companies in its industry? How much more would it be worth? And how much money does the owner actually need from the business to live the life they want afterward? Put side by side, these numbers turn a vague goal ("sell someday for a good price") into a concrete target.</p>
 </div>
 
@@ -244,7 +244,7 @@ body: `
 <p><b>The insight:</b> she does not need to become best-in-class. Closing just over half of the value gap closes her wealth gap. That makes the goal concrete and achievable: for example, raising margins by about 2.5 points and improving the multiple by half a turn over three to four years.</p>
 </div>
 
-<h2>What the gaps tell you</h2>
+<h2>Interpreting the gaps</h2>
 <ul>
 <li><b>Wealth gap closed already:</b> the owner can exit now if they choose. The planning question is how and when, and whether building more value is worth the time.</li>
 <li><b>Wealth gap smaller than value gap:</b> achievable through value acceleration. Build a plan and a timeline.</li>
@@ -259,16 +259,16 @@ body: `
 <li>Be transparent about benchmarks and their limits. Industry data is imperfect, especially for Hawaii.</li>
 <li>Connect each gap to specific actions and timelines.</li>
 </ul>
-<div class="call say"><span class="tag">A way to say it</span>
-<p>"Based on what you told us you want your life to look like, the business needs to be worth about $10.5 million when you leave. Today it\'s around $8 million. The good news is that businesses like yours at the top of the industry are worth quite a bit more than that, so there\'s room. You don\'t have to be the best in the industry. You need to close about half the distance, and we can map out how."</p>
+<div class="call say"><span class="tag">Example language</span>
+<p>"Based on what you told us you want your life to look like, the business needs to be worth about $10.5 million when you leave. Today it\'s around $8 million. Businesses like yours at the top of the industry are worth quite a bit more than that, so there\'s room. You don\'t have to be the best in the industry. You need to close about half the distance, and we can map out how."</p>
 </div>
 
 <div class="call hawaii"><span class="tag">Hawaii context</span>
 <p>Two Hawaii factors often increase the wealth gap: high living costs, and long life expectancy, since Hawaii has long had one of the highest life expectancies of any state. A plan that must support an owner and spouse into their 90s needs more assets. Wealth planners will model this, and it is worth stating plainly to owners who assume a shorter retirement.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The three gaps connect business value to the owner\'s personal financial plan, which is EPI\'s core idea of aligning business, personal, and financial goals. Building them requires coordination between the valuation specialist, the wealth planner, and you, which is exactly the cross-functional work the role describes.</p></div>
 `,
 terms: [
@@ -317,7 +317,7 @@ objectives: [
   'Map the methodology to the stages of a bank advisory engagement'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>EPI\'s method has three stages. First, learn where the owner and business really stand (Discover). Then, work steadily to protect and build value in short, focused cycles (Prepare). Finally, when the owner is ready, choose what to do: sell, transfer, or keep running a better business (Decide). The owner does not have to decide how to exit at the start.</p>
 </div>
 
@@ -375,9 +375,9 @@ body: `
 <p>An owner of a Hilo auto repair chain completes Discover and learns that his wealth gap is small, but his business is highly dependent on him and his building is the key asset. After two years of Prepare, he has a service manager running operations and has moved the building into a family LLC. At Decide, he chooses to keep owning the business, collect rent, and step back to two days a week. He did not sell, and the plan still succeeded, because he now has options he did not have before.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and your role</span>
-<p>Discover, Prepare, Decide is the backbone of the CEPA curriculum and a practical way to structure engagements. The 90-day sprint concept is also directly useful for the "execution momentum across workstreams" the Senior Advisor role describes.</p></div>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
+<p>Discover, Prepare, Decide is the core structure of the CEPA curriculum and a practical way to structure engagements. The 90-day sprint concept is also directly useful for the "execution momentum across workstreams" the Senior Advisor role describes.</p></div>
 `,
 terms: [
   ['Discover', 'The first gate of EPI\'s methodology: assessing goals, readiness, value, and gaps.'],

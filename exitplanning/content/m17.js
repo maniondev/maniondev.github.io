@@ -10,18 +10,18 @@ objectives: [
   'Identify the questions to ask early with a Hawaii owner'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Hawaii\'s economy has features that shape every succession plan: an isolated island market, a heavy dependence on tourism, the military, government, and construction, very high land values, a high cost of living, and a community where reputation travels fast. Many businesses are family-owned and multigenerational. Planning here uses the same tools as anywhere, but the context changes which tools matter most.</p>
 </div>
 
-<h2>The landscape</h2>
+<h2>Industries and ownership</h2>
 <ul>
 <li><b>Industries:</b> visitor industry and hospitality; construction and trades; wholesale and distribution (much of it tied to shipping); retail; auto dealerships; agriculture and food processing; professional and health services; real estate.</li>
 <li><b>Ownership:</b> many long-established family companies, some in their third generation or later, alongside first-generation founders who built businesses from the 1970s through the 1990s and are now at or near retirement age.</li>
 <li><b>Geography:</b> Oahu is the largest market, and neighbor island businesses operate in even smaller markets with distinct communities.</li>
 </ul>
 
-<h2>Factors that shape succession here</h2>
+<h2>Factors affecting succession in Hawaii</h2>
 <table>
 <tr><th>Factor</th><th>Effect on planning</th></tr>
 <tr><td>Cost of living and out-migration</td><td>Hawaii has seen net out-migration of residents to the mainland in recent years. Many owners\' children live on the mainland, which reduces the pool of family successors and complicates fairness planning.</td></tr>
@@ -42,8 +42,8 @@ body: `
 <li>How do you feel about local ownership after you leave?</li>
 </ul>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job is based in Hawaii and relationship-driven. Understanding the local context shows owners and colleagues that you see their situation clearly, and it helps you anticipate the issues that matter most.</p></div>
 `,
 terms: [
@@ -89,7 +89,7 @@ objectives: [
   'Identify real estate transfer issues, including HARPTA withholding'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>In Hawaii, the land under a business is often worth as much as or more than the business itself, and sometimes the business does not own it at all. Whether a family owns its land, leases it, or has it tangled up with the operating company changes the value, the exit options, the estate plan, and how heirs can be treated fairly.</p>
 </div>
 
@@ -125,13 +125,13 @@ body: `
 <li><b>Conveyance tax:</b> Hawaii imposes a conveyance tax on real property transfers, with rates that rise with value.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: a lease changes the plan</span>
+<div class="call example"><span class="tag">Worked example: ground lease term</span>
 <p>A Waikiki-area restaurant group plans to sell in two years. During the assessment you learn that its main location sits on a ground lease with 11 years remaining and a rent reset in three years. A buyer\'s lender may not finance an acquisition with that remaining term, and the upcoming reset creates uncertainty about profit.</p>
 <p>The plan now includes an early conversation with the landowner about extending the lease, which could change both the value and the realistic buyer pool.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Real estate questions belong in every Hawaii assessment from the first meeting. They also connect several internal partners at once: commercial banking (real estate lending), trust and estate (family LLCs and estate planning), and valuation (separate real estate appraisals).</p></div>
 `,
 terms: [
@@ -179,7 +179,7 @@ objectives: [
   'Identify Hawaii-specific transfer obstacles such as licensing'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Buyers for Hawaii businesses come from a few groups: local companies and investors, mainland companies that want to enter the market, private equity roll-ups, and insiders. Each sees island businesses differently, and several local factors, like licensing and logistics, affect whether a deal can happen at all.</p>
 </div>
 
@@ -193,7 +193,7 @@ body: `
 <tr><td>Insiders (family, managers, ESOP)</td><td>Continuity and opportunity</td><td>Financing capacity; slower payment to the owner</td></tr>
 </table>
 
-<h2>Local obstacles</h2>
+<h2>Hawaii-specific transfer issues</h2>
 <ul>
 <li><b>Licensing:</b> contractors and some professions need licensed individuals. In Hawaii contracting, an entity\'s license runs through a qualified individual (the responsible managing employee). If the owner is that individual, the buyer needs a replacement (Lesson 14.5).</li>
 <li><b>Logistics:</b> mainland buyers may underestimate shipping, inventory, and cost differences.</li>
@@ -202,7 +202,7 @@ body: `
 <li><b>Government contracts:</b> set-aside status and assignability (Lesson 2.4).</li>
 </ul>
 
-<h2>Helping owners think about buyers</h2>
+<h2>Evaluating buyers</h2>
 <ul>
 <li>Clarify what the owner cares about beyond price (Lesson 6.5).</li>
 <li>Understand what each buyer group would actually do with the business.</li>
@@ -210,8 +210,8 @@ body: `
 <li>Consider a targeted process that includes both local and outside buyers so the owner sees real options.</li>
 </ul>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Owners often ask their banker, "Who would even buy this?" Having a clear picture of the buyer groups, and the local issues each one runs into, makes you useful from the first conversation.</p></div>
 `,
 terms: [
@@ -255,11 +255,11 @@ objectives: [
   'Protect confidentiality in a small community'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>In Hawaii, people tend to do business with people they know and trust, and reputations are built over years. Advisors who take time to build relationships, respect family and elders, keep confidences, and show up consistently earn trust. Advisors who rush or treat owners as transactions do not last long.</p>
 </div>
 
-<h2>How trust is built here</h2>
+<h2>Building trust</h2>
 <ul>
 <li><b>Relationship before business:</b> "talk story" is how people get to know each other. Skipping it can come across as disrespectful.</li>
 <li><b>Connections:</b> shared schools, family, communities, and mutual friends matter. A warm introduction from a trusted banker or CPA often opens the door.</li>
@@ -268,7 +268,7 @@ body: `
 <li><b>Consistency over time:</b> showing up at community events, following through, and staying in touch between engagements.</li>
 </ul>
 
-<h2>Adapting without stereotyping</h2>
+<h2>Cultural differences among families</h2>
 <p>Hawaii is highly diverse, with families of Native Hawaiian, Japanese, Chinese, Filipino, Portuguese, Korean, Caucasian, and many mixed heritages. Family norms around inheritance, the roles of eldest children, gender, and how disagreement is expressed vary widely, including within the same heritage. Use these principles:</p>
 <ul>
 <li>Ask rather than assume: "How has your family handled decisions like this before?"</li>
@@ -285,12 +285,12 @@ body: `
 <li>Remember that employees, competitors, and customers may know each other and the family.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: a slow start that paid off</span>
+<div class="call example"><span class="tag">Worked example: relationship-building meetings</span>
 <p>A commercial banker introduces you to an owner who has banked with the bank for 30 years. The first two meetings are mostly about his family history, the early days of the business, and people you both know. You resist the urge to steer toward planning. In the third meeting, he brings his daughter and says, "We need to talk about what happens when I\'m gone." The trust built in the first two meetings made that possible.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your career</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description highlights relationship management and customer experience. In a relationship market, your reputation is your most important professional asset, and it is built one interaction at a time.</p></div>
 `,
 terms: [

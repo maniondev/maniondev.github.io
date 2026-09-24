@@ -5,212 +5,212 @@ window.FBE = {
 
   phases: [
     {id: 'p1', label: 'Phase 1', title: 'Foundations',
-     summary: 'The business owner\'s world, private-company financials, entity and transaction tax, and estate planning basics. This is the vocabulary every other advisor at the table will assume you have.'},
+     summary: 'The purpose of exit planning, private company financial analysis, entity and transaction tax, and estate planning basics.'},
     {id: 'p2', label: 'Phase 2', title: 'Core Disciplines',
-     summary: 'Valuation, exit options, deal structure, the Exit Planning Institute\'s Value Acceleration Methodology, owner readiness, family business systems, and wealth planning around a liquidity event.'},
-    {id: 'p3', label: 'Phase 3', title: 'The Advisory Craft',
-     summary: 'Owner psychology, consultative conversations, running an exit readiness assessment, coordinating the internal team, client materials and events, and the Hawaii market. This phase maps most directly to the job description.'},
-    {id: 'p4', label: 'Phase 4', title: 'Integration and CEPA',
-     summary: 'Full capstone cases from first meeting to roadmap, then structured preparation for the CEPA program and exam.'}
+     summary: 'Valuation, exit options, deal structure, the Exit Planning Institute\'s Value Acceleration Methodology, owner readiness, family business systems, and wealth planning around a sale.'},
+    {id: 'p3', label: 'Phase 3', title: 'Advisory Practice',
+     summary: 'Owner psychology, client meetings, the exit readiness assessment, coordinating internal and outside partners, client materials and events, and family business in Hawaii.'},
+    {id: 'p4', label: 'Phase 4', title: 'Case Studies and CEPA Preparation',
+     summary: 'Five case studies that combine topics from earlier modules, followed by CEPA program information, a concept review, and two practice exams.'}
   ],
 
   modules: [
     /* ---------------- PHASE 1 ---------------- */
-    {id: 'm01', phase: 'p1', num: 1, title: 'The Owner, the Role, and the Practice',
+    {id: 'm01', phase: 'p1', num: 1, title: 'Introduction to Exit Planning and the Advisory Role',
      summary: 'Why exit planning exists, how every owner eventually exits, how a bank\'s Family Business & Entrepreneurs practice works, and where your boundaries are.',
-     why: 'Everything else in this program is a tool. This module explains the problem those tools solve: an owner whose wealth, identity and family are tied up in one illiquid asset, facing a transition that happens once and cannot be redone.',
-     job: 'This is the context behind every line in the job description: intake, readiness assessments, coordination with commercial banking, wealth planning, trust and valuation, and the compliance paragraph at the end.',
+     why: 'An owner\'s wealth, income, and often family are tied to one illiquid asset that is usually sold or transferred only once. This module defines exit planning and describes how a bank practice delivers it.',
+     job: 'Covers the context for the responsibilities in the job description: intake, readiness assessments, coordination with internal partners, and compliance.',
      lessons: [
-       {id: 'm01-l01', title: 'Why exit planning exists', summary: 'The owner\'s balance sheet, the illiquidity problem, and why most transitions go worse than they should.'},
-       {id: 'm01-l02', title: 'Every owner exits: planned and unplanned', summary: 'The voluntary exit, the five Ds that force an involuntary one, and why timing is the owner\'s most underrated variable.'},
-       {id: 'm01-l03', title: 'How a bank Family Business & Entrepreneurs practice works', summary: 'The client journey, the internal partners, the planning pathways, and why a bank invests in this work.'},
-       {id: 'm01-l04', title: 'Your lane: boundaries, referrals, and compliance', summary: 'What you do, what you coordinate, what you never do, and how BSA/AML and fair banking apply to business-owner clients.'}
+       {id: 'm01-l01', title: 'The purpose of exit planning', summary: 'The owner\'s balance sheet, characteristics of a private business as an asset, the definition of exit planning, and common causes of failed transitions.'},
+       {id: 'm01-l02', title: 'Planned and unplanned exits', summary: 'Voluntary and involuntary exits, the five Ds, contingency planning, and factors that affect exit timing.'},
+       {id: 'm01-l03', title: 'How a bank family business advisory practice operates', summary: 'The client journey, the internal partners, the planning pathways, and why a bank invests in this work.'},
+       {id: 'm01-l04', title: 'Professional boundaries, referrals, and compliance', summary: 'The scope of the advisor role, referrals to licensed professionals, conflicts of interest, BSA/AML, fair banking, and documentation.'}
      ]},
-    {id: 'm02', phase: 'p1', num: 2, title: 'Private Company Financials Through the Owner\'s Lens',
+    {id: 'm02', phase: 'p1', num: 2, title: 'Private Company Financial Analysis',
      summary: 'How private company financials differ from what you see in a bank, how to normalize earnings, and how a headline price becomes cash in the owner\'s pocket.',
-     why: 'Every value conversation starts with earnings, and private company earnings are almost never stated the way a buyer will see them. This is where your FP&A background gives you the fastest head start.',
-     job: 'The "quantitative inputs" in an exit readiness assessment are mostly this: normalized earnings, working capital, debt, and the quality of those earnings.',
+     why: 'Valuation, the wealth gap, and financing capacity all start from normalized earnings. Private company statements usually need adjustment before they can be used for these purposes.',
+     job: 'The quantitative inputs in an exit readiness assessment: normalized earnings, working capital, debt, and quality of earnings.',
      lessons: [
        {id: 'm02-l01', title: 'Why private company financials are different', summary: 'Tax-driven books, the owner\'s discretion, and the three kinds of financial statements you will see.'},
-       {id: 'm02-l02', title: 'Normalizing earnings: add-backs, EBITDA and SDE', summary: 'Turning reported profit into the earnings a buyer will pay for.'},
-       {id: 'm02-l03', title: 'From headline price to cash in hand', summary: 'Enterprise value, equity value, debt, cash, the working capital peg, fees, and taxes.'},
-       {id: 'm02-l04', title: 'Quality of earnings: what buyers attack', summary: 'Concentration, owner dependence, recurring revenue, and the risks that shrink a multiple.'}
+       {id: 'm02-l02', title: 'Normalizing earnings: add-backs, EBITDA and SDE', summary: 'Calculating EBITDA, normalizing adjustments, and seller\'s discretionary earnings.'},
+       {id: 'm02-l03', title: 'Enterprise value, equity value, and net proceeds', summary: 'Enterprise and equity value, cash-free debt-free pricing, the working capital peg, transaction costs, and taxes.'},
+       {id: 'm02-l04', title: 'Quality of earnings and buyer risk factors', summary: 'Customer concentration, owner dependence, revenue quality, and quality of earnings reports.'}
      ]},
     {id: 'm03', phase: 'p1', num: 3, title: 'Entity Structure and Transaction Tax',
      summary: 'Entity types, basis and gain, asset versus stock sales, and the main tools that shape the tax on an exit.',
-     why: 'Owners do not live on the purchase price. They live on what is left after tax, and the same deal can leave very different amounts depending on structure. You will not give tax advice, but you must recognize the issues early enough to bring in the CPA.',
-     job: 'Tax considerations sit behind most of the "decision considerations" the job description asks you to identify.',
+     why: 'After-tax proceeds depend on entity type and deal structure. Advisors do not give tax advice but need to recognize these issues early enough to involve the CPA.',
+     job: 'Tax considerations underlie many of the decision points the job description asks you to identify.',
      lessons: [
        {id: 'm03-l01', title: 'Entity types and why they matter', summary: 'Sole proprietorships, partnerships and LLCs, S corporations and C corporations, and how each is taxed.'},
        {id: 'm03-l02', title: 'Basis, gain, and the rates that apply', summary: 'What gets taxed on a sale, capital gain versus ordinary income, recapture, NIIT, and Hawaii.'},
-       {id: 'm03-l03', title: 'Asset sale versus stock sale', summary: 'Why buyers and sellers want opposite things, purchase price allocation, and the C corporation trap.'},
-       {id: 'm03-l04', title: 'Tools that shape the tax on an exit', summary: 'Installment sales, QSBS, the ESOP rollover, and planning that has to happen before a deal.'}
+       {id: 'm03-l03', title: 'Asset sale versus stock sale', summary: 'Buyer and seller tax consequences, purchase price allocation, and C corporation asset sales.'},
+       {id: 'm03-l04', title: 'Installment sales, QSBS, ESOP rollovers, and pre-sale planning', summary: 'Installment sales, QSBS, the ESOP rollover, and planning that has to happen before a deal.'}
      ]},
-    {id: 'm04', phase: 'p1', num: 4, title: 'Estate and Wealth Transfer Essentials',
+    {id: 'm04', phase: 'p1', num: 4, title: 'Estate Planning and Wealth Transfer',
      summary: 'The basic estate plan, estate and gift tax, techniques for moving business value to the next generation, and buy-sell agreements.',
-     why: 'For family businesses, exit planning and estate planning are the same conversation. The business is usually the largest asset in the estate, and how it passes determines both the tax bill and whether the family stays intact.',
-     job: 'This module prepares you to work alongside the trust and estate resources named in the job description and to spot when a client needs them.',
+     why: 'In family businesses, exit planning and estate planning overlap. The business is often the largest asset in the estate.',
+     job: 'Prepares you to work with the trust and estate resources named in the job description and to identify when a client needs them.',
      lessons: [
        {id: 'm04-l01', title: 'The basic estate plan', summary: 'Wills, revocable trusts, powers of attorney, beneficiary designations, and probate.'},
        {id: 'm04-l02', title: 'Estate and gift tax, federal and Hawaii', summary: 'The exemption, the annual exclusion, portability, the Hawaii estate tax, and step-up in basis.'},
-       {id: 'm04-l03', title: 'Moving business value to the next generation', summary: 'Gifting, valuation discounts, voting and non-voting shares, GRATs, sales to grantor trusts, and SLATs.'},
+       {id: 'm04-l03', title: 'Estate freeze techniques: gifts, GRATs, IDGTs, and SLATs', summary: 'Recapitalization, valuation discounts, gifts, GRATs, sales to grantor trusts, SLATs, and family LLCs.'},
        {id: 'm04-l04', title: 'Buy-sell agreements and life insurance', summary: 'Cross-purchase versus redemption, valuation clauses, funding, and the Connelly decision.'}
      ]},
 
     /* ---------------- PHASE 2 ---------------- */
     {id: 'm05', phase: 'p2', num: 5, title: 'Business Valuation',
      summary: 'Standards of value, the three approaches, multiples, discounts, and why one business legitimately has several values.',
-     why: 'Almost every planning decision depends on value: the wealth gap, gifting, buy-sell prices, exit options, and financing. Understanding how value is built lets you read reports critically and explain them in plain language.',
-     job: 'The job description names valuation specialists as a core internal partner. This module lets you work with them as a peer, frame the right question for them, and translate their results for clients.',
+     why: 'Planning decisions depend on value: the wealth gap, gifting, buy-sell prices, exit options, and financing. This module covers how value is determined and how to read a valuation report.',
+     job: 'Valuation specialists are a named internal partner. This module covers the concepts needed to work with them and explain results to clients.',
      lessons: [
-       {id: 'm05-l01', title: 'Value is a range: standards and premises of value', summary: 'Fair market value, investment value, strategic value, and why the purpose of a valuation changes the answer.'},
+       {id: 'm05-l01', title: 'Standards, premises, and levels of value', summary: 'Fair market value, investment value, strategic value, premise and level of value, and valuation purpose.'},
        {id: 'm05-l02', title: 'The income approach', summary: 'Capitalization of earnings, discounted cash flow, and building a discount rate for a private company.'},
-       {id: 'm05-l03', title: 'The market approach', summary: 'Guideline public companies, transaction databases, and using multiples without fooling yourself.'},
-       {id: 'm05-l04', title: 'The asset approach and when it controls', summary: 'Adjusted net assets, holding companies, real estate heavy businesses, and liquidation value.'},
+       {id: 'm05-l03', title: 'The market approach', summary: 'Guideline public company and transaction methods, data sources, and adjusting multiples.'},
+       {id: 'm05-l04', title: 'The asset approach', summary: 'Adjusted net assets, holding companies, real estate heavy businesses, and liquidation value.'},
        {id: 'm05-l05', title: 'Discounts, premiums, and reading a valuation report', summary: 'Lack of control, lack of marketability, and how to review a report with a client.'}
      ]},
-    {id: 'm06', phase: 'p2', num: 6, title: 'Exit Options: Insiders and Outsiders',
+    {id: 'm06', phase: 'p2', num: 6, title: 'Exit Options',
      summary: 'Every realistic path out of a business, what each requires, and how to compare them against the owner\'s goals.',
-     why: 'Owners usually see only one or two exit paths. This module lays out every realistic option and a way to compare them against the owner\'s goals.',
-     job: 'Planning pathways and roadmaps in the job description start here: which paths are realistic for this owner, and what each requires.',
+     why: 'Covers the full set of exit options and a method for comparing them against the owner\'s goals.',
+     job: 'Planning pathways start with identifying which exit options are realistic for a given owner.',
      lessons: [
-       {id: 'm06-l01', title: 'The map of exit options', summary: 'Internal and external transfers, recapitalizations, and orderly wind-downs.'},
-       {id: 'm06-l02', title: 'Transferring to family', summary: 'Gift, sale, or a blend; readiness of the next generation; and financing the transfer.'},
+       {id: 'm06-l01', title: 'Overview of exit options', summary: 'Internal and external transfers, recapitalizations, and wind-downs, with a comparison of each.'},
+       {id: 'm06-l02', title: 'Family transfers', summary: 'Successor readiness, gift versus sale, parents\' income needs, and testing whether the business can support the transfer.'},
        {id: 'm06-l03', title: 'Management buyouts and ESOPs', summary: 'Selling to employees, how the financing works, and when an ESOP fits.'},
-       {id: 'm06-l04', title: 'Strategic buyers, private equity, and recapitalizations', summary: 'Who pays what and why, rollover equity, and the second bite of the apple.'},
+       {id: 'm06-l04', title: 'Strategic buyers, private equity, and recapitalizations', summary: 'Strategic and financial buyers, platform and add-on acquisitions, rollover equity, and recapitalizations.'},
        {id: 'm06-l05', title: 'Comparing options against the owner\'s goals', summary: 'A decision framework that weighs proceeds, legacy, timing, control, and risk.'}
      ]},
     {id: 'm07', phase: 'p2', num: 7, title: 'Deal Structure and the Sale Process',
      summary: 'How a sale actually runs, from preparation to closing, and the deal terms that move real dollars.',
-     why: 'Deal terms and process decide how much of a headline price the owner actually keeps, and when. Knowing them lets you prepare owners before a buyer arrives.',
-     job: 'Owners will bring you offers and letters of intent. This module helps you support them, and it connects directly to the commercial banking partner who often finances the buyer.',
+     why: 'Deal terms and the sale process determine how much of the headline price the owner receives, and when.',
+     job: 'Owners bring offers and letters of intent to their advisors, and commercial banking often finances the buyer.',
      lessons: [
        {id: 'm07-l01', title: 'The sale process from start to close', summary: 'Advisors, teasers, the confidential information memorandum, LOIs, diligence, and closing.'},
-       {id: 'm07-l02', title: 'Deal terms that move the money', summary: 'Cash at close, earnouts, seller notes, escrows, holdbacks, and rollover equity.'},
-       {id: 'm07-l03', title: 'Diligence, reps and warranties, and what kills deals', summary: 'Quality of earnings reports, indemnification, R&W insurance, and common failure points.'},
-       {id: 'm07-l04', title: 'Financing the buyer: where the bank fits', summary: 'Senior debt, SBA 7(a), mezzanine, and the commercial banker\'s view of a deal.'}
+       {id: 'm07-l02', title: 'Deal terms: earnouts, seller notes, escrows, and rollover', summary: 'Cash at close, earnouts, seller notes, escrows, holdbacks, and rollover equity.'},
+       {id: 'm07-l03', title: 'Due diligence, representations and warranties, and deal failure', summary: 'Quality of earnings reports, indemnification, R&W insurance, and common failure points.'},
+       {id: 'm07-l04', title: 'Acquisition financing', summary: 'Senior debt, SBA 7(a), mezzanine, and the commercial banker\'s view of a deal.'}
      ]},
     {id: 'm08', phase: 'p2', num: 8, title: 'The Value Acceleration Methodology',
      summary: 'The Exit Planning Institute\'s core framework: Discover, Prepare, Decide, the Four Cs of intangible capital, and the three gaps.',
-     why: 'This is the Exit Planning Institute\'s core framework and the backbone of the CEPA. Everything in the program so far fits inside it.',
-     job: 'The exit readiness assessment in the job description is essentially the Discover stage of this methodology.',
+     why: 'The Exit Planning Institute\'s core framework and the basis of the CEPA curriculum.',
+     job: 'The exit readiness assessment corresponds to the Discover stage of this methodology.',
      lessons: [
-       {id: 'm08-l01', title: 'Business attractiveness versus business readiness', summary: 'Why a valuable business can still be unsellable, and the EPI view of value creation.'},
+       {id: 'm08-l01', title: 'Business attractiveness versus business readiness', summary: 'EPI\'s distinction between attractiveness and readiness, intangible value, and the Five Stages of Value Maturity.'},
        {id: 'm08-l02', title: 'The Four Cs of intangible capital', summary: 'Human, customer, structural, and social capital, and how each shows up in value.'},
-       {id: 'm08-l03', title: 'The value gap, profit gap, and wealth gap', summary: 'Quantifying the distance between where the owner is and where they need to be.'},
+       {id: 'm08-l03', title: 'The value gap, profit gap, and wealth gap', summary: 'Definitions and calculation of the profit gap, value gap, and wealth gap.'},
        {id: 'm08-l04', title: 'Discover, Prepare, Decide', summary: 'The three gates, the 90-day sprint cycle, and how an engagement moves through them.'}
      ]},
     {id: 'm09', phase: 'p2', num: 9, title: 'Owner Readiness: Personal and Financial',
      summary: 'Whether the owner is ready to leave, can afford to leave, and has somewhere to go.',
-     why: 'Many transitions fail on the personal or financial side even when the business is ready. This module covers the owner\'s readiness as carefully as the company\'s.',
-     job: 'The job description asks for personal and business readiness assessments. This module supplies the personal and financial half, and the scorecard you build here carries into Module 14.',
+     why: 'Transitions can fail on the personal or financial side even when the business is ready. This module covers owner readiness.',
+     job: 'Covers the personal and financial half of the readiness assessment. The scorecard built here is used again in Module 14.',
      lessons: [
-       {id: 'm09-l01', title: 'The three legs: business, personal, and financial', summary: 'Why owners who are ready in only one or two dimensions struggle after an exit.'},
-       {id: 'm09-l02', title: 'Financial readiness and "the number"', summary: 'Building the owner\'s post-exit cash flow need and testing it against net proceeds.'},
-       {id: 'm09-l03', title: 'Personal readiness and life after the business', summary: 'Identity, purpose, relationships, and planning the next chapter.'},
-       {id: 'm09-l04', title: 'Measuring readiness', summary: 'Readiness scoring tools, what they reveal, and how to use them in a first meeting.'}
+       {id: 'm09-l01', title: 'The three legs: business, personal, and financial', summary: 'Business, financial, and personal readiness, and the consequences of gaps in each.'},
+       {id: 'm09-l02', title: 'Financial readiness and retirement funding needs', summary: 'Estimating post-exit spending, other income, and the portfolio required, and linking it to required business value.'},
+       {id: 'm09-l03', title: 'Personal readiness', summary: 'Losses owners experience, signs of low personal readiness, and planning for life after the business.'},
+       {id: 'm09-l04', title: 'Readiness assessment tools', summary: 'Common readiness scoring tools, designing a scorecard, and presenting scores.'}
      ]},
     {id: 'm10', phase: 'p2', num: 10, title: 'Family Business Systems and Governance',
      summary: 'How family, ownership and business interact, and the governance structures that keep them working.',
-     why: 'Family businesses fail across generations far more often from family and governance problems than from business problems. This module gives you the frameworks family business advisors use.',
-     job: 'Most clients of a Family Business &amp; Entrepreneurs practice are exactly this: families who own businesses together. These tools shape how you run meetings and design plans with them.',
+     why: 'Frameworks used by family business advisors: the three-circle model, the developmental model, succession, governance, and equalization among heirs.',
+     job: 'Most clients of a Family Business &amp; Entrepreneurs practice are families who own businesses together.',
      lessons: [
-       {id: 'm10-l01', title: 'The three-circle model', summary: 'Seven positions, seven perspectives, and why the same decision looks different from each.'},
+       {id: 'm10-l01', title: 'The three-circle model', summary: 'The seven positions in the Tagiuri and Davis model and how each views common decisions.'},
        {id: 'm10-l02', title: 'How family businesses develop over generations', summary: 'Controlling owner, sibling partnership, cousin consortium, and what changes at each stage.'},
        {id: 'm10-l03', title: 'Leadership succession and ownership succession', summary: 'Two separate transitions that are often confused, and preparing the next generation.'},
        {id: 'm10-l04', title: 'Governance: boards, family councils, and constitutions', summary: 'Structures that separate family, ownership and business decisions.'},
-       {id: 'm10-l05', title: 'Fair versus equal and managing conflict', summary: 'Active and inactive heirs, in-laws, compensation, and the conversations families avoid.'}
+       {id: 'm10-l05', title: 'Equalization among heirs and family conflict', summary: 'Active and inactive heirs, balancing tools, compensation, in-laws, and structuring family conversations.'}
      ]},
     {id: 'm11', phase: 'p2', num: 11, title: 'Wealth Planning Around a Liquidity Event',
      summary: 'Planning before, during, and after the sale so the proceeds support the owner\'s life and legacy.',
-     why: 'The owner\'s outcome is decided by what happens to the proceeds and to their life after the sale. This module covers the planning around the event itself.',
-     job: 'This is where the wealth strategy, trust, and investment teams take the lead, and where a clean handoff from the Family Business team matters most.',
+     why: 'Planning before, during, and after a sale: timing, charitable strategies, managing proceeds, and insurance.',
+     job: 'This is where wealth strategy, trust, and investment teams take the lead, and where the handoff from the Family Business team occurs.',
      lessons: [
-       {id: 'm11-l01', title: 'Pre-transaction planning windows', summary: 'What must happen years, months, and weeks before a deal, and what becomes impossible after the LOI.'},
+       {id: 'm11-l01', title: 'Pre-transaction planning timeline', summary: 'Planning actions by time before a transaction, and why the letter of intent limits later planning.'},
        {id: 'm11-l02', title: 'Charitable strategies', summary: 'Donor-advised funds, charitable remainder trusts, and gifting pre-sale interests.'},
-       {id: 'm11-l03', title: 'From operator to investor', summary: 'Concentrated wealth becoming liquid wealth, cash flow design, and risk.'},
+       {id: 'm11-l03', title: 'Managing sale proceeds', summary: 'Tax reserves, time-segmented portfolios, contingent proceeds, and common post-sale mistakes.'},
        {id: 'm11-l04', title: 'Insurance and risk management for owners', summary: 'Key person, disability, buy-sell funding, and post-exit coverage.'}
      ]},
 
     /* ---------------- PHASE 3 ---------------- */
     {id: 'm12', phase: 'p3', num: 12, title: 'Business Owner Psychology',
      summary: 'Why owners delay, how identity and control shape decisions, and what seller\'s remorse teaches advisors.',
-     why: 'Owners rarely decide based on information alone. Understanding why they delay, what they fear losing, and who else influences them is what turns technical knowledge into progress.',
-     job: 'Consultative engagement, the first responsibility in the job description, depends on reading the owner as well as the business.',
+     why: 'Why owners delay planning, what they lose in a transition, who else influences decisions, and how people move toward change.',
+     job: 'Supports the consultative engagement responsibility in the job description.',
      lessons: [
-       {id: 'm12-l01', title: 'Why owners avoid exit planning', summary: 'Mortality, identity, control, and the belief that the business will always be there.'},
-       {id: 'm12-l02', title: 'Identity, control, and seller\'s remorse', summary: 'What owners lose when they sell, and how to plan for it.'},
-       {id: 'm12-l03', title: 'The spouse, the partner, and the family in the room', summary: 'Who else is part of the decision, and how to include them.'},
-       {id: 'm12-l04', title: 'Change readiness and motivating action', summary: 'Moving an owner from interest to commitment without pressure.'}
+       {id: 'm12-l01', title: 'Why owners avoid exit planning', summary: 'Common reasons owners delay planning and approaches that reduce resistance.'},
+       {id: 'm12-l02', title: 'Owner identity and seller\'s remorse', summary: 'Bridges\' transition model, sources of seller\'s remorse, and ways to reduce it.'},
+       {id: 'm12-l03', title: 'Spouses, co-owners, and other stakeholders', summary: 'Involving spouses, co-owners, adult children, and key employees in planning.'},
+       {id: 'm12-l04', title: 'Stages of change and motivational interviewing', summary: 'The stages of change model and motivational interviewing skills applied to owners.'}
      ]},
-    {id: 'm13', phase: 'p3', num: 13, title: 'Discovery and Consultative Conversations',
+    {id: 'm13', phase: 'p3', num: 13, title: 'Client Discovery and Consultative Meetings',
      summary: 'The conversation skills behind "engages in consultative discussions" in the job description.',
-     why: 'This is the conversation skill set behind every engagement: first meetings, listening, guiding toward a next step, and delivering hard news.',
-     job: 'The job description asks you to engage in consultative discussions and guide them toward defined planning pathways. This module is that skill, practiced.',
+     why: 'First meetings, questioning and listening, recommending a next step, and delivering difficult news.',
+     job: 'Covers the consultative discussion and planning pathway responsibilities in the job description.',
      lessons: [
-       {id: 'm13-l01', title: 'The first meeting', summary: 'Structure, questions, and what a good first meeting produces.'},
-       {id: 'm13-l02', title: 'Questioning and listening', summary: 'Open questions, follow-ups, summarizing, and the discipline of not solving too early.'},
-       {id: 'm13-l03', title: 'Guiding toward a planning pathway', summary: 'Moving from a conversation to a defined next step and roadmap.'},
-       {id: 'm13-l04', title: 'Difficult conversations', summary: 'Delivering a low valuation, naming family conflict, and handling pushback.'}
+       {id: 'm13-l01', title: 'The first meeting', summary: 'Preparation, meeting structure, and intended outcomes of a first meeting.'},
+       {id: 'm13-l02', title: 'Questioning and listening', summary: 'Question types, reflective listening, and the trust equation.'},
+       {id: 'm13-l03', title: 'Recommending a planning pathway', summary: 'Connecting discovery findings to a planning pathway and handling common hesitations.'},
+       {id: 'm13-l04', title: 'Difficult conversations', summary: 'Preparing for and delivering difficult news, and responding to reactions.'}
      ]},
     {id: 'm14', phase: 'p3', num: 14, title: 'The Exit Readiness Assessment',
      summary: 'Hands-on: gathering qualitative and quantitative inputs and turning them into themes, action items, and decision points.',
-     why: 'This module turns everything so far into the core work product of the role. It ends with a full case you complete yourself.',
-     job: 'Gathering, organizing, and analyzing inputs, and synthesizing them into themes, action items, and decision points, is word for word the exit readiness responsibility in the job description.',
+     why: 'The core work product of the role, from intake through synthesis, ending with a full case exercise.',
+     job: 'Matches the exit readiness analysis responsibility in the job description: gathering and analyzing inputs and identifying themes, action items, and decision points.',
      lessons: [
        {id: 'm14-l01', title: 'Intake and data gathering', summary: 'What to request, in what order, and how to make it easy for the owner.'},
        {id: 'm14-l02', title: 'Assessing business readiness', summary: 'Financial, operational, and intangible capital review.'},
        {id: 'm14-l03', title: 'Assessing personal and financial readiness', summary: 'Goals, the wealth gap, and personal readiness signals.'},
-       {id: 'm14-l04', title: 'Synthesis: themes, action items, and decision points', summary: 'Turning a pile of inputs into a clear picture and a prioritized plan.'},
-       {id: 'm14-l05', title: 'Workshop: a full assessment', summary: 'A complete case with data, where you build the assessment yourself.'}
+       {id: 'm14-l04', title: 'Synthesizing findings: themes, action items, and decision points', summary: 'Grouping findings into themes, prioritizing actions, framing decision points, and structuring the deliverable.'},
+       {id: 'm14-l05', title: 'Case exercise: Kamakani Electric', summary: 'A complete assessment case with financial, family, and estate data, and a model answer.'}
      ]},
-    {id: 'm15', phase: 'p3', num: 15, title: 'Orchestrating the Advisory Team',
+    {id: 'm15', phase: 'p3', num: 15, title: 'Coordinating the Advisory Team',
      summary: 'Working with commercial banking, wealth planning, trust and estate, valuation, and outside CPAs and attorneys.',
-     why: 'Exit plans involve many specialists who do not report to you. Coordination is what keeps the plan moving and the owner at the center.',
-     job: 'Cross-functional coordination (Advisor) and orchestration with influence without authority (Senior Advisor) are named directly in the job description.',
+     why: 'Working with internal and outside partners who do not report to you: roles, trackers, dependencies, and influence.',
+     job: 'Covers cross-functional coordination (Advisor) and influence without authority (Senior Advisor).',
      lessons: [
-       {id: 'm15-l01', title: 'Who does what', summary: 'Each partner\'s role, incentives, and language.'},
-       {id: 'm15-l02', title: 'Running workstreams and keeping momentum', summary: 'Timelines, owners of tasks, and status rhythms that keep a plan moving.'},
+       {id: 'm15-l01', title: 'Roles of internal and outside partners', summary: 'Roles and incentives of internal and outside partners, and RACI charts.'},
+       {id: 'm15-l02', title: 'Managing workstreams and dependencies', summary: 'Engagement trackers, dependencies between workstreams, and status meetings.'},
        {id: 'm15-l03', title: 'Working with outside advisors', summary: 'CPAs, attorneys, and investment bankers the client already trusts.'},
-       {id: 'm15-l04', title: 'Influence without authority', summary: 'Getting partners who do not report to you to deliver on time.'}
+       {id: 'm15-l04', title: 'Influence without authority', summary: 'The currencies framework, making requests, and escalation.'}
      ]},
     {id: 'm16', phase: 'p3', num: 16, title: 'Client Materials, Meetings, and Events',
      summary: 'Client-ready summaries, roadmaps, meeting facilitation, documentation, and client events.',
-     why: 'Owners act on what they read and remember. Clear materials, well-run meetings, and events that lead to conversations are how advisory work becomes visible.',
-     job: 'Client materials, meeting follow-through, documentation, and event activation are all listed responsibilities.',
+     why: 'Client summaries, the roadmap document, meeting facilitation and documentation, and client events.',
+     job: 'Covers the client materials, follow-through, documentation, and event responsibilities.',
      lessons: [
-       {id: 'm16-l01', title: 'Writing for business owners', summary: 'Summaries and recommendations an owner will read and act on.'},
-       {id: 'm16-l02', title: 'The roadmap deliverable', summary: 'Structuring findings, options, and a sequenced plan.'},
+       {id: 'm16-l01', title: 'Writing for business owners', summary: 'Plain-language summaries, presenting numbers, and compliance review of client materials.'},
+       {id: 'm16-l02', title: 'The client roadmap document', summary: 'Sections, visuals, and presentation of the client roadmap.'},
        {id: 'm16-l03', title: 'Facilitating meetings and documenting follow-through', summary: 'Agendas, decisions, action items, and notes that hold up.'},
-       {id: 'm16-l04', title: 'Client events that create conversations', summary: 'Seminars, roundtables, and events that lead to real engagements.'}
+       {id: 'm16-l04', title: 'Client events', summary: 'Event formats, planning timeline, follow-up, measurement, and compliance.'}
      ]},
-    {id: 'm17', phase: 'p3', num: 17, title: 'The Hawaii Market',
+    {id: 'm17', phase: 'p3', num: 17, title: 'Family Business in Hawaii',
      summary: 'Family enterprise in Hawaii: land, relationships, a limited buyer pool, and multigenerational expectations.',
-     why: 'The same planning tools apply everywhere, but Hawaii changes which ones matter most: land, leases, a small buyer pool, children on the mainland, and a relationship-driven culture.',
-     job: 'The role serves Hawaii owners through a Hawaii bank. Local fluency is part of credibility with owners and colleagues.',
+     why: 'Hawaii-specific factors in succession planning: land and ground leases, a small buyer pool, successors living on the mainland, and a relationship-based market.',
+     job: 'The role serves Hawaii business owners.',
      lessons: [
-       {id: 'm17-l01', title: 'Family business in Hawaii', summary: 'Industry mix, generational patterns, and the role of relationships.'},
-       {id: 'm17-l02', title: 'Land, real estate, and operating companies', summary: 'Separating property from operations, and why it matters for value and estate planning.'},
-       {id: 'm17-l03', title: 'Buyers for island businesses', summary: 'Local, mainland, and private equity buyers, and what each looks for.'},
-       {id: 'm17-l04', title: 'Culture, trust, and advising in a relationship market', summary: 'How trust is earned and kept when everyone knows everyone.'}
+       {id: 'm17-l01', title: 'Industries and ownership patterns in Hawaii', summary: 'Industry mix, ownership patterns, and factors that affect succession in Hawaii.'},
+       {id: 'm17-l02', title: 'Real estate, ground leases, and operating companies', summary: 'Separating property from operations, and why it matters for value and estate planning.'},
+       {id: 'm17-l03', title: 'Buyer types for Hawaii businesses', summary: 'Local, mainland, and private equity buyers, and what each looks for.'},
+       {id: 'm17-l04', title: 'Relationships, culture, and confidentiality in Hawaii', summary: 'Building trust, cultural differences among families, and confidentiality in a small community.'}
      ]},
 
     /* ---------------- PHASE 4 ---------------- */
-    {id: 'm18', phase: 'p4', num: 18, title: 'Capstone Cases',
+    {id: 'm18', phase: 'p4', num: 18, title: 'Case Studies',
      summary: 'Full cases from first meeting through roadmap, each testing a different combination of skills.',
-     why: 'Real situations never arrive sorted by module. These cases combine valuation, tax, estate, family, deal, and advisory skills the way client work does.',
-     job: 'Each case asks you to do what the role does: read a messy situation, find the themes and decision points, and recommend next steps and the partners to involve.',
+     why: 'Five cases that combine valuation, tax, estate, family, deal, and advisory topics.',
+     job: 'Each case follows the role\'s process: identify the issues and decision points, then recommend next steps and the partners to involve.',
      lessons: [
-       {id: 'm18-l01', title: 'Case: the second-generation HVAC company', summary: 'Owner dependence, a private equity approach, and a son who wants in.'},
-       {id: 'm18-l02', title: 'Case: the family restaurant group', summary: 'Three siblings, one operator, and real estate held separately.'},
-       {id: 'm18-l03', title: 'Case: the three-partner professional firm', summary: 'Partners on different timelines and an outdated buy-sell agreement.'},
-       {id: 'm18-l04', title: 'Case: the landholding family', summary: 'Active and inactive heirs, land that cannot be sold easily, and estate tax exposure.'},
-       {id: 'm18-l05', title: 'Case: the unplanned exit', summary: 'An owner\'s sudden disability and the family left to decide.'}
+       {id: 'm18-l01', title: 'Case: HVAC company with a private equity offer', summary: 'C corporation asset sale, rollover and earnout terms, and successor readiness.'},
+       {id: 'm18-l02', title: 'Case: sibling buyout of a restaurant group', summary: 'Normalizing earnings, financing a sibling buyout, shared real estate, and governance.'},
+       {id: 'm18-l03', title: 'Case: retiring partner in an engineering firm', summary: 'Updating a buy-sell agreement and funding a retiring partner\'s buyout.'},
+       {id: 'm18-l04', title: 'Case: estate planning for a land-rich family', summary: 'Portability, estate tax exposure, liquidity, conservation easements, and governance for four heirs.'},
+       {id: 'm18-l05', title: 'Case: sudden owner incapacity', summary: 'Authority gaps, the first 30 days, the bank\'s response, and the decision at 90 days.'}
      ]},
     {id: 'm19', phase: 'p4', num: 19, title: 'CEPA Preparation',
      summary: 'How the CEPA program works, the concepts it emphasizes, and practice exams.',
-     why: 'A structured path to the credential the role expects, with a concept review and two full practice exams.',
-     job: 'The job description expects a commitment to pursue the CEPA. This module turns that commitment into a plan.',
+     why: 'CEPA program information, a review of EPI frameworks, and two practice exams.',
+     job: 'The job description expects a commitment to pursue the CEPA.',
      lessons: [
        {id: 'm19-l01', title: 'The CEPA program and exam', summary: 'Eligibility, format, and how to prepare.'},
        {id: 'm19-l02', title: 'Concept review: EPI frameworks', summary: 'A structured review of the methodology and terms the program stresses.'},
@@ -220,8 +220,8 @@ window.FBE = {
   ],
 
   diagnostic: {
-    intro: 'This measures where you are starting from across seven pillars. You are expected to miss a lot of these the first time. Retake it at the end of each phase to see your progress.',
-    after: 'Low scores are what we expect before Phase 1 and point to where the early modules will matter most. Save your first result and compare after each phase.',
+    intro: '21 questions across seven subject areas. Take it before starting and again after each phase to measure progress.',
+    after: 'Low scores before Phase 1 are expected. Results are saved so later attempts can be compared.',
     pillars: [
       {id: 'fin', short: 'Fin', name: 'Financials and valuation'},
       {id: 'tax', short: 'Tax', name: 'Tax and entity structure'},
@@ -299,9 +299,9 @@ window.FBE = {
   },
 
   library: {
-    intro: 'A curated list, ordered by when each item is most useful. You do not need to read all of it. Lessons point to specific items when they matter most. Check items off as you finish them.',
+    intro: 'Books, papers, and organizations referenced in the lessons, grouped by subject, with the phase where each is most relevant. Check items off as you finish them.',
     groups: [
-      {title: 'Start here', items: [
+      {title: 'Core reading', items: [
         {title: 'Walking to Destiny', by: 'Christopher M. Snider', when: 'Phase 1', note: 'The Exit Planning Institute\'s own book on the Value Acceleration Methodology. The closest thing to the CEPA program in book form. Read it early and again before the CEPA.'},
         {title: 'Finish Big', by: 'Bo Burlingham', when: 'Phase 1', note: 'Interviews with owners about how their exits went, including the ones that went badly. The best introduction to the human side of exits.'},
         {title: 'Built to Sell', by: 'John Warrillow', when: 'Phase 1', note: 'A short business fable about making a company less dependent on its owner. Easy to read and useful for explaining owner dependence to clients.'}
@@ -326,7 +326,7 @@ window.FBE = {
         {title: 'Plan Your Estate', by: 'Denis Clifford (Nolo)', when: 'Phase 1', note: 'A plain-language guide to wills, trusts, and estate tax. Written for consumers, which makes it a fast way to learn the vocabulary.'},
         {title: 'Hawaii Department of Taxation: estate tax', by: 'tax.hawaii.gov', when: 'Phase 1', url: 'https://tax.hawaii.gov/', note: 'Primary source for the current Hawaii estate tax exemption, rates, and forms.'}
       ]},
-      {title: 'The advisory craft', items: [
+      {title: 'Advisory skills', items: [
         {title: 'The Trusted Advisor', by: 'David Maister, Charles Green, Robert Galford', when: 'Phase 3', note: 'The standard book on how professional advisors earn trust. Its trust equation is a useful self-check.'},
         {title: 'Humble Inquiry', by: 'Edgar Schein', when: 'Phase 3', note: 'A short book on asking instead of telling. Directly useful for discovery meetings.'},
         {title: 'Crucial Conversations', by: 'Kerry Patterson and co-authors', when: 'Phase 3', note: 'Tools for high-stakes conversations where emotions run high, which describes most family succession meetings.'},
@@ -348,20 +348,20 @@ window.FBE = {
 
   role: [
     '<p class="eyebrow">The role</p>',
-    '<h1 class="big">Advisor, Family Business &amp; Entrepreneurs.</h1>',
-    '<p class="lede">The job description, decoded, and how every module in this program connects to it.</p>',
+    '<h1 class="big">Advisor, Family Business &amp; Entrepreneurs</h1>',
+    '<p class="lede">A summary of the job description and the modules that cover each responsibility.</p>',
 
-    '<h2>What the role actually is</h2>',
-    '<p>Read closely, the job is a coordinator and analyst who sits between business-owner clients and the bank\'s specialists. The Advisor does intake, contributes to exit readiness assessments, prepares client materials, and keeps work moving across commercial banking, wealth planning, trust and estate, and valuation. The Senior Advisor leads those same activities and owns the client relationship and the recommendations.</p>',
+    '<h2>Role summary</h2>',
+    '<p>The role is a coordinator and analyst position who sits between business-owner clients and the bank\'s specialists. The Advisor does intake, contributes to exit readiness assessments, prepares client materials, and keeps work moving across commercial banking, wealth planning, trust and estate, and valuation. The Senior Advisor leads those same activities and owns the client relationship and the recommendations.</p>',
     '<p>The posting says "Individual Contributor" and "part of a broader wealth team." That means you will not manage people, and you will not deliver most of the technical work yourself. Valuations come from valuation specialists, legal documents from attorneys, investment management from wealth advisors. Your value is in understanding enough of each discipline to spot issues, ask the right questions, organize the work, and explain it clearly to the owner.</p>',
 
-    '<h2>Which level fits you today</h2>',
+    '<h2>Advisor and Senior Advisor levels</h2>',
     '<p>The Advisor level asks for three years in wealth management, financial planning support, commercial banking, business advisory, consulting, "or a related client-facing environment." Your FP&amp;A work for the Wealth segment is related and has real substance: you know the economics of the business this team belongs to, you build the kind of analysis they need, and you already work across bank functions. The gap is the client-facing part. Senior Advisor asks for five years advising or supporting entrepreneurs, family businesses, or high-net-worth clients directly, so Advisor is the realistic target.</p>',
-    '<div class="call hawaii"><span class="tag">Closing the client-facing gap</span><ul><li>Ask to shadow a Family Business &amp; Entrepreneurs advisor, a commercial banker, or a wealth planner in client meetings while you are still in FP&amp;A.</li><li>Offer to build analysis for the team: a readiness scoring tool, a proceeds waterfall model, a pipeline report. This shows the "practice and program support" line in the posting in action.</li><li>Volunteer at client events. The posting lists event support as a responsibility, and events are a low-risk way to spend time with owners.</li><li>Build relationships now with the internal partners named in the posting. You will coordinate with these people daily in the role.</li></ul></div>',
+    '<div class="call hawaii"><span class="tag">Building client-facing experience</span><ul><li>Ask to shadow a Family Business &amp; Entrepreneurs advisor, a commercial banker, or a wealth planner in client meetings while you are still in FP&amp;A.</li><li>Offer to build analysis for the team: a readiness scoring tool, a proceeds waterfall model, a pipeline report. This shows the "practice and program support" line in the posting in action.</li><li>Volunteer at client events. The posting lists event support as a responsibility, and events are a low-risk way to spend time with owners.</li><li>Build relationships now with the internal partners named in the posting. You will coordinate with these people daily in the role.</li></ul></div>',
 
-    '<h2>Responsibilities mapped to the program</h2>',
+    '<h2>Responsibilities and related modules</h2>',
     '<div class="tablewrap"><table class="map">',
-    '<tr><th>Responsibility</th><th>What it really means</th><th>Modules</th></tr>',
+    '<tr><th>Responsibility</th><th>Description</th><th>Modules</th></tr>',
     '<tr><td><b>Client engagement</b><br><span class="faint small">Consultative discussions; guide toward planning pathways and roadmaps</span></td><td>Running discovery conversations with owners, understanding their goals, and steering toward a defined next step instead of an open-ended chat.</td><td>1, 9, 12, 13</td></tr>',
     '<tr><td><b>Exit readiness analysis</b><br><span class="faint small">Gather, organize, analyze inputs; identify themes, action items, decisions</span></td><td>Collecting financials and owner information, normalizing them, scoring readiness, and synthesizing it into a clear set of findings. The closest match to your FP&amp;A skills.</td><td>2, 5, 8, 9, 14</td></tr>',
     '<tr><td><b>Cross-functional coordination</b><br><span class="faint small">Commercial banking, wealth planning, trust/estate, valuation</span></td><td>Knowing what each partner does, when to bring them in, and how to keep timelines and deliverables aligned.</td><td>1, 3, 4, 7, 11, 15</td></tr>',
@@ -371,7 +371,7 @@ window.FBE = {
     '<tr><td><b>Compliance</b><br><span class="faint small">Fair Banking, AML, BSA, USA PATRIOT Act</span></td><td>Treating clients consistently, recognizing unusual activity around large liquidity events, and staying within what a bank advisor may say about legal and tax matters.</td><td>1</td></tr>',
     '</table></div>',
 
-    '<h2>The qualifications list, translated</h2>',
+    '<h2>Qualifications</h2>',
     '<ul>',
     '<li><b>Business analysis (intermediate):</b> your strongest area. Module 2 shows how it applies to private companies.</li>',
     '<li><b>Communication and consultation (intermediate):</b> the biggest shift from FP&amp;A. Internal executives want answers; owners need to be heard before they will accept answers. Modules 12 and 13.</li>',
@@ -381,7 +381,7 @@ window.FBE = {
     '<li><b>CEPA commitment:</b> expected but not required at hire. Saying you have already started a structured program toward it is a credible signal. Module 19.</li>',
     '</ul>',
 
-    '<h2>How to describe your background for this role</h2>',
-    '<div class="call say"><span class="tag">A way to say it</span><p>"I have spent my career understanding how businesses make money and where the numbers come from, most recently for our Wealth segment. That is the analytical half of exit readiness work. I have been deliberately building the other half: exit planning, valuation, estate and succession concepts, and the conversation skills to work with owners. I know the internal partners this team relies on, because I already work with their numbers."</p></div>'
+    '<h2>Describing your background</h2>',
+    '<div class="call say"><span class="tag">Example language</span><p>"I have spent my career understanding how businesses make money and where the numbers come from, most recently for our Wealth segment. That is the analytical half of exit readiness work. I have been deliberately building the other half: exit planning, valuation, estate and succession concepts, and the conversation skills to work with owners. I know the internal partners this team relies on, because I already work with their numbers."</p></div>'
   ].join('\n')
 };

@@ -10,7 +10,7 @@ objectives: [
   'Build a pre-transaction checklist for an owner'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Many of the most valuable planning steps have deadlines, and most of those deadlines arrive before the owner has even decided to sell. Once a buyer and a price are on the table, options narrow quickly. Organizing planning by "how far ahead does this need to happen?" is one of the most practical tools an advisor has.</p>
 </div>
 
@@ -24,7 +24,7 @@ body: `
 <tr><td><b>After closing</b></td><td>Estimated tax payments; investing proceeds in stages; updating estate documents for the new asset mix; insurance changes; managing earnouts, notes, and rollover equity; the owner\'s next chapter</td></tr>
 </table>
 
-<h2>Why the LOI is a turning point</h2>
+<h2>Effect of the letter of intent</h2>
 <ul>
 <li><b>Valuation certainty:</b> once there is a price, gifts are valued near that price, which removes most of the benefit of gifting at discounted values.</li>
 <li><b>Assignment of income:</b> if a sale is effectively certain, gains on shares given away may still be taxed to the donor (Lesson 3.4).</li>
@@ -32,18 +32,18 @@ body: `
 <li><b>Leverage:</b> terms not settled in the LOI tend to go the buyer\'s way.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: two owners, same sale</span>
+<div class="call example"><span class="tag">Worked example: early and late planning</span>
 <p><b>Owner A</b> started planning four years before selling. She converted to S status early, gifted 30% of non-voting shares to trusts for her children at a discounted value, set up a donor-advised fund with shares before marketing began, and had a financial plan showing her number. At closing, her estate was smaller, her charitable goals were funded efficiently, and she knew exactly how to invest the proceeds.</p>
 <p><b>Owner B</b> received an unsolicited offer and signed an LOI within a month. Afterward, he asked about gifting to his children and giving to charity. Most of the benefit was gone: the value was fixed, the sale was nearly certain, and the timeline left no room. He paid more tax, and his estate was larger.</p>
 <p>Same price. Very different outcomes, driven by timing alone.</p>
 </div>
 
-<div class="call hawaii"><span class="tag">Where you fit</span>
+<div class="call hawaii"><span class="tag">Advisor role</span>
 <p>Unsolicited offers are common, and owners often call their banker first. One of the most valuable things a Family Business advisor can do is create a short pause: "Before you sign anything, let\'s get your CPA, attorney, and our planning team together for one meeting." That meeting can protect options worth far more than any delay costs.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For coordination</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Planning windows are fundamentally a coordination problem: the owner\'s CPA, attorney, wealth planner, trust team, and M&amp;A advisor each own different items with different deadlines. Keeping everyone on one timeline is the role\'s core value.</p></div>
 `,
 terms: [
@@ -89,12 +89,12 @@ objectives: [
   'Identify timing rules and practical complications, including S corporation shares'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>An owner who wants to give to charity can often do much more good, at lower cost, by giving shares of the business before a sale instead of giving cash after. The charity (or a charitable trust) sells the shares without paying capital gains tax, and the owner gets a charitable deduction. Some structures also pay the owner an income for life. The timing has to be right, and not every type of share works easily.</p>
 </div>
 
-<h2>Why give shares instead of cash</h2>
-<div class="call example"><span class="tag">Worked example: $1 million of charitable intent</span>
+<h2>Giving shares instead of cash</h2>
+<div class="call example"><span class="tag">Worked example: gifting shares versus cash</span>
 <p>An owner with near-zero basis plans to give $1 million to charity.</p>
 <table>
 <tr><th></th><th class="n">Sell shares, give cash</th><th class="n">Give shares before the sale</th></tr>
@@ -128,8 +128,8 @@ body: `
 <p>Hawaii has a strong tradition of family and community philanthropy. Community foundations here offer donor-advised funds and deep knowledge of local nonprofits. For owners who want their business legacy to become a community legacy, a pre-sale charitable plan can connect the two.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Charitable planning is a clear example of a pre-LOI planning window, and it often matters personally to owners. Asking "Is charitable giving part of your plans?" early in discovery can open a meaningful conversation and preserve a valuable option.</p></div>
 `,
 terms: [
@@ -179,14 +179,14 @@ objectives: [
   'Explain how uncertain proceeds (earnouts, notes, rollover) should be treated'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>After a sale, the owner stops running a business they understood and controlled, and starts owning a portfolio they may not understand and cannot control. That shift is both financial and emotional. Good planning slows it down, sets clear rules for the money, and protects against the most common mistakes, which usually happen in the first year or two.</p>
 </div>
 
-<h2>A different kind of risk</h2>
+<h2>Concentrated and diversified risk</h2>
 <p>As an operator, the owner took concentrated risk on one business but felt in control. As an investor, they hold diversified assets with lower overall risk, but they watch prices move every day without any control. Many owners find this harder than expected, and some react by taking concentrated risks again, often in areas they know less well than their old business.</p>
 
-<h2>A practical framework</h2>
+<h2>Managing proceeds</h2>
 <ul>
 <li><b>Set aside taxes first:</b> the tax on the sale is due (with estimated payments) in the months after closing. Keep that money safe and liquid.</li>
 <li><b>A "decision-free" period:</b> many advisors recommend avoiding major new commitments for six to twelve months after a sale while the owner adjusts.</li>
@@ -196,7 +196,7 @@ body: `
 </ul>
 <p>Specific investment recommendations come from licensed investment professionals. Your role is to make sure the plan connects to the owner\'s cash flow needs, taxes, and goals.</p>
 
-<h2>Uncertain money</h2>
+<h2>Contingent proceeds</h2>
 <ul>
 <li><b>Earnouts:</b> plan as if they may not pay. If they do, treat them as a bonus to the plan.</li>
 <li><b>Seller notes:</b> a loan to the buyer. Consider the credit risk and do not depend on the payments for essential spending until they are well established.</li>
@@ -228,12 +228,12 @@ body: `
 <p>The owner can see exactly where the next several years of spending will come from, which makes the long-term portfolio easier to leave alone.</p>
 </div>
 
-<div class="call hawaii"><span class="tag">Where the bank fits</span>
-<p>This is the point where the bank\'s wealth management and trust teams become central. A smooth handoff from the Family Business team to the wealth team, with the owner\'s goals, cash flow plan, and uncertain proceeds clearly documented, is one of the most important moments in the whole engagement, both for the client and for the bank relationship.</p>
+<div class="call hawaii"><span class="tag">Bank role</span>
+<p>At this point, the bank\'s wealth management and trust teams become central. A smooth handoff from the Family Business team to the wealth team, with the owner\'s goals, cash flow plan, and uncertain proceeds clearly documented, is one of the most important moments in the whole engagement, both for the client and for the bank relationship.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the relationship</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>EPI\'s fifth stage of value maturity is "manage wealth." The planning does not end at closing. Owners who have a clear plan for their proceeds and their time are much more likely to look back on the sale as a success.</p></div>
 `,
 terms: [
@@ -281,8 +281,8 @@ objectives: [
   'Recognize coverage gaps that open after a sale'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Insurance protects the plan against the events that would otherwise break it: the death or disability of an owner or key person, an estate tax bill the family cannot pay, or a claim after the business is sold. Owners often have outdated coverage, and new gaps open after a sale when the company stops paying for things.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Insurance protects the plan against events that would otherwise disrupt it: the death or disability of an owner or key person, an estate tax bill the family cannot pay, or a claim after the business is sold. Owners often have outdated coverage, and new gaps open after a sale when the company stops paying for things.</p>
 </div>
 
 <h2>Before a transition</h2>
@@ -316,8 +316,8 @@ body: `
 <p>Because Hawaii\'s Prepaid Health Care Act requires employers to provide health coverage to most employees, many Hawaii owners have never shopped for individual coverage. The transition from employer coverage to COBRA, individual plans, or Medicare deserves early attention in the post-sale plan. Natural disaster exposure is also a real part of property and business interruption planning here.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For protection</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>EPI places "protect value" before "build value," and insurance is one of the main protection tools. In a readiness assessment, a quick review of coverage against current value (for example, buy-sell insurance sized for a business worth a third of today\'s value) often produces urgent and easy action items. Specific policy recommendations come from licensed insurance professionals.</p></div>
 `,
 terms: [

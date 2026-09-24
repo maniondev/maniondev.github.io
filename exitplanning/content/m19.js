@@ -10,7 +10,7 @@ objectives: [
   'Build a study plan that uses this program and EPI\'s materials'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The Certified Exit Planning Advisor (CEPA) credential is awarded by the Exit Planning Institute. You earn it by completing EPI\'s program and passing its exam, and you keep it with continuing education. The job description does not require it at hire but expects you to pursue it. This program has covered the concepts. The CEPA program itself will teach EPI\'s specific methodology and tools in depth.</p>
 </div>
 <p class="small faint">Program details, eligibility, costs, and exam format change over time. Confirm everything in this lesson on the Exit Planning Institute\'s website before you register.</p>
@@ -23,7 +23,7 @@ body: `
 <li><b>Maintenance:</b> continuing education hours and EPI membership are required to keep the credential active.</li>
 </ul>
 
-<h2>Timing for you</h2>
+<h2>Timing</h2>
 <ul>
 <li><b>If hired into the role:</b> ask about the bank\'s sponsorship and preferred timing. Many employers pay for the program as professional development.</li>
 <li><b>Before hire:</b> you can finish this program, read Walking to Destiny, and follow EPI\'s published content, which demonstrates commitment in interviews.</li>
@@ -42,8 +42,8 @@ body: `
 <tr><td>7</td><td>Take Practice Exam 2, then EPI\'s own preparation materials, before the exam</td></tr>
 </table>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your career</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The CEPA gives you a shared language with other exit planning professionals and credibility with owners, CPAs, and attorneys. It is also an explicit expectation of the role you are targeting.</p></div>
 `,
 terms: [
@@ -86,7 +86,7 @@ objectives: [
   'Identify the frameworks you need to review'
 ],
 body: `
-<div class="call plain"><span class="tag">How to use this review</span>
+<div class="call plain"><span class="tag">Instructions</span>
 <p>Read each framework, then cover the page and explain it out loud in two or three sentences. If you cannot, go back to the lesson listed. Then take the 10-question check at the bottom.</p>
 </div>
 
@@ -106,7 +106,7 @@ body: `
 <tr><td><b>The advisory team</b></td><td>Exit planning is multidisciplinary. The exit planner coordinates specialists and keeps the owner\'s goals at the center.</td><td>1.3, 15.1</td></tr>
 </table>
 
-<h2>Common connections the exam may test</h2>
+<h2>Key relationships between frameworks</h2>
 <ul>
 <li>Protecting value comes before building value.</li>
 <li>Most owners are not ready and most have no written plan, which is the reason the discipline exists.</li>

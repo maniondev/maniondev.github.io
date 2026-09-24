@@ -11,8 +11,8 @@ objectives: [
   'Plan the interviews that supply qualitative inputs'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>An assessment is only as good as its inputs. Intake means collecting the right documents and conversations without burying the owner in paperwork. A well-organized request, sent in stages, makes the owner\'s job easy and shows them the practice is professional.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>The quality of an assessment depends on its inputs. Intake means collecting the right documents and conversations without burying the owner in paperwork. A well-organized request, sent in stages, makes the owner\'s job easy and shows them the practice is professional.</p>
 </div>
 
 <h2>What to gather</h2>
@@ -54,8 +54,8 @@ body: `
 <p>Many owners will not have a personal balance sheet or a spending estimate ready. Offer a simple worksheet and, if helpful, fill it in together during a meeting. Treat missing documents (no buy-sell agreement, a will from 2005) as findings rather than failures.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>"Gathering, organizing, and analyzing qualitative and quantitative inputs" is word for word in the job description. A clean, staged intake process is often the first thing an owner experiences of the practice, and it is an easy place for an Advisor to add visible value.</p></div>
 `,
 terms: [
@@ -100,7 +100,7 @@ objectives: [
   'Produce a value range with drivers'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Business readiness brings together everything from Modules 2, 5, and 8: what the business really earns, what it is worth, what drives or threatens that value, and whether it is protected against surprises. The output is a short set of ratings with evidence, a value range, and the biggest issues.</p>
 </div>
 
@@ -136,13 +136,13 @@ body: `
 <tr><td>Recurring revenue</td><td>Strong</td><td>40% of revenue from annual service agreements with 90% renewal</td></tr>
 </table>
 
-<div class="call watch"><span class="tag">Avoid false precision</span>
+<div class="call watch"><span class="tag">Caution</span>
 <p>Resist presenting a single value or a score to two decimal places. Owners anchor on precise numbers. A range with named drivers is more honest and more useful.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment</span>
-<p>This is where your FP&amp;A skills show most. A clear, evidence-backed business readiness section sets up the themes and action items that follow.</p></div>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
+<p>This section draws most directly on FP&amp;A skills. A clear, evidence-backed business readiness section sets up the themes and action items that follow.</p></div>
 `,
 terms: [
   ['Business readiness review', 'The assessment of financial quality, value, intangible capital, and protection.'],
@@ -185,7 +185,7 @@ objectives: [
   'Assess personal readiness with observable signals'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>This section answers two questions: can the owner afford to exit, and are they ready to? The financial part is a calculation built with the wealth planner. The personal part is a careful reading of what the owner and family have said and done.</p>
 </div>
 
@@ -213,12 +213,12 @@ body: `
 <h2>Presenting the two legs</h2>
 <p>Present financial readiness with numbers, and personal readiness with the owner\'s own words. "You mentioned you haven\'t taken more than a week off in eight years" is more respectful and persuasive than a score for "emotional readiness."</p>
 
-<div class="call hawaii"><span class="tag">Hawaii reminder</span>
+<div class="call hawaii"><span class="tag">Hawaii note</span>
 <p>Include the Hawaii estate tax threshold in the estate section and note any family land. It is often where the family\'s first real surprise comes from (Lesson 4.2).</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description refers to "personal and business exit readiness assessments." This lesson covers the personal half, which is often what distinguishes an exit planning practice from a valuation or brokerage service.</p></div>
 `,
 terms: [
@@ -263,7 +263,7 @@ objectives: [
   'Structure the findings deliverable'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>After gathering and analyzing, you may have 40 findings. Owners cannot act on 40 things. Synthesis means grouping findings into a handful of themes, choosing the few actions that matter most now, and naming the big decisions the owner will face. The job description calls these "themes, action items, and decision points."</p>
 </div>
 
@@ -312,8 +312,8 @@ body: `
 <p>For every theme and finding, ask: so what does this mean for the owner\'s goals? "Customer concentration of 27%" is a fact. "If the general contractor relationship ended, profit would drop by roughly a third, and buyers will price that risk" is a finding.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Synthesis is the step that separates useful advisors from data collectors. It is also the step where an Advisor can grow toward the Senior Advisor role, which the job description says "synthesizes qualitative and quantitative inputs into themes, action items, and decision points."</p></div>
 `,
 terms: [
@@ -360,7 +360,7 @@ objectives: [
   'Compare your work with a model answer'
 ],
 body: `
-<div class="call plain"><span class="tag">How to use this workshop</span>
+<div class="call plain"><span class="tag">Instructions</span>
 <p>Read the case. Build your assessment using the templates from Lessons 14.1 to 14.4 and your spreadsheet tools from earlier modules. Write your answer in the exercise box below before opening the model answer. Expect this to take 60 to 90 minutes.</p>
 </div>
 

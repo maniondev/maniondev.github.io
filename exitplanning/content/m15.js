@@ -10,11 +10,11 @@ objectives: [
   'Anticipate where partners\' interests may pull in different directions'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>An exit plan needs many specialists, and each one sees the owner through their own lens. The commercial banker sees credit risk and a loan relationship. The wealth advisor sees future assets to manage. The attorney sees legal exposure. Knowing what each person cares about, and how they talk, lets you get the best from all of them and keep the owner at the center.</p>
 </div>
 
-<h2>The partners through their own eyes</h2>
+<h2>Partner roles and incentives</h2>
 <table>
 <tr><th>Partner</th><th>Main focus</th><th>How success is often measured</th><th>What they need from you</th></tr>
 <tr><td>Commercial banker</td><td>Credit quality, the business relationship</td><td>Loan growth, deposits, credit performance, retention</td><td>Early notice of changes in ownership; involvement in financing designs</td></tr>
@@ -38,7 +38,7 @@ body: `
 </table>
 <p>The owner is accountable for their own decisions. Your recurring role is usually responsible for coordination and tracking.</p>
 
-<h2>Where interests can pull apart</h2>
+<h2>Conflicting incentives</h2>
 <ul>
 <li>A sale to a mainland buyer may end the commercial loan relationship.</li>
 <li>A family transfer may keep the relationship but produce less immediate liquidity for wealth management.</li>
@@ -46,8 +46,8 @@ body: `
 </ul>
 <p>Naming these openly inside the bank, and consistently putting the owner\'s goals first, keeps the team aligned and protects trust.</p>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>"Coordinates with internal partners including commercial banking, wealth planning, trust or estate resources, and valuation specialists" is a core responsibility. Understanding each partner\'s point of view is how coordination becomes collaboration.</p></div>
 `,
 terms: [
@@ -69,7 +69,7 @@ quiz: [
    why: 'Client-first behavior protects trust and long-term business.'},
   {q: 'What is your most common RACI role in an engagement?',
    options: ['Responsible for coordination and tracking', 'Accountable for every decision', 'Only informed', 'Responsible for drafting legal documents'], a: 0,
-   why: 'Coordination is the heart of the Advisor role.'}
+   why: 'Coordination is a core part of the Advisor role.'}
 ],
 exercise: `
 <p>Build a full RACI chart for the Kamakani Electric first 90-day sprint (Lesson 14.5), including the owner, Joy, Kyle, you, the estate attorney, the trust team, the valuation specialist, the CPA, and the commercial banker.</p>`,
@@ -91,7 +91,7 @@ objectives: [
   'Set a status rhythm that keeps momentum without overloading the owner'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Exit plans stall when nobody is watching the whole picture. Each specialist does their piece on their own timeline, the owner gets busy, and months pass. A simple tracker, a regular check-in rhythm, and attention to what depends on what are usually enough to keep things moving.</p>
 </div>
 
@@ -123,13 +123,13 @@ body: `
 <li><b>Outside advisors:</b> updates when their items are active, and invitations to key meetings.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: a stalled plan</span>
+<div class="call example"><span class="tag">Worked example: dependency delay</span>
 <p>Four months into a plan, the estate attorney is waiting on the valuation, the valuation specialist is waiting on the CPA\'s adjusted financials, and the CPA did not know anyone was waiting on them. Nobody is at fault; nobody owned the whole chain.</p>
 <p>A tracker with the dependency noted, and a two-week check-in, would have surfaced the bottleneck in the first month. A short call among the three would have fixed it.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The Senior Advisor description mentions "maintaining execution momentum across workstreams." Your FP&amp;A experience with close calendars, forecast cycles, and cross-functional deadlines is directly transferable here, and worth highlighting.</p></div>
 `,
 terms: [
@@ -174,7 +174,7 @@ objectives: [
   'Build a referral network among local professionals'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Owners already have advisors they trust, usually a CPA and an attorney. A good bank advisor makes those people part of the team, gives them credit, and makes their work easier. Over time, those advisors become the best source of new referrals.</p>
 </div>
 
@@ -204,8 +204,8 @@ body: `
 <p>The professional community in Hawaii is small and interconnected. A CPA who has a good experience with you on one client will tell others, and so will one who has a bad experience. Reputation among professionals often matters as much as reputation among owners.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the practice</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Outside advisors can accelerate or block every plan, and they refer many future clients. How you work with them affects both outcomes.</p></div>
 `,
 terms: [
@@ -249,7 +249,7 @@ objectives: [
   'Escalate constructively when needed'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Almost no one on the planning team reports to you. You need specialists to prioritize your client\'s work alongside everything else they do. Influence without authority means understanding what each person values and making it easy and rewarding for them to help.</p>
 </div>
 
@@ -282,12 +282,12 @@ body: `
 <li>If still stuck, escalate to managers framed around the client\'s needs, not the colleague\'s failure.</li>
 </ol>
 
-<div class="call hawaii"><span class="tag">From your FP&amp;A experience</span>
+<div class="call hawaii"><span class="tag">Related experience</span>
 <p>You already influence without authority: getting business partners to submit forecasts on time, persuading leaders to accept an analysis, and running programs like the AI Ambassador network. Those are real examples to use when describing your fit for this role.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The Senior Advisor description explicitly asks for "the ability to influence without authority across multiple partner teams." It is the skill that makes cross-functional coordination work.</p></div>
 `,
 terms: [
