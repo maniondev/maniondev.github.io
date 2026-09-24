@@ -179,7 +179,7 @@
 </script>
 
 <script>
-/* Secret gesture: press and hold the LinkedIn link for 5 seconds to open /interviewprep */
+/* Secret gesture: press and hold the LinkedIn link for 5 seconds to open /exitplanning */
 (function(){
   var link = document.querySelector('a[href*="linkedin.com"]');
   if(!link) return;
@@ -191,7 +191,7 @@
     if(e.pointerType === 'mouse' && e.button !== 0) return;
     fired = false;
     clearTimeout(holdTimer);
-    holdTimer = setTimeout(function(){ fired = true; window.location.href = '/interviewprep'; }, HOLD);
+    holdTimer = setTimeout(function(){ fired = true; window.location.href = '/exitplanning'; }, HOLD);
   }
   function cancel(){ clearTimeout(holdTimer); holdTimer = null; }
   link.addEventListener('pointerdown', start);
