@@ -11,12 +11,12 @@ objectives: [
   'Explain why the bank, the owner, and the advisor all care about this work'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Most business owners are rich on paper and exposed in practice. Most of what they own is tied up in one company that they cannot sell quickly, whose value they do not really know, and which may not be worth much without them. They will probably sell or hand it off only once in their lives, with no practice run. Exit planning is the work of getting that one event right, and it usually takes several years.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>For most business owners, the majority of their net worth is tied up in one company that cannot be sold quickly, whose value is uncertain, and which may be worth less without them. Most will sell or transfer a business only once. Exit planning prepares the owner and the business for that transition, usually over several years.</p>
 </div>
 
-<h2>Start with the owner's balance sheet</h2>
-<p>You already know how to read a balance sheet. Apply that skill to a person instead of a company, and the core problem of this field becomes visible right away.</p>
+<h2>The owner's balance sheet</h2>
+<p>A personal balance sheet shows how an owner\'s wealth is distributed and why the business creates concentration risk.</p>
 <p>Meet Leilani, 61, who founded a commercial landscaping company in Honolulu 28 years ago. Here is her personal balance sheet as her advisor might sketch it in a first meeting:</p>
 <table>
 <tr><th>Asset</th><th class="n">Estimated value</th><th class="n">Share</th><th>Can she turn it into cash in 90 days?</th></tr>
@@ -30,7 +30,7 @@ body: `
 <p>A W-2 professional with $6.4 million would usually hold most of it in diversified, liquid investments. Leilani has 83% of her wealth in the company and a building whose only tenant is that company. If the business struggles, both lose value together. And the $4 million figure is a guess. Nobody has valued the company, and she arrived at the number because a friend sold a similar-sized business "for about that."</p>
 <p>Her retirement depends almost entirely on converting that $4 million into something she can live on. Everything in this program exists to help owners like Leilani do that well.</p>
 
-<h2>Why a private business is an unusual asset</h2>
+<h2>Characteristics of a private business as an asset</h2>
 <p>Four features make an owner's stake in a private company very different from a portfolio of stocks.</p>
 <h3>1. It is illiquid</h3>
 <p>There is no market price and no button to press. A sale to an outside buyer typically takes six to twelve months once a process starts, and preparing a business to sell well takes years. Transfers to family or employees can take even longer because the buyers usually cannot pay all at once.</p>
@@ -41,14 +41,14 @@ body: `
 <h3>4. It depends on the owner</h3>
 <p>In many small and mid-sized businesses, the owner holds the key customer relationships, makes the important decisions, and knows how things actually work. A buyer asks, "What is left when the owner leaves?" If the answer is "not much," the business is worth much less, and sometimes it cannot be sold at all.</p>
 
-<div class="call example"><span class="tag">Worked example: the same business, two outcomes</span>
+<div class="call example"><span class="tag">Worked example: same earnings, different multiples</span>
 <p>Two HVAC companies each earn $1.5 million a year in normalized profit (Module 2 covers what "normalized" means).</p>
 <p><b>Company A</b>: the owner handles every major customer, estimates every large job himself, and keeps the processes in his head. A buyer sees a lot of risk and offers 3.5 times profit, with a large portion paid only if customers stay after he leaves. Headline price: $5.25 million, with perhaps $3.5 million certain.</p>
 <p><b>Company B</b>: same profit, but a general manager runs daily operations, service agreements make up 40% of revenue, and the estimating process is documented. A buyer offers 5.5 times profit, mostly cash at closing. Price: $8.25 million.</p>
 <p>The $3 million difference came from years of work on how the business runs, not from higher profit. That work is what exit planning makes possible, and it cannot be done in the six months before a sale.</p>
 </div>
 
-<h2>What exit planning is</h2>
+<h2>Definition of exit planning</h2>
 <p>The Exit Planning Institute (EPI), which awards the CEPA credential, frames exit planning as a long-term strategy that does three things at once:</p>
 <ol>
 <li>Builds a business that is more valuable and more transferable, meaning it can run without the owner.</li>
@@ -66,7 +66,7 @@ body: `
 <tr><td>Possible outcomes</td><td>Sale or no sale</td><td>Sale, family transfer, employee transfer, recapitalization, staying and growing, or planned wind-down</td></tr>
 </table>
 
-<h2>Why transitions go badly</h2>
+<h2>Common causes of failed transitions</h2>
 <p>EPI's owner surveys have repeatedly found that most owners want to exit within the next decade, that most have no written transition plan, and that many owners who sell say they regret it within a year. You will see these findings quoted in the field. Treat specific percentages with some care, since survey samples vary, but the pattern is consistent and matches what advisors see in practice. The common causes:</p>
 <ul>
 <li><b>Starting too late.</b> The owner begins planning when something forces it (health, burnout, an unsolicited offer), which leaves no time to fix what lowers value.</li>
@@ -81,12 +81,12 @@ body: `
 <p>Many of the owners you will serve built businesses that are part of the community's fabric: contractors, distributors, restaurants, auto dealers, and service firms. Several features make planning harder here. The pool of local buyers is small. Mainland acquirers are active but may not share the owner's commitment to employees and community. Real estate is often a large part of family wealth and is sometimes held together with the operating business. And relationships run deep, so an owner may put off a conversation about succession for years to avoid upsetting family or long-time employees. All of this makes early planning more valuable here than in larger markets.</p>
 </div>
 
-<h2>Why it matters</h2>
+<h2>Relevance to the role</h2>
 <div class="call why"><span class="tag">For the owner</span>
 <p>This is usually the largest financial event of their life, and it is also personal. How it goes determines their retirement, what happens to employees they care about, whether the family stays close, and how they feel about their life's work.</p></div>
 <div class="call why"><span class="tag">For the bank</span>
 <p>Business owners are often among a bank's most valuable relationships: loans, deposits, treasury services, and personal banking. A sale can turn a commercial relationship into a large wealth management relationship, or it can move everything to a mainland acquirer's bank. Helping owners plan keeps the bank at the center of that event. Your FP&amp;A background lets you see these economics clearly, which will help you communicate with leadership about the practice.</p></div>
-<div class="call why"><span class="tag">For you and the CEPA</span>
+<div class="call why"><span class="tag">Application</span>
 <p>EPI's entire methodology rests on the ideas in this lesson: owners are unprepared, value is built over time, and business, personal, and financial goals must be aligned. You will see this lesson's framing again in Module 8.</p></div>
 `,
 terms: [
@@ -143,8 +143,8 @@ objectives: [
   'Explain the factors that make an exit well-timed or badly timed'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Every owner leaves their business eventually. The only questions are whether they choose when and how, or whether something chooses for them. Good planning prepares for both: the exit the owner wants, and the one that could happen next Tuesday.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Every owner leaves their business eventually. The exit is either voluntary, on the owner\'s timing and terms, or involuntary, forced by events such as death, disability, or financial distress. Good planning prepares for both: the exit the owner wants, and the one that could happen next Tuesday.</p>
 </div>
 
 <h2>Planned and unplanned exits</h2>
@@ -175,7 +175,7 @@ body: `
 <p>With a funded buy-sell agreement, the story is short: the agreement sets the price or a formula, life insurance pays Sandra, Kimo owns 100%, and the business focuses on customers. You will study buy-sell agreements in detail in Lesson 4.4.</p>
 </div>
 
-<h2>Contingency planning comes first</h2>
+<h2>Contingency planning</h2>
 <p>Before you help an owner design their ideal exit, make sure the business survives an unplanned one. A basic contingency plan answers one question: <b>if the owner could not show up tomorrow, who would do what?</b></p>
 <ul>
 <li><b>Authority:</b> Who can sign checks, approve payroll, and access bank accounts? This is a very practical question for a bank. An owner who is the only signer on the operating account creates an immediate crisis if they are hospitalized.</li>
@@ -186,7 +186,7 @@ body: `
 </ul>
 <p>Contingency planning is often the best first engagement with an owner who is not ready to talk about leaving. It is concrete, protects their family, and does not require them to decide anything about retirement.</p>
 
-<div class="call say"><span class="tag">How an advisor might open this</span>
+<div class="call say"><span class="tag">Example language</span>
 <p>"A lot of owners I talk with are years away from thinking about selling, and that's fine. Before we get anywhere near that, I like to ask a simpler question: if you got sick next month and couldn't work for six months, what would happen here? Who would run things, and who could sign the checks?"</p>
 </div>
 
@@ -206,8 +206,8 @@ body: `
 <p>This is a perfect contingency planning conversation, and it came from a banking detail. The next step is a joint conversation with the commercial banker about continuity: authorized signers, a power of attorney, and whether the daughter should begin joining meetings with the bank. From there, a wider conversation about succession can follow naturally.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The five Ds are the fastest way to show an owner that exit planning is relevant now, not at 70. In an exit readiness assessment, contingency gaps (no buy-sell, no power of attorney, a single signer, no insurance) are some of the most common and most urgent action items you will find. They are also easy for the owner to act on, which builds momentum and trust.</p></div>
 `,
 terms: [
@@ -262,8 +262,8 @@ objectives: [
   'Explain the practice\'s value to the bank in terms an FP&A leader would recognize'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>A bank's Family Business &amp; Entrepreneurs practice is a front door and a coordinator. Owners come in through bankers, events, and referrals. The team figures out where they stand and what they need, lays out a plan, and brings in the right specialists from inside and outside the bank. The team rarely does the technical work itself. It makes sure the work happens, in the right order, and that the owner understands it.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>A bank's Family Business &amp; Entrepreneurs practice identifies business-owner clients, assesses their situation, and coordinates the specialists who serve them. Owners come in through bankers, events, and referrals. The team figures out where they stand and what they need, lays out a plan, and brings in the right specialists from inside and outside the bank. The team rarely does the technical work itself. It makes sure the work happens, in the right order, and that the owner understands it.</p>
 </div>
 <p class="small faint">This lesson describes how practices like this commonly work across banks. Details at Bank of Hawaii will differ. Treat it as a framework to compare against what you learn internally.</p>
 
@@ -315,11 +315,11 @@ body: `
 <li><b>Investment banker or business broker:</b> runs a sale process when the owner decides to sell to an outside buyer. Brokers typically handle smaller businesses; investment bankers handle larger ones.</li>
 <li><b>Insurance professional:</b> life, disability, and key person coverage to fund buy-sell agreements and estate liquidity.</li>
 </ul>
-<div class="call watch"><span class="tag">A common mistake</span>
+<div class="call watch"><span class="tag">Common mistake</span>
 <p>New advisors sometimes treat the owner's CPA or attorney as competition. The owner trusts them, and they can block any plan they are not part of. Bring them in early, respect their role, and make them look good. Many of your future referrals will come from outside advisors who liked working with you.</p>
 </div>
 
-<h2>The practice through an FP&amp;A lens</h2>
+<h2>Practice economics</h2>
 <p>You will be more effective if you understand how this practice creates value for the bank, and you are well placed to understand it. Consider a mid-sized owner relationship:</p>
 <table>
 <tr><th>Relationship element</th><th>Before planning</th><th>After a well-coordinated transition</th></tr>
@@ -329,7 +329,7 @@ body: `
 <tr><td>Next generation</td><td>Unknown to the bank</td><td>Known, engaged, and banked</td></tr>
 </table>
 <p>The economic case for the practice is relationship retention and expansion around the largest financial event in a client's life. The service may be offered at no charge or on a fee basis depending on the bank. Either way, its success is usually measured by client engagement, referrals across the bank, and the business retained or gained.</p>
-<div class="call watch"><span class="tag">Hold this in balance</span>
+<div class="call watch"><span class="tag">Conflict of interest</span>
 <p>The bank benefits from certain outcomes, such as proceeds staying at the bank. Your advice must still put the client's interests first. If the best plan involves an outside specialist or a buyer who will move the banking elsewhere, the client needs to hear that. Trust earned this way produces more business over time than steering ever does. Lesson 1.4 covers this further.</p>
 </div>
 
@@ -391,11 +391,11 @@ objectives: [
   'Explain how fair banking and privacy rules shape advisory work'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>You will know a lot about tax, law, and investments, and you will be tempted to answer questions in all three. Your job is to explain concepts, ask good questions, spot issues, and get the right licensed expert involved. Separately, business owners going through transitions move large amounts of money, and the bank has legal obligations to know who it is dealing with and to report suspicious activity. Staying in your lane protects the client, the bank, and you.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Advisors in this role learn a great deal about tax, law, and investments but are not licensed to advise on them. The role is to explain concepts, ask good questions, spot issues, and get the right licensed expert involved. Separately, business owners going through transitions move large amounts of money, and the bank has legal obligations to know who it is dealing with and to report suspicious activity. Staying in your lane protects the client, the bank, and you.</p>
 </div>
 
-<h2>What you do and what you do not</h2>
+<h2>Scope of the advisor role</h2>
 <table>
 <tr><th>You can</th><th>You coordinate, and a licensed professional delivers</th></tr>
 <tr><td>Explain how an asset sale differs from a stock sale in general</td><td>Tax advice on how this client's sale should be structured (CPA or tax attorney)</td></tr>
@@ -415,9 +415,9 @@ body: `
 
 <h2>How to say it</h2>
 <p>The skill is being useful without crossing the line. Compare these responses to an owner who asks, "Should I sell assets or stock?"</p>
-<div class="call watch"><span class="tag">Crosses the line</span><p>"Definitely stock. You're an S corp, so you'll save a lot."</p></div>
-<div class="call watch"><span class="tag">Unhelpful</span><p>"I can't give tax advice. Ask your CPA."</p></div>
-<div class="call say"><span class="tag">Useful and in bounds</span><p>"That's one of the biggest decisions in any sale, and it affects you and the buyer differently. In general, buyers prefer buying assets because of the tax benefits to them, and sellers often prefer selling stock. How much it matters for you depends on your entity type, your tax basis, and how the price would be allocated. Let's put it on the list for a conversation with your CPA. I can put together the questions ahead of time so that meeting is productive. Would it help if I joined?"</p></div>
+<div class="call watch"><span class="tag">Example: outside the advisor's role</span><p>"Definitely stock. You're an S corp, so you'll save a lot."</p></div>
+<div class="call watch"><span class="tag">Example: unhelpful response</span><p>"I can't give tax advice. Ask your CPA."</p></div>
+<div class="call say"><span class="tag">Example: appropriate response</span><p>"That's one of the biggest decisions in any sale, and it affects you and the buyer differently. In general, buyers prefer buying assets because of the tax benefits to them, and sellers often prefer selling stock. How much it matters for you depends on your entity type, your tax basis, and how the price would be allocated. Let's put it on the list for a conversation with your CPA. I can put together the questions ahead of time so that meeting is productive. Would it help if I joined?"</p></div>
 <p>The pattern is: <b>acknowledge the importance, explain the concept, name what it depends on, identify who decides, and offer to coordinate.</b> Use it often.</p>
 
 <h2>Conflicts of interest</h2>
@@ -470,8 +470,8 @@ body: `
 <p>This is a serious red flag for both tax and money laundering issues. You do not debate it over lunch or promise anything. You tell him plainly that you cannot help with an arrangement like that and that his attorney and CPA need to see any offer. After the lunch, you escalate through the bank's BSA process, document the conversation factually, and do not discuss the escalation with the client.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role and in interviews</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Showing that you understand these limits is a strength, and it reads as maturity to hiring managers. The posting lists "laws and regulations" as an intermediate proficiency. You can show it by explaining how you would stay useful to an owner while staying in bounds, and how liquidity events connect to BSA obligations.</p></div>
 `,
 terms: [

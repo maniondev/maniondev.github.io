@@ -11,7 +11,7 @@ objectives: [
   'Recommend next steps that keep the owner\'s options open'
 ],
 body: `
-<div class="call plain"><span class="tag">How to use the capstone cases</span>
+<div class="call plain"><span class="tag">Instructions</span>
 <p>Each case pulls together several modules. Read the case, write your answers in the exercise box, then open the model answer. The model answer is one reasonable approach. Where your reasoning differs, bring it to your mentor in chat.</p>
 </div>
 

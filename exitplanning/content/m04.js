@@ -11,7 +11,7 @@ objectives: [
   'Identify estate plan issues specific to business owners'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>An estate plan answers three questions: who makes decisions if I cannot, who gets what when I die, and how does it get to them. For a business owner, there is a fourth question: who controls the business during and after that transition? Most owners have some documents. Many have documents that no longer match their lives, their assets, or their business.</p>
 </div>
 
@@ -57,8 +57,8 @@ body: `
 <p>It is not unusual in Hawaii to find family land or business interests still titled in the name of a parent or grandparent who died years ago, because no one completed probate. Ownership can become divided among many descendants over generations, making the property very hard to sell, borrow against, or manage. Checking how key assets are actually titled is one of the most valuable intake steps you can take with a multigenerational family. Title reports and a review of share records often surprise the family.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The personal readiness part of an exit readiness assessment includes the estate plan. You will ask: Do documents exist? When were they last updated? Are the business shares titled in the trust? Are beneficiary designations current? Does the plan fit the buy-sell agreement? These questions are simple, concrete, and often reveal urgent gaps. They are also a natural bridge to the bank's trust and estate resources and the client's attorney.</p></div>
 `,
 terms: [
@@ -111,7 +111,7 @@ objectives: [
   'Explain the trade-off between lifetime gifts and the step-up in basis at death'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The federal government taxes large transfers of wealth, whether given during life or left at death, but each person has a large lifetime exemption before any tax applies. In 2026 that exemption is $15 million per person. Hawaii has its own estate tax with a much lower exemption, around $5.5 million, so many Hawaii business-owning families that owe no federal estate tax can still owe Hawaii tax. And there is a trade-off: assets given away during life keep the owner's low tax basis, while assets held until death get a fresh basis that can erase capital gains.</p>
 </div>
 
@@ -154,7 +154,7 @@ body: `
 <p><b>The liquidity problem:</b> the family has $2 million of liquid assets. Everything else is a business, a building, and a home. Without planning (life insurance held outside the estate, lifetime gifting, or other techniques), the children may need to borrow against or sell part of the business to pay the tax.</p>
 </div>
 
-<h2>Step-up in basis: the trade-off</h2>
+<h2>Step-up in basis</h2>
 <p>When someone dies, assets included in their estate generally receive a new income tax basis equal to fair market value at death (a <b>step-up</b>). If a founder with near-zero basis in a $10 million company dies, the heirs' basis becomes $10 million. If they sell soon after, there may be little or no capital gains tax.</p>
 <p>Gifts made during life do not get a step-up. The recipient takes the donor's basis (<b>carryover basis</b>). So gifting shares removes future growth from the estate, but the recipient inherits the built-in gain.</p>
 <table>
@@ -169,8 +169,8 @@ body: `
 <p>Because real estate values in Hawaii are high, many families whose business and personal lives feel "middle class" have estates above $5.49 million once the business, the operating property, and a home are added up. They often assume estate tax only affects the very wealthy, because that is true federally. Showing them the Hawaii numbers is often the first time estate planning feels relevant.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>You will not calculate estate taxes for clients. You will estimate the size of the estate, see whether it is near or above the federal and Hawaii thresholds, spot a liquidity problem, and bring in the trust and estate team and the attorney. The step-up trade-off also shapes exit decisions: an elderly owner with a very low basis might, in some cases, be better off financially holding the business and leaving it to heirs than selling. That is a planning question worth raising.</p></div>
 `,
 terms: [
@@ -230,7 +230,7 @@ objectives: [
   'Identify which technique fits which family situation'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>If a business will grow, the best time to move it to the next generation is before it grows. Estate planners use several techniques to transfer ownership, and especially future growth, to children or trusts for them at a low tax cost, while the parent keeps control and enough income to live on. You need to understand what each technique is trying to do, so you can follow the conversation and help the family see the trade-offs.</p>
 </div>
 
@@ -289,7 +289,7 @@ body: `
 <tr><td>Significant real estate alongside the business</td><td>Family LLC or partnership for the real estate</td></tr>
 </table>
 
-<div class="call watch"><span class="tag">What these techniques cannot do</span>
+<div class="call watch"><span class="tag">Limitations</span>
 <p>They cannot make a family agree, make a successor competent, or make an unhappy sibling feel treated fairly. Families that implement sophisticated transfers without discussing them openly often end up in conflict, and research on family wealth transfers suggests most failures come from breakdowns in trust and communication, not from technical flaws. The technical plan and the family conversation have to move together.</p>
 </div>
 
@@ -297,8 +297,8 @@ body: `
 <p>A third-generation owner of a Maui hardware business has two children. One runs the store. The other lives on the mainland. The family also owns the store's land, which is worth more than the business. A common structure: move the land into a family LLC and gift non-voting LLC units to both children over time, recapitalize the business and transfer it to the child who runs it, and use life insurance or other assets to balance the estate. The land stays in the family and provides income to both children, while control of the operating business goes to the child who runs it. Module 10 covers "fair versus equal" in depth.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role and for the CEPA</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Family transfers are one of the main exit paths, especially in Hawaii. Understanding the purpose and trade-offs of these tools lets you follow the attorney and trust officer, translate for the family, and connect estate techniques to business decisions like timing a sale, passing control, and treating heirs fairly. EPI expects CEPAs to understand these tools at a conceptual level and to coordinate the specialists who implement them.</p></div>
 `,
 terms: [
@@ -357,7 +357,7 @@ objectives: [
   'Explain the Connelly decision and why it changed how redemption agreements are reviewed'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>When a business has more than one owner, a buy-sell agreement is the plan for what happens when one of them leaves, dies, becomes disabled, divorces, or wants out. It says who must or may buy their share, how the price is set, and where the money comes from. Most agreements exist on paper. Many are badly out of date, use a price formula that no longer makes sense, and are not funded. In practice, an outdated agreement can cause as much trouble as having none.</p>
 </div>
 
@@ -429,12 +429,12 @@ body: `
 </ol>
 </div>
 
-<div class="call hawaii"><span class="tag">Where this shows up in banking</span>
+<div class="call hawaii"><span class="tag">Bank role</span>
 <p>Commercial bankers often see buy-sell agreements in loan files, and a buyout triggered by a partner's death can affect the company's ability to repay its loans. A lender may want to know that a buy-sell exists and is funded. Reviewing agreements together with the commercial banker is a natural cross-functional engagement, and it frequently uncovers a larger planning need.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>For multi-owner businesses, reviewing the buy-sell agreement should be part of every exit readiness assessment. It addresses the five Ds from Lesson 1.2, it connects valuation, insurance, estate planning, and banking, and the gaps are usually clear and fixable. It is often the first concrete action item in a plan.</p></div>
 `,
 terms: [

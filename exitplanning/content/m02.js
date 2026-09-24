@@ -11,11 +11,11 @@ objectives: [
   'Recognize accounting issues that make a private company\'s numbers hard to compare'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>At a bank, financial statements exist to report performance accurately to regulators, investors, and management. In a private company, the main audience is usually the IRS, and the owner has every reason to make profit look as low as the law allows. That is legal and normal. It also means the numbers you receive usually understate what the business actually earns for its owner, and they have to be adjusted before anyone can judge value.</p>
 </div>
 
-<h2>Who the statements are for</h2>
+<h2>Purpose of private company statements</h2>
 <p>In your FP&amp;A work, the numbers follow GAAP, are audited, have internal controls around them, and are built to show performance. A private company of 20 to 200 employees is different:</p>
 <ul>
 <li><b>The main user is the tax return.</b> Every dollar of profit is a dollar taxed, so owners run personal-benefit expenses through the business, pay family members, and take deductions aggressively.</li>
@@ -75,8 +75,8 @@ body: `
 <p>None of these is dishonest. They answer different questions. Lesson 2.2 shows how to work from the first number to a defensible version of the third.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment and for you</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>An exit readiness assessment needs a credible view of earnings, because value, the wealth gap, and exit options all depend on it. Your FP&amp;A skills (reconciling sources, questioning variances, building clean models from messy data) transfer directly. What is new is the context: here, the messy data is intentional, and pointing that out has to be done respectfully. Owners are sensitive about their books, and a CPA who prepared them will be too.</p></div>
 `,
 terms: [
@@ -136,7 +136,7 @@ objectives: [
   'Explain why each dollar of add-back matters and why documentation is essential'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Normalizing earnings means asking: if a new owner ran this business the normal way, paying market wages and market rent, with no personal expenses and no one-time surprises, how much would it earn? That number is what buyers pay for. You get there by starting with reported profit and adding back or subtracting specific items, each of which should be backed by evidence.</p>
 </div>
 
@@ -201,7 +201,7 @@ body: `
 <li><b>Removing a cost must not remove the revenue it supports.</b> If the owner's "personal" travel is actually how he maintains a key customer relationship, it is not an add-back.</li>
 <li><b>Look for missing costs.</b> If the owner also acts as the chief estimator, the buyer will need to hire one. That is a negative adjustment.</li>
 </ul>
-<div class="call watch"><span class="tag">A sensitive moment</span>
+<div class="call watch"><span class="tag">Caution</span>
 <p>Some owner perks may be personal expenses that should not have been deducted for tax. When presenting add-backs, the language matters. Phrases like "discretionary expenses" and "costs a new owner would not incur" are standard and neutral. Avoid commenting on whether something was properly deducted. That is between the owner and the CPA.</p>
 </div>
 
@@ -209,8 +209,8 @@ body: `
 <p>A family-owned tour company on Kauai shows an unusual dip in profit in one year because of a temporary closure after a flood, and a large spike in another year from insurance proceeds. Normalizing means removing the insurance income, adding back the one-time cleanup costs, and considering whether to adjust for lost revenue during the closure. It also raises a harder question the buyer will ask: how likely is that kind of disruption to happen again? Some events are one-time. Others are a known risk of the location.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Normalized earnings are the base for the value range, the wealth gap calculation, and financing capacity for a management buyout or family transfer. In a readiness assessment, a first normalization also produces action items: document the add-backs, bring rent to market, move family compensation to market, and stop running personal expenses through the business in the two or three years before a sale so the numbers speak for themselves.</p></div>
 `,
 terms: [
@@ -277,7 +277,7 @@ objectives: [
   'Build a proceeds waterfall from headline price to after-tax cash'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>When an owner hears "we'll pay $10 million for your business," they picture $10 million in the bank. They will receive much less. The buyer's price is for the whole operating business. The seller pays off debt, may have to leave a certain amount of working capital behind, pays advisors, has part of the money held back, and then pays taxes. Walking an owner through this before a deal is one of the most valuable things an advisor can do.</p>
 </div>
 
@@ -339,8 +339,8 @@ body: `
 <p>Your role is not to evaluate the offer for him. That is for his M&amp;A advisor and attorney. But helping him see the likely waterfall, with ranges for the earnout and rollover, turns "6 times" into a realistic range of cash in hand. It also shows which questions to ask. The commercial banker's view of the loan payoffs is useful here too.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For financial readiness</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The owner's financial readiness depends on net proceeds, not headline value. When the wealth planner calculates whether the owner can afford to exit (Module 9), this waterfall is the input. Many owners discover a wealth gap only when they see this calculation. Seeing it early, while there is still time to grow value or adjust plans, is the entire point of exit planning.</p></div>
 `,
 terms: [
@@ -404,7 +404,7 @@ objectives: [
   'Turn risk findings into readiness action items'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Two companies with the same profit can sell for very different prices. The difference is how confident a buyer is that the profit will continue, and grow, after the owner leaves. Buyers look hard for anything that makes future profit less certain. Every risk they find lowers the multiple they will pay. Much of exit planning is finding those risks first and reducing them.</p>
 </div>
 
@@ -473,8 +473,8 @@ body: `
 <p>Customer concentration is a common issue in Hawaii because some industries are dominated by a few large buyers: hotel groups, the military, state and county government, and major developers. Government and military contracts can be stable, but they are awarded through procurement and may have specific transfer rules, including small business or other set-aside status that may not survive a sale. Always ask about contract assignability and set-aside status when government revenue is significant.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment and the CEPA</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>This lesson connects the numbers to the owner's choices. Earnings set the base. Risk sets the multiple. The owner can influence both, if there is time. EPI's Four Cs of intangible capital (Module 8) are a structured way to look at many of these same risks: human capital (owner and key employee dependence), customer capital (concentration and contracts), structural capital (systems and financial reporting), and social capital (culture and reputation).</p></div>
 `,
 terms: [
@@ -506,7 +506,7 @@ quiz: [
 exercise: `
 <p>Create a simple risk scorecard for a business. List eight factors from this lesson (customer concentration, owner dependence, revenue quality, key employees, trend, supplier dependence, capital needs, financial reporting). For each, write what "low risk," "medium risk," and "high risk" would look like in one line.</p>
 <p>Then score a business you know (or Company A from the example). Pick the two highest risks and write an action item, a responsible person, and a realistic timeframe for each.</p>
-<p>A tool like this, refined over time, is exactly the kind of "practice and program support" the job description describes.</p>`,
+<p>A tool like this, refined over time, is an example of the "practice and program support" the job description describes.</p>`,
 discussion: `
 <p>Many owners take pride in being indispensable: "Nobody knows these customers like I do." How would you help an owner see that this same fact lowers the value of their business, without making them feel that their life's work is being criticized?</p>`,
 resources: [

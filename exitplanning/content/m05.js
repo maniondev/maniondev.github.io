@@ -11,7 +11,7 @@ objectives: [
   'Describe the difference between a calculation and a conclusion of value, and the main valuation credentials'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>"What is my business worth?" has no single answer. It depends on who is buying, how much of the business they get, whether they gain control, and why the value is being measured. A 30% non-voting interest given to a child is worth far less per share than the whole company sold to a competitor who can cut costs by merging it. Both numbers are correct for their purpose. An advisor who understands this can explain why the estate planner's number and the investment banker's number are so different, and can keep owners from anchoring on the wrong one.</p>
 </div>
 
@@ -43,7 +43,7 @@ body: `
 </table>
 <p>The step from control to minority reflects a <b>discount for lack of control</b>. The step from marketable to non-marketable reflects a <b>discount for lack of marketability</b>. Lesson 5.5 covers both.</p>
 
-<h2>Purpose drives the answer</h2>
+<h2>Valuation purpose</h2>
 <table>
 <tr><th>Purpose</th><th>Usual standard</th><th>Who does it</th></tr>
 <tr><td>Gift and estate tax</td><td>Fair market value, often at a minority level with discounts</td><td>Qualified appraiser; must hold up with the IRS</td></tr>
@@ -79,8 +79,8 @@ body: `
 <p>The gap between fair market value and strategic value can be especially large here. There may be few local buyers, and mainland strategic buyers may be willing to pay much more to enter the Hawaii market than any local financial buyer would. Owners who hear about a strategic sale in their industry should understand that the price reflected that buyer's specific situation, and that their own business may or may not attract the same interest.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role and the CEPA</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>EPI teaches that value is a range and that owners must understand the range before choosing an exit path. Most planning conflicts about value come from comparing numbers built for different purposes. You will often be the person who lays the numbers side by side and explains them in plain language, which also helps the valuation specialists do their jobs.</p></div>
 `,
 terms: [
@@ -134,11 +134,11 @@ objectives: [
   'Show how reducing company-specific risk increases value'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A business is worth the cash it will produce in the future, adjusted for how risky that cash is and how long you have to wait for it. The riskier and less certain the future cash, the less a buyer will pay today. You already do forecasting and discounting in FP&amp;A. The new part is how private company risk is measured, and how much a single judgment about risk can move the value.</p>
 </div>
 
-<h2>The core idea</h2>
+<h2>Present value of future cash flow</h2>
 <blockquote>Value = present value of expected future cash flows, discounted at a rate that reflects their risk</blockquote>
 <p>Two methods apply this idea:</p>
 <ul>
@@ -146,7 +146,7 @@ body: `
 <li><b>Discounted cash flow (DCF):</b> projects several years of cash flow, then adds a terminal value. Best when growth or margins are expected to change.</li>
 </ul>
 
-<h2>What cash flow?</h2>
+<h2>Measuring cash flow</h2>
 <p>Appraisers usually value <b>net cash flow</b>, not EBITDA: normalized earnings after taxes, minus capital expenditures needed to sustain the business, minus increases in working capital. Cash flow can be measured before debt payments (to value the whole company, called invested capital) or after them (to value the equity). The discount rate must match the cash flow: a rate for invested capital with invested capital cash flows, an equity rate with equity cash flows.</p>
 <p>A related debate is <b>tax-affecting</b>: whether to apply an entity-level tax to an S corporation's earnings even though the S corporation pays none. Appraisers and courts have disagreed, and the choice can move value materially. You only need to know the issue exists.</p>
 
@@ -196,7 +196,7 @@ body: `
 <p>Total value: about <b>$7.3 million</b>. Half of it comes from the terminal value, which is typical and is why the long-term growth and discount rate assumptions deserve the most scrutiny.</p>
 </div>
 
-<div class="call watch"><span class="tag">The FP&amp;A trap</span>
+<div class="call watch"><span class="tag">Caution: owner projections</span>
 <p>Owners' projections tend to be optimistic, often with a "hockey stick" of growth right after the valuation date. Appraisers test projections against history, industry data, and the investment needed to achieve them. Your forecasting instincts are useful here: ask what has to be true for the forecast to happen, and what it would cost.</p>
 </div>
 
@@ -204,8 +204,8 @@ body: `
 <p>Some risks specific to Hawaii businesses show up in the company-specific premium: shipping and supply chain dependence, exposure to tourism cycles, a limited labor pool, natural disaster risk, and a small local market that caps growth. When you help an owner reduce risk, it helps to identify which risks the business can control and which it can only prepare for, such as through insurance, inventory buffers, or diversified suppliers.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For value acceleration</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The income approach makes EPI's central argument mathematically visible: value can grow through higher cash flow and through lower risk, and risk reduction is often faster and cheaper to achieve than growth. When you explain an action plan to an owner, you can show how each action affects either the numerator (cash flow) or the denominator (risk).</p></div>
 `,
 terms: [
@@ -260,7 +260,7 @@ objectives: [
   'Recognize common mistakes owners make with multiples'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The market approach values a business by looking at what buyers have paid for similar businesses. It is how real estate is valued with comparable sales. The hard part is that no two private companies are alike, the data is incomplete, and the "multiple" someone quotes is often for a different kind of earnings, a different size of company, or a deal with very different terms.</p>
 </div>
 
@@ -270,7 +270,7 @@ body: `
 <h3>Guideline transaction (merger and acquisition) method</h3>
 <p>Uses prices paid in actual sales of private companies. Much more relevant for your clients, when enough good data exists.</p>
 
-<h2>Where transaction data comes from</h2>
+<h2>Transaction data sources</h2>
 <table>
 <tr><th>Source</th><th>What it covers</th></tr>
 <tr><td><b>DealStats</b> (formerly Pratt's Stats)</td><td>Detailed private transactions across sizes, with financial data and deal terms</td></tr>
@@ -291,7 +291,7 @@ body: `
 <li><b>Deal terms:</b> did the price include working capital? Real estate? An earnout? Seller financing? Was it an asset or stock sale? Two "5 times" deals can be very different economically.</li>
 </ul>
 
-<h2>Which multiple?</h2>
+<h2>Choosing a multiple</h2>
 <ul>
 <li><b>EV / EBITDA:</b> the standard for mid-sized businesses.</li>
 <li><b>Price / SDE:</b> for small owner-operated businesses.</li>
@@ -323,8 +323,8 @@ body: `
 <p>Transaction databases contain very few Hawaii deals, so appraisers generally rely on national data. Adjustments for Hawaii may cut both ways: higher operating costs, logistics risk, and a small buyer pool on one side; limited competition, strong local brands, and barriers to entry for mainland competitors on the other. It is reasonable to ask a valuation specialist how they considered Hawaii-specific factors.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In client conversations</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Most owners think about value in multiples, because that is how their friends and industry peers talk. Knowing how multiples are actually derived lets you meet owners where they are while correcting the most common misunderstandings. It also lets you have a useful conversation with a valuation specialist about their comparables.</p></div>
 `,
 terms: [
@@ -375,7 +375,7 @@ objectives: [
   'Recognize the issue of built-in gains in C corporation holding companies'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Some businesses are valued mainly on their assets because their earnings are small or because assets are what they hold. A company that holds land, or one that earns so little that its equipment is worth more than its profits, is valued by adding up its assets at their real market values and subtracting its debts. This approach also sets a floor: an operating business is rarely worth less than it would bring if its assets were sold.</p>
 </div>
 
@@ -403,7 +403,7 @@ body: `
 <p>A rational owner would not sell for $1.9 million when the assets alone would bring $3.2 million. The asset approach sets the value. The business has no goodwill, and the real planning question may be whether to keep operating at all, or to improve profitability until the business is worth more as a going concern.</p>
 </div>
 
-<h2>Real estate: separate it</h2>
+<h2>Separating real estate from operations</h2>
 <p>When the operating company owns its building, appraisers usually value the real estate separately (with a real estate appraisal) and value the operating company as if it paid market rent. This matters for planning because:</p>
 <ul>
 <li>Real estate and operating businesses attract different buyers and financing.</li>
@@ -429,8 +429,8 @@ body: `
 <p>Real estate is central to many Hawaii family fortunes, and it is frequently tangled up with operating businesses: the restaurant owns its site, the contractor owns its baseyard, the family owns the land under the shopping center. Separating property from operations, understanding its value, and deciding who in the family should own it are some of the most important planning questions you will face here. Leasehold interests, where the land is owned by a trust or landowner and leased for a long term, add another layer to consider in value and financing.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In planning</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The asset approach reminds owners and advisors that some businesses have little transferable goodwill. For those owners, the planning conversation may be about improving earnings, selling assets, or an orderly wind-down rather than a sale as a going concern. It also frames the real estate question, which is one of the most common decision points in Hawaii engagements.</p></div>
 `,
 terms: [
@@ -480,7 +480,7 @@ objectives: [
   'Explain a valuation result to an owner in plain language'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A small slice of a private company is worth less than its share of the whole, because the owner of that slice cannot run the company and cannot easily sell. Appraisers express this as discounts. They matter for family gifts, estate taxes, buy-sell agreements, and divorces. You also need to be able to read a valuation report well enough to spot problems and explain the result to a client.</p>
 </div>
 
@@ -544,7 +544,7 @@ body: `
 <li><b>Name the two or three biggest drivers</b>, positive and negative.</li>
 <li><b>Connect it to action:</b> which drivers the owner can change, and what the value could look like if they did.</li>
 </ol>
-<div class="call say"><span class="tag">A way to say it</span>
+<div class="call say"><span class="tag">Example language</span>
 <p>"The appraiser landed between $6.5 and $7.5 million. The biggest things helping you are your margins and your service contracts. The biggest thing holding the number down is how much of the business runs through you personally. That\'s also the one you have the most control over, and it\'s where the plan we talked about focuses."</p>
 </div>
 
@@ -552,8 +552,8 @@ body: `
 <p>In families with land-rich holding companies, discounts can be large and can also create tension. A child who receives a 20% interest valued at a steep discount for gift tax purposes may feel that their inheritance was "valued low," while also knowing they cannot sell it. Explaining that the same discount that saves tax also reflects the real limits on their interest is part of preparing heirs.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>You will frequently sit between a valuation specialist and an owner. Understanding discounts and report structure lets you ask the specialist useful questions, catch mismatches between the report and the owner\'s situation, and translate the result into decisions. That is the "client communication and decision support" the job description describes.</p></div>
 `,
 terms: [

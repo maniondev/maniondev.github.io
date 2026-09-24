@@ -10,7 +10,7 @@ objectives: [
   'Define what a successful first meeting produces'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A good first meeting is mostly listening. The owner should leave feeling understood, clearer about their situation, and knowing what the next step is. The advisor should leave knowing the owner\'s goals, the big issues, and who else matters. It should not feel like a sales pitch or an interrogation.</p>
 </div>
 
@@ -22,7 +22,7 @@ body: `
 <li><b>Prepare a light agenda</b> and a few opening questions. Do not prepare a presentation.</li>
 </ul>
 
-<h2>A structure that works</h2>
+<h2>Meeting structure</h2>
 <table>
 <tr><th>Part</th><th>Time</th><th>Purpose</th></tr>
 <tr><td>Opening</td><td>5 to 10 min</td><td>Thank them, set expectations ("today is mostly about understanding you"), confirm time and confidentiality</td></tr>
@@ -33,7 +33,7 @@ body: `
 <tr><td>Next step</td><td>5 to 10 min</td><td>Propose one concrete next step and confirm it</td></tr>
 </table>
 
-<h2>What a good first meeting produces</h2>
+<h2>Outcomes of a first meeting</h2>
 <ul>
 <li>A clear sense of the owner\'s goals and concerns, in their own words</li>
 <li>The trigger for the conversation</li>
@@ -52,7 +52,7 @@ body: `
 <li>Taking so many notes that you stop making eye contact. Write key phrases and fill in afterward.</li>
 </ul>
 
-<div class="call say"><span class="tag">An opening you could use</span>
+<div class="call say"><span class="tag">Example language</span>
 <p>"Thanks for making the time. Today is really about understanding you, the business, and what you want the next chapter to look like. I won\'t be selling you anything, and there\'s no right answer to any of this. By the end, I\'ll share what I heard and suggest a next step if it seems useful. Everything we talk about stays confidential. Does that sound okay?"</p>
 </div>
 
@@ -60,8 +60,8 @@ body: `
 <p>First meetings here often start with getting to know each other: family, where you went to school, who you know in common. That is part of building trust, not small talk to rush through. Meeting at the owner\'s place of business, and letting them show you around, also tends to work well.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The first responsibility in the job description is engaging owners in consultative discussions. The first meeting sets the tone for everything after it, and it is also the most common interview role-play for advisory roles. Practicing this structure is worth your time.</p></div>
 `,
 terms: [
@@ -107,8 +107,8 @@ objectives: [
   'Use the trust equation to check your own behavior'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>The best advisors ask better questions and talk less. Open questions get owners talking; follow-ups get beneath the first answer; reflecting shows you understood. The discipline is resisting the urge to solve the problem before you understand it.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Effective discovery relies on open questions, follow-up questions, and reflective listening. Open questions get owners talking; follow-ups get beneath the first answer; reflecting shows you understood. The discipline is resisting the urge to solve the problem before you understand it.</p>
 </div>
 
 <h2>Question types</h2>
@@ -139,7 +139,7 @@ body: `
 </ul>
 <p>Self-orientation sits in the denominator, so it has an outsized effect. Talking too much, interrupting, and rushing to show expertise all raise it.</p>
 
-<div class="call example"><span class="tag">Worked example: going beneath the first answer</span>
+<div class="call example"><span class="tag">Worked example: follow-up questions</span>
 <p><b>Advisor:</b> "What would a great outcome look like?"<br>
 <b>Owner:</b> "Get a good price and retire."<br>
 <b>Advisor:</b> "What else?"<br>
@@ -151,12 +151,12 @@ body: `
 <p>The first answer pointed to a strategic sale. The fourth pointed toward internal options or a carefully chosen buyer.</p>
 </div>
 
-<div class="call watch"><span class="tag">The FP&amp;A habit to watch</span>
+<div class="call watch"><span class="tag">Caution</span>
 <p>Analysts are rewarded for having answers quickly. In discovery, a quick answer often ends the most valuable part of the conversation. When you feel the urge to explain, try asking one more question first.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Listening well is the foundation of "consultative." It is also how you gather the qualitative inputs the readiness assessment depends on. Owners rarely volunteer their real priorities to someone who is talking.</p></div>
 `,
 terms: [
@@ -203,8 +203,8 @@ objectives: [
   'Handle common hesitations without pressure'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Listening is not the whole job. The job description says to "guide conversations toward defined planning pathways and roadmaps." After you understand the owner, you need to suggest what to do next in a way that fits what they told you and feels like the natural next step.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>The job description says to "guide conversations toward defined planning pathways and roadmaps." After you understand the owner, you need to suggest what to do next in a way that fits what they told you and feels like the natural next step.</p>
 </div>
 
 <h2>From discovery to recommendation</h2>
@@ -238,7 +238,7 @@ body: `
 <tr><td>"Isn\'t this just a way to get my money?"</td><td>Acknowledge the concern honestly, explain how the service works and what the bank does and does not do, and let them decide.</td></tr>
 </table>
 
-<div class="call say"><span class="tag">An example close</span>
+<div class="call say"><span class="tag">Example language</span>
 <p>"Here\'s what I heard: you\'re proud of what you\'ve built, you\'re not in a hurry, and the thing that keeps you up is what happens to Lani and the business if something happens to you. You\'d also like a clearer idea of what the business might be worth someday. A good next step would be a readiness assessment. We\'d gather some information, meet with you and Lani for a couple of hours, and in about four weeks give you a short report on where you stand and what to do first. The first priority would almost certainly be the protection pieces. Does that sound like a good place to start?"</p>
 </div>
 
@@ -246,8 +246,8 @@ body: `
 <p>Owners here may be slow to commit in a first meeting, especially with someone new, and may want to check with family or trusted advisors. A patient follow-up, and involving the referring banker who already has the relationship, often works better than pushing for a decision in the room.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Pathways give conversations a destination. Without them, discovery meetings can become pleasant chats that go nowhere. With them, the owner leaves with a clear next step and the practice has a consistent process.</p></div>
 `,
 terms: [
@@ -291,8 +291,8 @@ objectives: [
   'Handle strong emotions and pushback'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Sooner or later you will have to tell an owner something they do not want to hear: the business is worth less than they thought, their successor is not ready, they cannot afford to retire when they planned. Avoiding or softening these messages too much hurts the owner. Delivering them clearly, with care and with a path forward, is one of the most valuable things an advisor does.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Advisors regularly have to tell an owner something they do not want to hear: the business is worth less than they thought, their successor is not ready, they cannot afford to retire when they planned. Avoiding or softening these messages too much hurts the owner. Delivering them clearly, with care and with a path forward, is one of the most valuable things an advisor does.</p>
 </div>
 
 <h2>Common hard conversations</h2>
@@ -324,8 +324,8 @@ body: `
 <li><b>Agree on a next step.</b></li>
 </ol>
 
-<div class="call say"><span class="tag">Delivering a low value</span>
-<p>"The valuation came back in a range of $3.8 to $4.4 million. I know you\'d been thinking closer to $7 million, so I want to be direct about that and then walk through why. [Pause.] The biggest factor is that most of the key customer relationships run through you personally, so a buyer would see a lot of risk in the transition. The second is the customer concentration with the hotel group. The good news is those are both things we can work on. Businesses that reduce owner dependence and diversify often see a meaningful change in value within two to four years. Can we talk about what that could look like?"</p>
+<div class="call say"><span class="tag">Example language: presenting a low valuation</span>
+<p>"The valuation came back in a range of $3.8 to $4.4 million. I know you\'d been thinking closer to $7 million, so I want to be direct about that and then walk through why. [Pause.] The biggest factor is that most of the key customer relationships run through you personally, so a buyer would see a lot of risk in the transition. The second is the customer concentration with the hotel group. Both of those can be improved. Businesses that reduce owner dependence and diversify often see a meaningful change in value within two to four years. Can we talk about what that could look like?"</p>
 </div>
 
 <h2>Handling reactions</h2>
@@ -340,8 +340,8 @@ body: `
 <p>Direct confrontation can be uncomfortable in many local families, and people may not voice disagreement openly in a meeting. Follow up individually after a difficult conversation to learn how it really landed. Silence in the room does not always mean agreement.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For trust</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Owners remember advisors who told them the truth kindly and helped them act on it. Credibility in the trust equation comes largely from moments like these.</p></div>
 `,
 terms: [

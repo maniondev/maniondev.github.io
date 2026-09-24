@@ -10,7 +10,7 @@ objectives: [
   'Explain why the highest price is not always the best outcome'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Owners usually picture two exits: sell to someone or hand it to the kids. There are more options than that, and each one trades off money, speed, certainty, control, and what happens to the people and legacy the owner cares about. Your job is to make sure the owner sees all the realistic options before choosing, and understands the trade-offs of each.</p>
 </div>
 
@@ -44,7 +44,7 @@ body: `
 <tr><td>Recapitalization</td><td>Market for the stake sold</td><td>Partial</td><td>6 to 12 months</td><td>Shared with the investor</td></tr>
 </table>
 
-<h2>The highest price is not always the best outcome</h2>
+<h2>Financial and non-financial outcomes</h2>
 <p>Consider two ways an owner can "win":</p>
 <ul>
 <li><b>Financial outcome:</b> after-tax proceeds, certainty of payment, and risk after closing.</li>
@@ -56,8 +56,8 @@ body: `
 <p>Legacy considerations tend to weigh heavily here. Owners often care about keeping the business locally owned, keeping jobs on-island, and protecting a name the community knows. Internal options (family, management, ESOP) and local buyers often align with those goals, while mainland strategic buyers often pay the most. Understanding how much the owner values each goal is essential before comparing offers.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>EPI emphasizes that owners should understand all their options before deciding, and that the right option depends on the owner\'s goals and readiness. In the job description, "planning pathways" often begin with this map: which paths are realistic given the business, the family, and the owner\'s goals.</p></div>
 `,
 terms: [
@@ -107,11 +107,11 @@ objectives: [
   'Test whether the business can support the transfer financially'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Passing the business to a child sounds simple and is often the hardest option to get right. Three questions have to be answered together: Is the child ready and willing to lead? How will the parents be paid, if at all? And how will the other children be treated? A plan that answers only one of these usually fails.</p>
 </div>
 
-<h2>Is the successor ready?</h2>
+<h2>Successor readiness</h2>
 <p>Family business advisors often look at three qualities:</p>
 <ul>
 <li><b>Competence:</b> can they actually run the business? Have they led people, managed customers, and made financial decisions?</li>
@@ -120,7 +120,7 @@ body: `
 </ul>
 <p>Common practices that build readiness: working outside the family business for several years first, starting in a real role rather than at the top, having clear performance reviews from someone other than a parent, and taking over responsibilities gradually with authority to match. Module 10 goes deeper.</p>
 
-<h2>Gift, sale, or both</h2>
+<h2>Gift, sale, or combination</h2>
 <table>
 <tr><th>Approach</th><th>Parent receives</th><th>Tax considerations</th><th>Fits when</th></tr>
 <tr><td><b>Gift</b></td><td>Nothing directly</td><td>Uses gift exemption; child takes the parent\'s low basis</td><td>Parents are financially independent of the business</td></tr>
@@ -135,7 +135,7 @@ body: `
 <li>Retained preferred or non-voting shares that pay distributions</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: can the business carry the transfer?</span>
+<div class="call example"><span class="tag">Worked example: testing a family transfer</span>
 <p>Parents need $250,000 a year before tax for 10 years from the business, beyond their other savings. The business is worth $6 million and produces $1.1 million of cash flow before owner compensation. Their daughter will run it.</p>
 <p><b>Plan:</b> sell 50% of the business to the daughter for $3 million with a 10-year note at 5%, gift the remaining 50% over time through trusts, and keep the building, leasing it to the company at market rent of $180,000 a year.</p>
 <table>
@@ -153,14 +153,14 @@ body: `
 <tr><td>Less capital spending</td><td class="n">(150,000)</td></tr>
 <tr class="tot"><td>Available for note payments</td><td class="n">about $500,000</td></tr>
 </table>
-<p>About $500,000 is available to cover $388,500 of note payments: a coverage ratio of about 1.3 times, which is thin but workable. If the $1.1 million had been measured before rent, the $180,000 of rent would drop coverage below 1 time, and the plan would fail. Always confirm what a cash flow figure includes. This is exactly the kind of question your FP&amp;A skills answer well, and it is essential to test before the family commits.</p>
+<p>About $500,000 is available to cover $388,500 of note payments: a coverage ratio of about 1.3 times, which is thin but workable. If the $1.1 million had been measured before rent, the $180,000 of rent would drop coverage below 1 time, and the plan would fail. Always confirm what a cash flow figure includes. Test this before the family commits.</p>
 <p>Note also: the daughter pays the note with after-tax dollars, which is one reason families often favor combinations of gifts, rent, and compensation that are deductible to the business.</p>
 </div>
 
-<h2>The other children</h2>
+<h2>Treatment of other heirs</h2>
 <p>If one child receives the business and others do not, the parents need a plan for fairness. Common tools: leaving other assets (real estate, investments, life insurance) to the other children, giving them non-voting shares with a dividend policy, or explicitly deciding that fair does not mean equal and explaining why. Lesson 10.5 covers this in depth.</p>
 
-<h2>Where transfers go wrong</h2>
+<h2>Common failure points</h2>
 <ul>
 <li>The parent never actually lets go of decisions, even after the ownership transfer.</li>
 <li>The successor was chosen by birth order or default rather than readiness.</li>
@@ -173,8 +173,8 @@ body: `
 <p>Family transfer is a common intended path in Hawaii, and expectations can be shaped by culture and generations of family history, including an assumption that the eldest child or a son will take over. The advisor should never impose views on these expectations, and should make sure the decision is based on the family\'s actual goals and each candidate\'s readiness and interest. Often the most helpful thing is simply creating a space where each family member can say what they want.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Family succession engagements pull in nearly every internal partner: commercial banking (financing and the loan relationship), wealth planning (the parents\' income need), trust and estate (the transfer techniques), and valuation (the appraisal). Coordinating them around a single, tested plan is the core of the Advisor role.</p></div>
 `,
 terms: [
@@ -222,7 +222,7 @@ objectives: [
   'Explain the ESOP repurchase obligation'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Selling to the people who already run the business keeps the company intact and rewards loyal employees. The challenge is that managers and employees rarely have the money to buy it. So the business itself, through borrowing and future profits, ends up paying for its own purchase, and the owner usually carries part of the risk by accepting payments over time.</p>
 </div>
 
@@ -279,12 +279,12 @@ body: `
 <p>Neither is automatically better. The choice depends on the owner\'s priorities, the managers\' ambitions, the company\'s debt capacity, and the tax picture. Both are strong candidates for this owner, which is why presenting both matters.</p>
 </div>
 
-<div class="call hawaii"><span class="tag">Where the bank fits</span>
+<div class="call hawaii"><span class="tag">Bank role</span>
 <p>MBOs and ESOPs both depend on bank financing, and the commercial banker\'s view of debt capacity often sets the practical boundaries. These transactions also keep the business local and the banking relationship intact, which aligns the client\'s goals with the bank\'s. Coordinating early with commercial banking avoids designing a deal the bank cannot finance.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the CEPA and your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Internal transfers are a large part of exit planning, especially for owners who care about legacy. Understanding their mechanics, financing limits, and fit criteria lets you identify candidates early and bring in ESOP specialists and commercial bankers at the right time.</p></div>
 `,
 terms: [
@@ -335,7 +335,7 @@ objectives: [
   'Describe other external buyers: family offices, independent sponsors, search funds'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Outside buyers come in a few types, and each has a different reason for buying. Strategic buyers want your business because it fits theirs. Private equity firms want to grow it and sell it again in a few years. Individual and search fund buyers want a good business to run. Knowing what each buyer is really after helps the owner understand their offers and decide which kind of buyer fits their goals.</p>
 </div>
 
@@ -382,8 +382,8 @@ body: `
 <p>PE-backed roll-ups have been active in service industries that exist throughout Hawaii: HVAC, plumbing, electrical, landscaping, pest control, dental, veterinary, and accounting, among others. Many Hawaii owners in these industries receive unsolicited letters from platforms. Helping owners understand what those buyers are really offering (and what questions to ask) before they respond is a valuable early service, and a natural reason to call a client.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>You will not run sale processes; investment bankers and brokers do. But owners will bring you offers and letters and ask what they mean. Understanding buyer types, rollover equity, and recapitalizations lets you help owners ask the right questions and connect them to the right advisors.</p></div>
 `,
 terms: [
@@ -434,7 +434,7 @@ objectives: [
   'Recognize when readiness, not preference, limits the options'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Once an owner sees the options, they need a way to choose. The best method starts with what the owner cares about, weights those goals, and scores each realistic option against them. It turns a vague, emotional decision into a structured conversation, while still leaving the choice to the owner.</p>
 </div>
 
@@ -469,7 +469,7 @@ body: `
 <h2>Risk-adjusted proceeds</h2>
 <p>When comparing money across options, compare like with like: after-tax, and adjusted for timing and risk. A $10 million all-cash strategic sale and a $10 million MBO paid over seven years are not equal. Discounting future payments and reducing contingent amounts by their probability of payment gives a fairer comparison. Your FP&amp;A skills apply directly.</p>
 
-<h2>Readiness limits options</h2>
+<h2>Readiness constraints</h2>
 <p>Sometimes the owner\'s preferred option is not available yet:</p>
 <ul>
 <li>An MBO needs managers who can run the business.</li>
@@ -483,8 +483,8 @@ body: `
 <p>An owner of a Kauai hardware and building supply chain, 68, scores a local family office offer higher than a mainland strategic offer that was 15% larger, because she weighted keeping the stores locally run and employees retained at 40%. Her children, who will inherit part of the proceeds, would have weighted things differently. A family meeting where everyone sees the matrix, and the owner explains her weights, can prevent resentment later.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For client materials</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>A decision matrix is a strong client-ready material: simple, visual, and anchored in the owner\'s own priorities. It turns "decision considerations," a phrase from the job description, into something an owner can use at a kitchen table.</p></div>
 `,
 terms: [

@@ -196,7 +196,7 @@ function mountQuiz(host, items, opts){
     if(i >= items.length){ return finish(); }
     var it = items[i], q = it.q;
     var order = shuffle(q.options.map(function(o, k){ return k; }));
-    var h = '<div class="quiz"><div class="qmeta"><span>' + esc(opts.title || 'Knowledge check') + '</span><span>' + (i + 1) + ' / ' + items.length + '</span></div>';
+    var h = '<div class="quiz"><div class="qmeta"><span>' + esc(opts.title || 'Quiz') + '</span><span>' + (i + 1) + ' / ' + items.length + '</span></div>';
     h += '<p class="qtext">' + q.q + '</p><div class="opts">';
     order.forEach(function(k, n){ h += '<button class="opt" data-k="' + k + '"><span class="l">' + 'ABCDE'[n] + '</span><span>' + q.options[k] + '</span></button>'; });
     h += '</div><div class="fb"></div></div>';
@@ -222,9 +222,9 @@ function mountQuiz(host, items, opts){
   }
   function finish(){
     var p = pct(right, items.length);
-    var h = '<div class="quiz"><div class="qmeta"><span>' + esc(opts.title || 'Knowledge check') + '</span><span>Complete</span></div>';
+    var h = '<div class="quiz"><div class="qmeta"><span>' + esc(opts.title || 'Quiz') + '</span><span>Complete</span></div>';
     h += '<div class="score">' + right + ' / ' + items.length + '</div><p class="muted" style="margin-top:8px">' + p + '% correct. ';
-    h += p >= 80 ? 'Solid. These will come back in Review on a spacing schedule so they stick.' : 'Worth another pass through the sections you missed. Missed questions come back in Review tomorrow.';
+    h += p >= 80 ? 'These questions will return in Review on a spaced schedule.' : 'Review the sections covering missed questions. Missed questions return in Review tomorrow.';
     h += '</p><div class="btnrow"><button class="btn ghost again">Retake</button></div></div>';
     host.innerHTML = h;
     $('.again', host).addEventListener('click', function(){ i = 0; right = 0; results = []; items = shuffle(items); draw(); });
@@ -244,17 +244,17 @@ function vHome(){
   var nx = nextLesson();
   var diag = S.diag[S.diag.length - 1];
   var h = '<div class="wrap page">';
-  h += '<p class="eyebrow">Family Business &amp; Entrepreneurs // Advisor Program</p>';
-  h += '<h1 class="big">From FP&amp;A to business-owner advisor.</h1>';
-  h += '<p class="lede">A self-paced program in exit planning, succession, valuation, wealth transfer, family dynamics and the advisory craft, built around the Bank of Hawaii Advisor role and the CEPA.</p>';
+  h += '<p class="eyebrow">Exit Planning and Family Business Advisory</p>';
+  h += '<h1 class="big">Exit Planning Program</h1>';
+  h += '<p class="lede">81 lessons covering exit planning, succession, valuation, wealth transfer, family business, and advisory practice, organized around the Family Business &amp; Entrepreneurs Advisor role and CEPA preparation.</p>';
   if(!diag){
-    h += '<a class="next" href="#/diagnostic"><span class="k">Start here</span><div class="t">Take the baseline diagnostic</div><p class="s">20 questions, about 15 minutes. It shows where you stand across the pillars so you can see progress later. Guessing is fine and expected.</p></a>';
+    h += '<a class="next" href="#/diagnostic"><span class="k">Start here</span><div class="t">Baseline diagnostic</div><p class="s">21 questions, about 15 minutes. Records a starting score in each subject area for comparison after each phase.</p></a>';
   }
   if(nx){
     var ls = lessonStub(nx.id);
     h += '<a class="next" href="#/l/' + nx.id + '"><span class="k">Next lesson // Module ' + ls.m.num + '</span><div class="t">' + esc(nx.title) + '</div><p class="s">' + esc(nx.summary) + '</p></a>';
   } else if(ready.length){
-    h += '<div class="card"><h3>You have completed every lesson.</h3><p class="muted">Keep your review queue at zero, retake the diagnostic, and work through the practice exams in Module 19 before the CEPA.</p></div>';
+    h += '<div class="card"><h3>All lessons complete.</h3><p class="muted">Continue clearing the review queue, retake the diagnostic, and complete the Module 19 practice exams.</p></div>';
   }
   h += '<dl class="stats">';
   h += '<div><dt>Lessons done</dt><dd>' + done + ' / ' + ready.length + '<small>' + all.length + ' in the full program</small></dd></div>';
@@ -262,7 +262,7 @@ function vHome(){
   h += '<div><dt>Diagnostic</dt><dd>' + (diag ? diag.score + '%' : 'Not taken') + '<small>' + (diag ? '<a href="#/diagnostic">Retake</a> after each phase' : '<a href="#/diagnostic">Take it</a>') + '</small></dd></div>';
   h += '<div><dt>Sync</dt><dd style="font-size:1rem;padding-top:4px">' + (Sync.on() ? 'Connected' : 'This device') + '<small><a href="#/settings">' + (Sync.on() ? 'Details' : 'Set up sync') + '</a></small></dd></div>';
   h += '</dl>';
-  h += '<h2>Your path</h2>';
+  h += '<h2>Progress by phase</h2>';
   C.phases.forEach(function(p){
     var mods = C.modules.filter(function(m){ return m.phase === p.id; });
     var tot = 0, dn = 0, rd = 0;
@@ -272,18 +272,18 @@ function vHome(){
   });
   h += '<div class="btnrow"><a class="btn" href="#/roadmap">Open the full roadmap</a><a class="btn ghost" href="#/role">How this maps to the job</a></div>';
   h += '<h2>How to use this program</h2><div class="prose"><ul>';
-  h += '<li><b>Go in order.</b> Later modules assume the vocabulary from earlier ones. Phase 1 builds the technical base the rest of the program stands on.</li>';
-  h += '<li><b>Do the knowledge check at the end of each lesson.</b> Every question you answer enters a spaced review queue. Missed questions return the next day; correct ones return after 3, 7, 16, then 35 days.</li>';
-  h += '<li><b>Write your exercise answers.</b> The exercises are where analysis turns into advisory judgment. Your answers save and sync, and we can review them together.</li>';
-  h += '<li><b>Bring questions back to your mentor.</b> When something does not make sense or you want to test a case, ask in chat. The curriculum adjusts to where you struggle.</li>';
+  h += '<li><b>Complete modules in order.</b> Later modules use terms and concepts introduced in earlier ones.</li>';
+  h += '<li><b>Take the quiz at the end of each lesson.</b> Answered questions enter the review queue. Missed questions return the next day; correct answers return after 3, 7, 16, and 35 days.</li>';
+  h += '<li><b>Write out exercise answers.</b> Each exercise applies the lesson to a client situation. Answers are saved and synced.</li>';
+  h += '<li><b>Questions and feedback.</b> Bring questions or exercise answers to chat for review.</li>';
   h += '</ul></div></div>';
   view.innerHTML = h;
 }
 
 function vRoadmap(){
   setNav('roadmap');
-  var h = '<div class="wrap page"><p class="eyebrow">Roadmap</p><h1 class="big">Four phases, nineteen modules.</h1>';
-  h += '<p class="lede">The order is deliberate. Foundations give you the language every advisor uses. Core disciplines teach the substance. The advisory craft turns knowledge into client work. Integration pulls it together through full cases and CEPA preparation.</p>';
+  var h = '<div class="wrap page"><p class="eyebrow">19 modules // 81 lessons</p><h1 class="big">Roadmap</h1>';
+  h += '<p class="lede">Modules are sequenced so each one builds on the terms and concepts of the modules before it. Phase 1 covers foundations, Phase 2 core technical disciplines, Phase 3 advisory practice, and Phase 4 case studies and CEPA preparation.</p>';
   C.phases.forEach(function(p){
     h += '<section class="phase"><div class="phase-head"><span class="mono">' + esc(p.label) + '</span><h2>' + esc(p.title) + '</h2></div><p>' + esc(p.summary) + '</p>';
     C.modules.filter(function(m){ return m.phase === p.id; }).forEach(function(m){ h += modCard(m); });
@@ -306,8 +306,8 @@ function vModule(id){
   var p = phaseById(m.phase), s = modStats(m);
   var h = '<div class="wrap page"><p class="crumbs"><a href="#/roadmap">Roadmap</a> / ' + esc(p.label) + '</p>';
   h += '<p class="eyebrow">Module ' + m.num + '</p><h1 class="big">' + esc(m.title) + '</h1><p class="lede">' + esc(m.summary) + '</p>';
-  if(m.why) h += '<div class="call why"><span class="tag">Why this module matters</span><p>' + m.why + '</p></div>';
-  if(m.job) h += '<div class="call hawaii"><span class="tag">Where it shows up in the job</span><p>' + m.job + '</p></div>';
+  if(m.why) h += '<div class="call why"><span class="tag">Purpose</span><p>' + m.why + '</p></div>';
+  if(m.job) h += '<div class="call hawaii"><span class="tag">Relevance to the Advisor role</span><p>' + m.job + '</p></div>';
   h += '<h2>Lessons</h2><ul class="lessons">';
   m.lessons.forEach(function(l, i){
     var ok = lessonReady(l.id), d = isDone(l.id);
@@ -333,23 +333,23 @@ function vLesson(id){
   h += '<p class="eyebrow">Lesson ' + m.num + '.' + (ls.i + 1) + (L.minutes ? ' // about ' + L.minutes + ' min' : '') + '</p>';
   h += '<h1 class="big">' + esc(ls.stub.title) + '</h1><p class="lede">' + esc(ls.stub.summary) + '</p>';
   if(L.objectives){
-    h += '<div class="objectives"><p class="k">By the end you can</p><ul>' + L.objectives.map(function(o){ return '<li>' + o + '</li>'; }).join('') + '</ul></div>';
+    h += '<div class="objectives"><p class="k">Objectives</p><ul>' + L.objectives.map(function(o){ return '<li>' + o + '</li>'; }).join('') + '</ul></div>';
   }
   h += '<div class="prose">' + L.body + '</div>';
   if(L.terms && L.terms.length){
-    h += '<p class="section-k">Vocabulary</p><h2>Key terms</h2><dl class="terms">' + L.terms.map(function(t){ return '<div><dt>' + esc(t[0]) + '</dt><dd>' + t[1] + '</dd></div>'; }).join('') + '</dl>';
+    h += '<p class="section-k"></p><h2>Key terms</h2><dl class="terms">' + L.terms.map(function(t){ return '<div><dt>' + esc(t[0]) + '</dt><dd>' + t[1] + '</dd></div>'; }).join('') + '</dl>';
   }
   if(L.quiz && L.quiz.length){
-    h += '<p class="section-k">Check yourself</p><h2>Knowledge check</h2><p class="muted small">' + L.quiz.length + ' questions. Each answer enters your review queue.</p><div id="lq"></div>';
+    h += '<p class="section-k"></p><h2>Quiz</h2><p class="muted small">' + L.quiz.length + ' questions. Each answer enters your review queue.</p><div id="lq"></div>';
   }
   if(L.exercise){
-    h += '<p class="section-k">Apply it</p><h2>Exercise</h2><div class="prose">' + L.exercise + '</div>' + notesBox(id + ':ex', 'Write your answer here. It saves as you type.');
+    h += '<p class="section-k"></p><h2>Exercise</h2><div class="prose">' + L.exercise + '</div>' + notesBox(id + ':ex', 'Write your answer here. It saves as you type.');
   }
   if(L.discussion){
-    h += '<p class="section-k">Think it through</p><h2>Discussion</h2><div class="prose">' + L.discussion + '</div>' + notesBox(id + ':disc', 'Your thoughts. Bring these to your mentor in chat.');
+    h += '<p class="section-k"></p><h2>Discussion</h2><div class="prose">' + L.discussion + '</div>' + notesBox(id + ':disc', 'Your thoughts. Bring these to your mentor in chat.');
   }
   if(L.resources && L.resources.length){
-    h += '<p class="section-k">Go deeper</p><h2>Further reading</h2><ul class="res">' + L.resources.map(function(r){
+    h += '<p class="section-k"></p><h2>Further reading</h2><ul class="res">' + L.resources.map(function(r){
       return '<li><div class="rt">' + (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>' : esc(r.title)) + (r.by ? ' <span class="faint">// ' + esc(r.by) + '</span>' : '') + '</div>' + (r.note ? '<p class="rn">' + r.note + '</p>' : '') + '</li>';
     }).join('') + '</ul>';
   }
@@ -411,8 +411,8 @@ function vReview(){
   setNav('review');
   var due = dueQuestions();
   var seen = Object.keys(S.quiz).length;
-  var h = '<div class="wrap page"><p class="eyebrow">Spaced review</p><h1 class="big">Review</h1>';
-  h += '<p class="lede">Questions come back on a schedule: missed ones the next day, correct ones after 3, 7, 16 and 35 days. A few minutes here each session does more for retention than rereading.</p>';
+  var h = '<div class="wrap page"><p class="eyebrow">Spaced repetition</p><h1 class="big">Review</h1>';
+  h += '<p class="lede">Questions come back on a schedule: missed ones the next day, correct ones after 3, 7, 16 and 35 days.</p>';
   h += '<dl class="stats"><div><dt>Due now</dt><dd>' + due.length + '</dd></div><div><dt>In rotation</dt><dd>' + seen + '</dd></div><div><dt>Mastered</dt><dd>' + Object.keys(S.quiz).filter(function(k){ return S.quiz[k].box >= 4; }).length + '<small>box 4 or 5</small></dd></div></dl>';
   h += '<div id="rv"></div></div>';
   view.innerHTML = h;
@@ -463,7 +463,7 @@ function vGlossary(){
   var terms = [];
   Object.keys(C.lessons).forEach(function(lid){ (C.lessons[lid].terms || []).forEach(function(t){ terms.push({t: t[0], d: t[1], l: lid}); }); });
   terms.sort(function(a, b){ return a.t.toLowerCase().localeCompare(b.t.toLowerCase()); });
-  var h = '<div class="wrap page"><p class="eyebrow">Reference</p><h1 class="big">Glossary</h1><p class="lede">' + terms.length + ' terms from published lessons. It grows as you go.</p>';
+  var h = '<div class="wrap page"><p class="eyebrow">Reference</p><h1 class="big">Glossary</h1><p class="lede">' + terms.length + ' terms from all lessons, searchable.</p>';
   h += '<input class="search" id="gq" type="search" placeholder="Search terms and definitions"><dl id="gl"></dl></div>';
   view.innerHTML = h;
   function draw(q){

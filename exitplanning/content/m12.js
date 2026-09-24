@@ -10,7 +10,7 @@ objectives: [
   'Choose an entry point that lowers resistance'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Most owners know they should plan, and most put it off. The reasons are rarely about information. Planning forces owners to think about getting old, losing control, possibly dying, disappointing family, and discovering the business is worth less than they hoped. People avoid those thoughts. An advisor who understands why owners delay can find a way in that feels safe.</p>
 </div>
 
@@ -28,7 +28,7 @@ body: `
 </table>
 <p>Often several are present at once, and the stated reason ("too busy") covers a deeper one ("I don\'t want to think about leaving").</p>
 
-<h2>Lowering resistance</h2>
+<h2>Addressing resistance</h2>
 <ul>
 <li><b>Start with protection, not exit.</b> Contingency planning (Lesson 1.2) protects the family and the business now and does not require any decision about leaving. It is the easiest first step for most owners.</li>
 <li><b>Frame planning as building value.</b> "What would make this business more valuable and less dependent on you?" is a business question, and owners like business questions.</li>
@@ -38,7 +38,7 @@ body: `
 <li><b>Be patient and stay in touch.</b> Many owners take months or years to move. The advisor who stays helpful without pushing is often the one they call when a trigger arrives.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: finding the real reason</span>
+<div class="call example"><span class="tag">Worked example: stated and underlying reasons for delay</span>
 <p>An owner, 67, keeps canceling planning meetings, citing a busy season. In a casual conversation, he mentions that his father sold the family business 30 years ago and "was dead within two years." The stated reason is time. The real reason may be fear that leaving the business will cost him his health and purpose.</p>
 <p>The response is not more urgency. It is a conversation about what a good transition could look like for him, possibly a gradual one that keeps him involved, and about what he would want his days to hold.</p>
 </div>
@@ -47,8 +47,8 @@ body: `
 <p>In a relationship market, some owners avoid planning because they do not want word getting around that they are "thinking about selling," which could worry employees, customers, and competitors. Assuring confidentiality, and framing the work as protection and value building, helps.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For client engagement</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description\'s first responsibility is consultative engagement with owners. Understanding resistance is what turns a polite first meeting into an engagement. Owners rarely say "I\'m afraid." They say "I\'m busy."</p></div>
 `,
 terms: [
@@ -94,7 +94,7 @@ objectives: [
   'Identify the sources of seller\'s remorse and how to reduce them'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A change like selling a business happens on a closing date. The emotional transition takes much longer. Owners have to let go of an old identity, go through an uncomfortable in-between period, and then build something new. Advisors who expect this can help owners prepare, and can recognize when regret is building.</p>
 </div>
 
@@ -116,7 +116,7 @@ body: `
 <li><b>Loss of control:</b> staying on as an employee of someone else\'s company can be hard for a former owner.</li>
 </ul>
 
-<h2>Reducing remorse</h2>
+<h2>Reducing seller's remorse</h2>
 <ul>
 <li>Plan the next chapter before the sale (Lesson 9.3).</li>
 <li>Clarify what the owner cares about (employees, name, community) and choose buyers and terms accordingly.</li>
@@ -125,7 +125,7 @@ body: `
 <li>Stay in touch after closing. A check-in at three, six, and twelve months is meaningful and good relationship practice.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: remorse from a transition role</span>
+<div class="call example"><span class="tag">Worked example: post-sale employment role</span>
 <p>An owner agreed to stay on as president for two years after selling to a mainland company. Within six months, she was frustrated: decisions she used to make now needed approval from someone she had never met, and she disagreed with changes to how employees were treated. She began to regret the sale.</p>
 <p>Before the sale, a candid conversation about what her role would really look like, with clear decision rights written into her employment agreement and perhaps a shorter transition period, could have reduced this. Advisors can prompt that conversation even though they do not negotiate the agreement.</p>
 </div>
@@ -134,8 +134,8 @@ body: `
 <p>Owners in Hawaii often have long, personal relationships with their employees and sometimes with employees\' families. Seeing those employees treated differently by a new owner can be especially painful. Understanding how important this is to the owner before choosing a buyer is part of preventing regret.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the relationship</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>An owner who regrets their sale often blames the process and the advisors. An owner who was prepared for the emotional transition often becomes the practice\'s best source of referrals.</p></div>
 `,
 terms: [
@@ -181,7 +181,7 @@ objectives: [
   'Manage co-owners with different goals and timelines'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The owner is rarely the only decision maker, even if they are the only name on the stock certificate. Spouses, business partners, adult children, and sometimes key employees all influence the outcome. Plans made with only the owner often stall when someone else finally weighs in.</p>
 </div>
 
@@ -209,7 +209,7 @@ body: `
 <h2>Key employees</h2>
 <p>Not decision makers, but their reactions matter. A key manager who leaves when rumors of a sale spread can cut value significantly. Retention plans and careful communication protect both the employee and the business.</p>
 
-<div class="call example"><span class="tag">Worked example: the missing voice</span>
+<div class="call example"><span class="tag">Worked example: spouse not included</span>
 <p>After three meetings with an owner about a possible sale, you finally meet his wife. She says she has no intention of leaving Oahu and is worried that he wants to "sail around the world." Their financial plan assumed a move to a lower-cost state and did not include her ongoing support of her elderly mother.</p>
 <p>Much of the plan must be revisited. Including her in the first meeting would have saved time and built trust with both.</p>
 </div>
@@ -218,8 +218,8 @@ body: `
 <p>Multigenerational households and close extended families are common in Hawaii. Decisions about a business can involve siblings, parents, or cousins who are not owners but whose views carry weight. Asking "Who else will have an opinion about this?" is a useful discovery question.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For client engagement</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Identifying all the stakeholders early avoids plans that fall apart late. It also shows owners that you understand how decisions are really made in their family.</p></div>
 `,
 terms: [
@@ -263,7 +263,7 @@ objectives: [
   'Apply basic motivational interviewing skills'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Owners move toward action in stages. Someone who has not yet accepted that planning matters needs a different conversation than someone ready to sign up. Pushing an owner to act before they are ready usually backfires. Meeting them where they are, and helping them hear their own reasons for change, works better.</p>
 </div>
 
@@ -286,9 +286,9 @@ body: `
 <li><b>Reflective listening:</b> repeating back what you heard, including feelings. "It sounds like you\'re proud of it and also tired."</li>
 <li><b>Summaries:</b> pulling together what the owner has said, especially their own reasons for change.</li>
 </ul>
-<p>The key idea is that people are more committed to reasons they say themselves than to reasons someone else gives them. When an owner says, "I guess I do want more time with my grandkids," that is more powerful than any statistic.</p>
+<p>The key idea is that people are more committed to reasons they say themselves than to reasons someone else gives them. When an owner says, "I guess I do want more time with my grandkids," that statement will motivate him more than any statistic.</p>
 
-<div class="call say"><span class="tag">A contemplation-stage conversation</span>
+<div class="call say"><span class="tag">Example: contemplation-stage conversation</span>
 <p><b>Owner:</b> "I know I should do something, but it\'s never the right time."<br>
 <b>Advisor:</b> "It sounds like part of you wants to get started, and part of you is waiting for things to calm down."<br>
 <b>Owner:</b> "Yeah. And they never do."<br>
@@ -301,8 +301,8 @@ body: `
 <p>In relationship-driven communities, an owner in precontemplation may still be a good relationship to invest in for years. Consistent, helpful contact through bankers and events keeps the door open until the owner\'s stage changes.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For engagement</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Matching your approach to the owner\'s stage keeps you from pushing too hard with owners who are not ready, and from moving too slowly with those who are. It also gives the team a common language for the pipeline: how many owners are at each stage, and what they need next.</p></div>
 `,
 terms: [

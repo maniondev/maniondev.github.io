@@ -11,7 +11,7 @@ objectives: [
   'Explain how M&A advisors and brokers are paid'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Selling a business is a structured process that usually takes six to twelve months once it starts. An advisor prepares the company, quietly markets it to chosen buyers, collects offers, negotiates the best one, and then the buyer spends months checking everything before the deal closes. Owners who understand the stages are calmer, make better decisions, and are less likely to be worn down into accepting worse terms late in the process.</p>
 </div>
 
@@ -36,7 +36,7 @@ body: `
 </ul>
 <p>An unsolicited offer is often the trigger for a process. A common piece of advice: when one buyer calls, it is worth finding out what other buyers would pay before negotiating exclusively.</p>
 
-<h2>The LOI is where leverage shifts</h2>
+<h2>The letter of intent and negotiating leverage</h2>
 <p>Before the LOI, the seller has leverage because buyers are competing. After the seller signs an LOI with exclusivity, the buyer has leverage: the seller has stopped talking to others, and the buyer controls the pace of diligence. That is why the LOI should settle as many important terms as possible: price, structure (asset or stock), working capital approach, what counts as debt, escrow size, earnout terms, rollover, and the owner\'s role. Terms left vague in the LOI are often negotiated later in the buyer\'s favor. When a buyer uses diligence findings to lower the price, it is called a <b>retrade</b>.</p>
 
 <h2>How advisors are paid</h2>
@@ -53,8 +53,8 @@ body: `
 <p>In a small market, confidentiality is harder. Buyers, bankers, employees, and competitors often know each other. Targeted processes and careful NDAs matter more here. Because many likely buyers are on the mainland, owners should expect site visits and management meetings to require travel and planning.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>You will not run processes, but you will help owners prepare for them, choose advisors, and understand where they are. When the owner has signed an LOI, the planning windows described in Module 3 are mostly closed, so your job is often to make sure the tax, estate, and wealth planning are done before that point.</p></div>
 `,
 terms: [
@@ -106,7 +106,7 @@ objectives: [
   'Explain non-compete, employment, and consulting agreements in a sale'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>The headline price is only the start. How much is paid in cash at closing, how much later, and how much depends on future events can matter as much as the price itself. A lower offer with more cash upfront can easily be worth more than a higher offer full of conditions.</p>
 </div>
 
@@ -164,12 +164,12 @@ body: `
 </ul>
 <p>Buyers sometimes prefer to shift value from purchase price into these agreements, since the payments may be deductible to them. Sellers usually prefer purchase price, which is more likely to be taxed as capital gain. This is another allocation negotiation for the CPA.</p>
 
-<div class="call hawaii"><span class="tag">Where the bank fits</span>
+<div class="call hawaii"><span class="tag">Bank role</span>
 <p>Seller notes in deals financed by a bank are usually subordinated, meaning the bank gets paid first and may restrict payments on the seller note if the business struggles. In SBA-financed deals, rules may require the seller note to be on standby (no payments) for a period, depending on how it is used. An owner considering a seller note should understand these terms from the lender\'s perspective, which is a natural conversation to have with the commercial banking team.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For decision support</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Owners routinely compare offers by headline price. Laying out the components, probabilities, and timing, as in the example, is one of the most useful things an advisor with your analytical background can do, as long as the M&amp;A advisor and CPA confirm the assumptions.</p></div>
 `,
 terms: [
@@ -218,7 +218,7 @@ objectives: [
   'Identify common reasons deals fail after the LOI'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>After the LOI, the buyer checks everything. The seller then makes formal promises about the business in the purchase agreement, and agrees to pay the buyer back if those promises turn out to be wrong. Deals often fall apart or get repriced during this period. Much of good exit planning is making sure there is nothing damaging for the buyer to find.</p>
 </div>
 
@@ -243,7 +243,7 @@ body: `
 </ul>
 <p><b>Representations and warranties insurance (RWI)</b> transfers much of this risk to an insurer. It has become common in mid-market deals, particularly with private equity buyers, and can reduce the escrow the seller must leave behind. It is less common in smaller deals because of its minimum cost.</p>
 
-<h2>What kills deals</h2>
+<h2>Common reasons deals fail</h2>
 <ul>
 <li><b>Quality of earnings surprises:</b> adjusted EBITDA does not hold up.</li>
 <li><b>Business performance dips during the process:</b> the owner is distracted and results slip.</li>
@@ -254,7 +254,7 @@ body: `
 <li><b>Poor records:</b> diligence drags, trust erodes, and the buyer walks or retrades.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: a readiness finding that prevents a retrade</span>
+<div class="call example"><span class="tag">Worked example: worker classification finding</span>
 <p>During an exit readiness assessment, you learn that a Hawaii contractor has classified most of its field workers as independent contractors for years. You flag it as a risk for the CPA and employment attorney.</p>
 <p>If this stays unresolved, a buyer\'s diligence will likely find it and estimate back payroll taxes, penalties, and benefits exposure, then demand a price reduction, a special escrow, or walk away. Addressing it two years before a sale (with professional guidance) costs money, but on the owner\'s timeline, and removes a major source of risk from the eventual deal.</p>
 </div>
@@ -263,8 +263,8 @@ body: `
 <p>Hawaii\'s general excise tax applies to a wide range of business activity, including many services. Buyers\' tax diligence often examines whether GET has been properly collected and paid, especially for businesses with complex revenue streams. Hawaii also has its own employment rules, including the Prepaid Health Care Act, which requires employers to provide health coverage to most employees working at least 20 hours a week. These are the kinds of local compliance items a mainland buyer will check.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In the readiness assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>An exit readiness assessment is, in part, a preview of buyer diligence. Findings like contractor classification, unpaid taxes, missing contracts, or poor records become action items long before a buyer arrives, when fixing them costs less and does not affect the price.</p></div>
 `,
 terms: [
@@ -316,7 +316,7 @@ objectives: [
   'Explain what a commercial banker looks for in an acquisition loan'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Most buyers borrow to buy a business, and how much they can borrow often sets the price they can pay. Lenders care about one main question: will the business produce enough cash to make the loan payments, with a cushion? For internal buyers, such as managers and family, the bank\'s answer frequently decides whether the deal can happen at all.</p>
 </div>
 
@@ -340,7 +340,7 @@ body: `
 <tr><td><b>Equity</b></td><td>The buyer\'s own money, plus any private equity or family office partners</td></tr>
 </table>
 
-<div class="call example"><span class="tag">Worked example: can the management team afford it?</span>
+<div class="call example"><span class="tag">Worked example: management buyout coverage test</span>
 <p>Managers want to buy a company for $8 million. EBITDA is $2 million.</p>
 <table>
 <tr><th>Sources of funds</th><th class="n">Amount</th></tr>
@@ -373,12 +373,12 @@ body: `
 <li>Is the price reasonable relative to independent valuation?</li>
 </ul>
 
-<div class="call hawaii"><span class="tag">Where you fit</span>
+<div class="call hawaii"><span class="tag">Advisor role</span>
 <p>For internal transfers and local buyers, involving commercial banking early turns the bank from a final hurdle into a design partner. A banker can tell you in an early conversation roughly how much debt a business can support, which sets realistic boundaries for price and structure. It also keeps the relationship at the bank after the transition, which is a shared goal.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For internal transfers</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Family transfers, MBOs, and ESOPs are all limited by debt capacity. Being able to run a quick coverage test and speak the commercial banker\'s language lets you design transfers that can actually be financed, which is a large part of "cross-functional coordination" in practice.</p></div>
 `,
 terms: [

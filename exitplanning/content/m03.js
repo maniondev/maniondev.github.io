@@ -11,11 +11,11 @@ objectives: [
   'Connect entity type to the exit options and tax outcomes it allows'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>How a business is set up legally decides who pays tax on its profits, how many times those profits are taxed, and what kinds of sales are possible later. An owner who chose their entity 25 years ago for reasons that made sense then may find it helps or hurts badly when they sell. You need to recognize the entity type in the first meeting and understand what it implies, so you know which questions to bring to the CPA.</p>
 </div>
 
-<h2>Two ideas to separate</h2>
+<h2>Legal form and tax classification</h2>
 <p>An entity has a <b>legal form</b> under state law (corporation, LLC, partnership) and a <b>tax classification</b> under federal law (C corporation, S corporation, partnership, or disregarded entity). They are related but different. The most common source of confusion is the LLC: an LLC is a legal form that can be taxed as a disregarded entity, a partnership, an S corporation, or a C corporation, depending on its elections. When an owner says "we're an LLC," your next question is, "How is it taxed?"</p>
 
 <h2>The main types</h2>
@@ -44,7 +44,7 @@ body: `
 <tr><td>Special exit tools</td><td></td><td>Flexible allocations</td><td>Voting/non-voting shares; ESOP-owned S corps pay no federal income tax on the ESOP's share</td><td>QSBS exclusion; ESOP section 1042 rollover</td></tr>
 </table>
 
-<h2>Built-in gains: the conversion trap</h2>
+<h2>Built-in gains tax</h2>
 <p>An owner who converts a C corporation to an S corporation does not escape corporate tax on value that already existed. If the business sells its assets within five years after the conversion (the <b>recognition period</b>), the built-in gain at the time of conversion is still taxed at the corporate level. This matters because owners sometimes hear "convert to an S corp before you sell" late in the process. The conversion may help, but only if it happens early enough, which is a timing question for the CPA.</p>
 
 <h2>Pass-through income and personal tax</h2>
@@ -65,8 +65,8 @@ body: `
 <p>Many long-established Hawaii family businesses are organized as S corporations, often with the operating real estate held in a separate LLC or partnership. Some older companies are still C corporations because they were formed before S corporation rules were attractive and never converted. These companies tend to be the most exposed to double taxation in a sale, and the most likely to benefit from early planning.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">In your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Entity type is one of the first facts you should confirm in intake, because it shapes nearly everything else: which sale structures are practical, how much tax the owner will pay, which trusts can hold shares, whether an ESOP makes sense, and whether any planning must start years in advance. You will not decide any of this. You will make sure it gets asked early.</p></div>
 `,
 terms: [
@@ -124,7 +124,7 @@ objectives: [
   'Estimate the combined federal and Hawaii tax on a simple sale'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Tax on a sale is charged on the profit, not the price. The profit is what you sold for minus what the tax system says you "paid" for it, called your basis. Founders usually have very little basis, so almost the whole price is profit. Then the rate depends on what kind of profit it is. Some is taxed as capital gain at lower rates, and some as ordinary income at much higher rates. The mix can move the tax bill by hundreds of thousands of dollars.</p>
 </div>
 
@@ -186,8 +186,8 @@ body: `
 <p>Hawaii caps the tax rate on capital gains at 7.25% for individuals while ordinary income can be taxed at up to 11%. The spread between ordinary and capital rates is therefore larger here than in many states, which makes character even more important. Owners sometimes ask about moving out of state before a sale. Changing domicile is a real, fact-intensive question: the owner must genuinely move, and gain tied to Hawaii real property or Hawaii business assets can still be taxed by Hawaii. It belongs with the CPA and attorney well before any deal, not after an offer arrives.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For financial readiness</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The after-tax number is what funds the owner's future. An early, rough tax estimate (always labeled as an estimate and reviewed by the CPA) often changes the conversation: the owner discovers that their "number" requires a higher sale price than they thought, or that the structure matters as much as the price. It also shows why the CPA needs to be involved from the start.</p></div>
 `,
 terms: [
@@ -252,7 +252,7 @@ objectives: [
   'Explain the C corporation double-tax trap and the structures that bridge the gap'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A buyer can buy the company itself (its shares) or buy the things the company owns (its assets). Buying the company means taking all of its history, good and bad. Buying the assets means picking what you want and leaving the rest behind, and it comes with a large tax benefit for the buyer. What is good for the buyer tends to cost the seller, so this becomes one of the central negotiations in any deal.</p>
 </div>
 
@@ -284,7 +284,7 @@ body: `
 <tr><td>Usually preferred by</td><td>Seller</td><td>Buyer</td></tr>
 </table>
 
-<h2>What the step-up is worth to the buyer</h2>
+<h2>Value of the step-up to the buyer</h2>
 <p>Suppose a buyer allocates $5 million to goodwill. In an asset deal, it can amortize that over 15 years: about $333,000 of deductions a year. At a combined tax rate of 25%, that saves about $83,000 a year for 15 years. Discounted to today, the benefit might be worth $600,000 to $900,000, depending on the discount rate. Equipment can be worth even more because it can often be deducted immediately. That value explains why buyers push for asset deals, and why a seller who agrees to one should ask for part of the benefit back in the price.</p>
 
 <h2>Purchase price allocation</h2>
@@ -295,7 +295,7 @@ body: `
 </ul>
 <p>Both parties are generally expected to report the same allocation, so it is negotiated and written into the purchase agreement.</p>
 
-<h2>The C corporation trap</h2>
+<h2>C corporation asset sales</h2>
 <div class="call example"><span class="tag">Worked example: same deal, two structures</span>
 <p>A C corporation with near-zero asset basis and near-zero stock basis. A buyer will pay $5 million. The owner is a Hawaii resident. Rates are simplified and illustrative.</p>
 <table>
@@ -310,7 +310,7 @@ body: `
 </div>
 <p>One related concept you may hear: <b>personal goodwill</b>. In some businesses, part of the goodwill belongs to the owner personally (their relationships and reputation) rather than to the corporation. If properly documented, the owner may sell that personal goodwill directly to the buyer, avoiding the corporate layer on that portion. It is fact-specific and heavily scrutinized, so it is a question for the CPA and attorney.</p>
 
-<h2>Structures that bridge the gap</h2>
+<h2>Hybrid structures</h2>
 <p>Tax advisors use several structures to give the buyer asset-sale tax treatment while giving the seller something closer to stock-sale simplicity. You only need to recognize the names and know they exist:</p>
 <ul>
 <li><b>Section 338(h)(10) and section 336(e) elections:</b> a stock sale that is treated as an asset sale for tax purposes. Available in certain S corporation and subsidiary sales.</li>
@@ -320,11 +320,11 @@ body: `
 
 <div class="call hawaii"><span class="tag">Hawaii scenario</span>
 <p>A Honolulu medical supply distributor, a C corporation since 1986, receives an offer from a national distributor. The buyer's term sheet says "asset purchase." The owner's CPA has not been involved yet, and the owner assumes his tax will be "capital gains, about 25%."</p>
-<p>This is the moment where early coordination pays off. The difference between the owner's assumption and a corporate asset sale could be close to a million dollars. The right next step is a meeting with the CPA before the owner signs anything, with the buyer's term sheet and the company's tax basis information in hand. A good question for the owner to bring to the buyer: "Would you consider a stock purchase, or a price adjustment to reflect the tax cost of an asset deal?"</p>
+<p>Early coordination matters here. The difference between the owner's assumption and a corporate asset sale could be close to a million dollars. The right next step is a meeting with the CPA before the owner signs anything, with the buyer's term sheet and the company's tax basis information in hand. A good question for the owner to bring to the buyer: "Would you consider a stock purchase, or a price adjustment to reflect the tax cost of an asset deal?"</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role and the CEPA</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Asset versus stock is one of the most common "decision considerations" in exit readiness work, and it links entity choice, tax, valuation, and deal terms. EPI expects CEPAs to understand how structure affects net proceeds, and to know when to involve the tax team. You now have the vocabulary to spot the issue in a term sheet and explain it simply.</p></div>
 `,
 terms: [
@@ -382,7 +382,7 @@ objectives: [
   'Explain why some planning must be completed before a letter of intent'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>A few tax tools can make a large difference in what an owner keeps. Some spread the tax over time. Some reduce or eliminate it. Almost all of them have strict eligibility rules and deadlines, and several stop working once a deal is too far along. Your job is to know they exist, recognize which owners might qualify, and make sure the tax advisors look at them early.</p>
 </div>
 
@@ -395,7 +395,7 @@ body: `
 </ul>
 
 <h2>Qualified small business stock (QSBS)</h2>
-<p>Section 1202 lets shareholders exclude a large amount of gain from federal tax on the sale of qualifying C corporation stock. It is one of the most powerful exit tax tools, and one of the most technical.</p>
+<p>Section 1202 lets shareholders exclude a large amount of gain from federal tax on the sale of qualifying C corporation stock. It can exclude a large amount of gain, and its requirements are technical.</p>
 <p>Main requirements, simplified:</p>
 <ul>
 <li>The company must be a <b>C corporation</b>, and the shareholder must have acquired the stock at original issuance (not bought from another shareholder).</li>
@@ -427,15 +427,15 @@ body: `
 <li><b>Holding periods.</b> QSBS and long-term capital gain treatment both depend on how long shares are held.</li>
 </ul>
 
-<div class="call example"><span class="tag">Worked example: the planning window closes</span>
+<div class="call example"><span class="tag">Worked example: gifting after an LOI</span>
 <p>An owner signs a letter of intent to sell for $12 million. The next week, he tells you he wants to put 30% of the company into trusts for his children "before the sale, to save estate tax."</p>
 <p>A year earlier, before any buyer, an appraiser might have valued a 30% non-controlling, non-marketable interest well below 30% of $12 million, and the future growth would have passed to the children outside his estate. Now, with a signed LOI at a known price, a gift is likely to be valued close to its share of the deal price, and the income tax on the sale may still fall on him. Some planning may still be possible, and his attorney and CPA will know. But the best version of this strategy required acting before the LOI.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>This lesson is the clearest example of why exit planning starts years before a sale. In an exit readiness assessment, one of your most important contributions is to flag time-sensitive tax and estate questions early and get them on the specialists' agendas while the options are still open. A simple question like "Has your CPA looked at whether any planning needs to happen before you talk to buyers?" can be worth a great deal.</p></div>
-<div class="call watch"><span class="tag">A reminder about figures</span>
+<div class="call watch"><span class="tag">Note on figures</span>
 <p>Tax law changes. Several rules in this module were modified by 2025 federal legislation. Treat every figure here as a starting point to confirm with the tax team for any real client.</p></div>
 `,
 terms: [

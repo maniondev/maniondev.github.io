@@ -10,7 +10,7 @@ objectives: [
   'Use the model to anticipate conflict and structure conversations'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>In a family business, three systems overlap: the family, the ownership, and the business. A person can be in one, two, or all three. Where someone sits changes what they care about. The daughter who works in the business and the son who owns shares but lives in California can both be reasonable and still want opposite things. The three-circle model helps everyone see why.</p>
 </div>
 
@@ -27,7 +27,7 @@ body: `
 <tr><td>7</td><td>Family owner-employee</td><td>The founder, or a successor who owns and runs the company</td><td>Everything at once: control, legacy, performance, family</td></tr>
 </table>
 
-<h2>Same decision, different views</h2>
+<h2>Example: dividend policy</h2>
 <div class="call example"><span class="tag">Worked example: should the company pay a dividend?</span>
 <p>A family construction company earned an unusually good year.</p>
 <ul>
@@ -51,8 +51,8 @@ body: `
 <p>Extended families are often closely involved in Hawaii family businesses: cousins, in-laws, and hanai relationships may all be part of the picture. Mapping who sits where, including people who do not hold formal titles but carry influence, is especially useful here.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Much of the "family" in family business advisory is predicting and managing how different stakeholders will react to a plan. The three-circle model is the fastest tool for that, and it is widely taught in family business programs.</p></div>
 `,
 terms: [
@@ -99,7 +99,7 @@ objectives: [
   'Anticipate the planning issues that arise at each stage'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Family businesses change shape as they pass between generations. A founder makes decisions alone. Siblings have to share decisions as equals. Cousins may barely know each other and have very different stakes in the company. Each shape needs different rules. Many family businesses struggle because they keep running on the rules of the previous stage.</p>
 </div>
 
@@ -133,8 +133,8 @@ body: `
 <p>Some of Hawaii\'s oldest companies are now in their third, fourth, or fifth generation, with many family shareholders. Their governance challenges (liquidity for cousins, professional management, board structure) are very different from a founder-led business. Recognizing the stage tells you which questions to ask first.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For planning</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Knowing the stage helps you anticipate what a family needs: a controlling owner needs a succession and ownership design; siblings need a partnership framework; cousins need governance and liquidity. It keeps you from recommending tools that do not fit.</p></div>
 `,
 terms: [
@@ -182,7 +182,7 @@ objectives: [
   'Explain the founder\'s transition out of control'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Two transitions happen in family succession: who runs the business, and who owns it. They are often treated as one event, but they can happen at different times, to different people. A daughter can become CEO years before she owns much stock. All four children can own the business while a non-family CEO runs it. Keeping these separate makes better plans and fewer hurt feelings.</p>
 </div>
 
@@ -215,10 +215,10 @@ body: `
 </ul>
 <p>Useful practices include a written transition timeline with dates for handing over each responsibility, a clear post-transition role, and a board that can mediate.</p>
 
-<h2>When the answer is a non-family CEO</h2>
+<h2>Non-family CEOs</h2>
 <p>Sometimes no family member is ready or willing, or the business has outgrown the family\'s management capacity. A non-family CEO can lead the business while the family keeps ownership. This works best with a strong board that includes independent members, clear authority for the CEO, and compensation that aligns the CEO with the owners\' goals (often through long-term incentives).</p>
 
-<div class="call example"><span class="tag">Worked example: separating the timelines</span>
+<div class="call example"><span class="tag">Worked example: leadership and ownership timelines</span>
 <p>A father, 64, and his daughter, 38, who has run operations for six years.</p>
 <table>
 <tr><th>Year</th><th>Leadership</th><th>Ownership</th></tr>
@@ -234,8 +234,8 @@ body: `
 <p>Respect for elders is deeply valued in many Hawaii families, which can make it hard for a successor to challenge a parent or for a parent to step back without losing face. A board chair or advisory role, formal recognition of the founder\'s contribution, and a clear public handoff can help honor the founder while giving the successor real authority.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For planning</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Separating leadership from ownership succession lets families make each decision on its own merits. The estate and trust team can design ownership transfers while leadership develops on its own timeline, and you coordinate both.</p></div>
 `,
 terms: [
@@ -284,7 +284,7 @@ objectives: [
   'Explain the value of independent board members'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Governance is how a family decides things: who decides what, where, and by what rules. Without it, every business decision can become a family argument and every family disagreement can hurt the business. Good governance gives each kind of decision its own place. It does not need to be elaborate, but it needs to match the family\'s size and stage.</p>
 </div>
 
@@ -318,7 +318,7 @@ body: `
 <tr><td>Cousin consortium</td><td>Formal board with independent directors; family council; family constitution; liquidity programs; next-generation education</td></tr>
 </table>
 
-<div class="call example"><span class="tag">Worked example: from kitchen table to structure</span>
+<div class="call example"><span class="tag">Worked example: sibling governance</span>
 <p>Three siblings, equal owners of a Hawaii distribution company, discuss everything at Sunday dinner, including pay, dividends, and hiring. Dinners have become tense and their spouses are frustrated.</p>
 <p>A practical first step:</p>
 <ol>
@@ -329,12 +329,12 @@ body: `
 </ol>
 </div>
 
-<div class="call hawaii"><span class="tag">Where the bank fits</span>
+<div class="call hawaii"><span class="tag">Bank role</span>
 <p>Trust officers and family business advisors at banks are often involved in family meetings, especially when trusts hold shares or when the bank serves as trustee. A bank trustee can bring neutrality to family discussions. Knowing the governance structures lets you recommend when to involve a professional family business consultant or facilitator.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For planning</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Technical plans (estate transfers, buy-sell agreements) fail when governance is missing, because there is no agreed way to make the decisions those plans require. Recommending the right level of governance is often the most valuable long-term advice a family receives.</p></div>
 `,
 terms: [
@@ -383,11 +383,11 @@ objectives: [
   'Structure a difficult family conversation and know when to bring in help'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>Parents usually want to treat their children equally. But giving every child an equal share of a business that only one of them runs can create problems for everyone: the child running it answers to siblings who do not understand the work, and the siblings own something they cannot sell or control. "Fair" can mean something different from "equal," and the plan works only if the family talks about it openly.</p>
 </div>
 
-<h2>The classic problem</h2>
+<h2>Active and inactive heirs</h2>
 <p>One child runs the business. Two do not. The business is most of the parents\' estate.</p>
 <table>
 <tr><th>Approach</th><th>Pros</th><th>Cons</th></tr>
@@ -417,7 +417,7 @@ body: `
 <p>The active child receives more on paper, but has also paid for part of the business and carries the work and risk of running it. The parents chose this deliberately and explained it at a family meeting. Whether it feels fair depends far more on that conversation than on the math.</p>
 </div>
 
-<h2>Recurring flashpoints</h2>
+<h2>Common sources of conflict</h2>
 <ul>
 <li><b>Compensation:</b> active family members should be paid market rates for their roles, set by a board or objective process. Underpaying creates resentment; overpaying is effectively a hidden distribution.</li>
 <li><b>Dividends versus reinvestment:</b> solve with a written policy.</li>
@@ -433,7 +433,7 @@ body: `
 <li><b>Parents explain their reasoning</b> along with the decision.</li>
 <li><b>Follow-up in writing</b> and time for reflection.</li>
 </ol>
-<div class="call watch"><span class="tag">Stay neutral</span>
+<div class="call watch"><span class="tag">Neutrality</span>
 <p>The bank advisor usually has a primary relationship with one family member, often the parent or the active child. Taking sides, even implicitly, damages trust with everyone else and may compromise the plan. When conflict is serious, recommend a neutral professional and keep your role to coordination and information.</p>
 </div>
 
@@ -441,8 +441,8 @@ body: `
 <p>Family land in Hawaii often carries meaning beyond its dollar value, and heirs may feel strongly that it should never be sold. Plans that put land into a family LLC with clear governance and income sharing, rather than dividing it, often reflect these values better than an equal division that could lead to a forced sale.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For family succession</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Research on family wealth transfers consistently points to communication and trust, not technical planning, as the main reasons transfers fail. This lesson is where technical tools meet family reality, and your role is to make sure both are addressed.</p></div>
 `,
 terms: [

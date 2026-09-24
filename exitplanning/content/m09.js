@@ -10,7 +10,7 @@ objectives: [
   'Use the three legs to structure an owner conversation'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>An owner is ready to exit only when three things are true at once: the business can be transferred, the owner can afford to leave, and the owner has something to go to. Most owners are strong in one of these and weak in the others. Like a three-legged stool, the plan falls over if any leg is short.</p>
 </div>
 
@@ -23,7 +23,7 @@ body: `
 </table>
 <p>EPI\'s framework treats these three as equally important and interdependent. Owners, and many advisors, tend to focus on the business leg because it is concrete. The other two are where many transitions fail.</p>
 
-<h2>When a leg is short</h2>
+<h2>Gaps in readiness</h2>
 <table>
 <tr><th>Strong</th><th>Weak</th><th>What typically happens</th></tr>
 <tr><td>Business, financial</td><td>Personal</td><td>The owner sells well, then feels lost. Regret, restlessness, sometimes buying or starting another business on impulse.</td></tr>
@@ -31,7 +31,7 @@ body: `
 <tr><td>Personal, financial</td><td>Business</td><td>The owner is ready and can afford it, but no one will pay enough, or the business depends on them. Earnouts, long transitions, or a lower price.</td></tr>
 </table>
 
-<div class="call example"><span class="tag">Worked example: three owners, three short legs</span>
+<div class="call example"><span class="tag">Worked example: readiness gaps</span>
 <ul>
 <li><b>Dennis</b>, 66, has a well-run business and $6 million outside it. He says he will "never retire" and has no interests outside work. <i>Short leg: personal.</i></li>
 <li><b>Carol</b>, 58, wants to leave in three years to care for her parents. Her business depends on her, and her net worth is almost entirely in the company. <i>Short legs: business and financial.</i></li>
@@ -52,8 +52,8 @@ body: `
 <p>Personal readiness often includes family and community roles: caring for aging parents, supporting children who live nearby or on the mainland, involvement in church, canoe clubs, civic organizations, and long-standing friendships tied to the business. Owners may also worry about what the community will think if they sell to an outside buyer. These are personal readiness factors, and they deserve space in the conversation.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the assessment</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>The job description asks for "personal and business exit readiness assessments." The three legs give that assessment its structure. Rating each leg and showing where the short one is gives the owner a clear, memorable picture of where the work is.</p></div>
 `,
 terms: [
@@ -101,7 +101,7 @@ objectives: [
   'Explain the wealth planner\'s role and the limits of simple estimates'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>"The number" is how much money an owner needs after selling to live the life they want. It starts with what they spend, including things the business pays for today, subtracts other income, and then asks how large a portfolio can safely produce the rest for the rest of their life. That number, worked backward through taxes and deal costs, tells the owner what their business needs to be worth.</p>
 </div>
 
@@ -156,9 +156,9 @@ body: `
 <p>Hawaii\'s cost of living and long life expectancy both push the number up. Owners retiring in their early 60s may need a plan lasting 30 years or more. Health insurance before Medicare is also a significant cost for owners who have relied on their company\'s group plan, which in Hawaii is shaped by the Prepaid Health Care Act. Owners who plan to move to the mainland or split time also need to consider state tax residency.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For financial readiness</span>
-<p>The number is the bridge between the owner\'s life and the business plan. Many owners have never calculated it. When they do, it often changes their timeline or their exit path. That is the moment planning becomes real, and it depends on close coordination with the wealth planning team.</p></div>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
+<p>The number is the bridge between the owner\'s life and the business plan. Many owners have never calculated it. When they do, it often changes their timeline or their exit path. It also depends on close coordination with the wealth planning team.</p></div>
 `,
 terms: [
   ['The number', 'The investable assets an owner needs after exit to fund their desired lifestyle for life.'],
@@ -205,11 +205,11 @@ objectives: [
   'Know when to involve other professionals'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
+<div class="call plain"><span class="tag">Summary</span>
 <p>For many owners, the business is also their identity, their social circle, and the reason they get up in the morning. Selling it can feel like losing all of that at once. Owners who have a clear plan for what they will do next tend to be much happier afterward. Advisors can help by raising the question early and giving it time.</p>
 </div>
 
-<h2>What owners lose</h2>
+<h2>Losses owners experience</h2>
 <ul>
 <li><b>Identity:</b> "I\'m the owner of..." is how they have introduced themselves for decades.</li>
 <li><b>Purpose and challenge:</b> daily problems to solve and decisions that matter.</li>
@@ -229,7 +229,7 @@ body: `
 <li>A spouse whose expectations for retirement differ sharply</li>
 </ul>
 
-<h2>Helping owners plan the next chapter</h2>
+<h2>Planning for life after the business</h2>
 <ul>
 <li><b>Ask early, and ask again.</b> Personal readiness develops over time. Revisit it at each stage.</li>
 <li><b>Encourage trial runs:</b> extended vacations, a four-day week, a board seat at a nonprofit, mentoring other business owners. These test what life might feel like.</li>
@@ -237,19 +237,19 @@ body: `
 <li><b>Consider a phased role:</b> chair, advisor, or part-time consultant after the transition, when the buyer or successor agrees.</li>
 <li><b>Connect to purpose:</b> philanthropy, community leadership, investing in or mentoring younger entrepreneurs, family.</li>
 </ul>
-<div class="call say"><span class="tag">A way to ask</span>
+<div class="call say"><span class="tag">Example language</span>
 <p>"A lot of owners tell me the hardest part of selling wasn\'t the deal. It was the Monday after. Have you thought about what you want your weeks to look like? There\'s no wrong answer, and it\'s fine not to know yet."</p>
 </div>
 
-<h2>Know your limits</h2>
+<h2>Referral to other professionals</h2>
 <p>You are not a therapist or a life coach. Some owners are dealing with grief, anxiety, health problems, or serious family conflict. It is appropriate to suggest that other professionals, such as a coach, counselor, or family business consultant, can help, and to follow the bank\'s policies on referrals.</p>
 
 <div class="call hawaii"><span class="tag">Hawaii scenario</span>
 <p>A Kona coffee farm and processing business owner, 70, says he will never leave the farm. As you listen, it becomes clear that he means the land, not the business operations, which he finds exhausting. That distinction opens a plan: sell or transfer the processing business, keep the land (and perhaps lease part of it), and keep living on and caring for it. Personal readiness often depends on understanding what the owner is truly attached to.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For the owner and the plan</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Owners who are not personally ready often stall the process, sabotage deals late, or regret the outcome. Paying attention to personal readiness protects the plan and the relationship. It is also one of the most human parts of the work, and owners remember advisors who asked about it.</p></div>
 `,
 terms: [
@@ -296,8 +296,8 @@ objectives: [
   'Recognize the limits of scores'
 ],
 body: `
-<div class="call plain"><span class="tag">In plain English</span>
-<p>Readiness scoring tools turn a messy set of facts and feelings into a simple picture. A score can start a conversation, show an owner where they stand, and measure progress over time. It cannot replace judgment, and it should never feel like a grade.</p>
+<div class="call plain"><span class="tag">Summary</span>
+<p>Readiness scoring tools summarize a large set of facts and observations in a simple format. A score can start a conversation, show an owner where they stand, and measure progress over time. It cannot replace judgment, and it should never feel like a grade.</p>
 </div>
 
 <h2>Common tools</h2>
@@ -318,7 +318,7 @@ body: `
 </table>
 <p>Keep it short enough to complete in a meeting or as a pre-meeting questionnaire. The value is in the conversation it starts.</p>
 
-<h2>Using scores well</h2>
+<h2>Presenting scores</h2>
 <ul>
 <li><b>Frame it as a starting point:</b> "This is a snapshot, not a grade. Most owners score low in a few places. That\'s what we work on."</li>
 <li><b>Let the owner self-score, then discuss:</b> gaps between the owner\'s view and the evidence are often the most useful insight.</li>
@@ -341,8 +341,8 @@ body: `
 <p>A consistent readiness scorecard used across the team allows comparisons across clients, helps prioritize who needs attention, and can support program reporting for leadership (how many clients have moved from low to moderate readiness, for example). Designing and maintaining such a tool is the kind of "practice and program support" contribution the job description calls for, and it plays to your analytical strengths.</p>
 </div>
 
-<h2>Why it matters</h2>
-<div class="call why"><span class="tag">For your role</span>
+<h2>Relevance to the role</h2>
+<div class="call why"><span class="tag">Application</span>
 <p>Scoring gives your analysis a structure owners can grasp quickly, and it creates measurable progress, which helps the owner and the practice. The Module 14 workshop builds on the scorecard you create here.</p></div>
 `,
 terms: [
