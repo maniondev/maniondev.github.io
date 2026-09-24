@@ -2,10 +2,8 @@
 'use strict';
 
 var C = window.FBE;
-var PW = 'rj0162';
 var STATE_KEY = 'fbe.state.v1';
 var SYNC_KEY = 'fbe.sync.v1';
-var UNLOCK_KEY = 'fbe.unlocked';
 var GIST_DESC = 'manionjohn.com exit planning progress';
 var GIST_FILE = 'fbe-progress.json';
 var DAY = 86400000;
@@ -599,21 +597,8 @@ window.addEventListener('hashchange', function(){ route(); window.scrollTo(0, 0)
 /* ================= boot ================= */
 try{ var th = localStorage.getItem('fbe.theme'); if(th) document.documentElement.setAttribute('data-theme', th); }catch(e){}
 
-var lock = document.getElementById('lock'), app = document.getElementById('app');
-function unlock(){
-  lock.hidden = true; app.hidden = false;
-  try{ localStorage.setItem(UNLOCK_KEY, '1'); }catch(e){}
-  route();
-  if(Sync.on()) Sync.run(); else Sync.set('off', Sync.msg);
-}
-var remembered = false;
-try{ remembered = localStorage.getItem(UNLOCK_KEY) === '1'; }catch(e){}
-if(remembered) unlock();
-document.getElementById('lockform').addEventListener('submit', function(e){
-  e.preventDefault();
-  var input = document.getElementById('pw');
-  if(input.value === PW) unlock();
-  else { document.getElementById('lockerr').textContent = 'That is not the passcode. Try again.'; input.value = ''; input.focus(); }
-});
-document.addEventListener('visibilitychange', function(){ if(!document.hidden && Sync.on() && !app.hidden) Sync.run(); });
+var app = document.getElementById('app');
+route();
+if(Sync.on()) Sync.run(); else Sync.set('off', Sync.msg);
+document.addEventListener('visibilitychange', function(){ if(!document.hidden && Sync.on()) Sync.run(); });
 })();

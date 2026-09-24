@@ -51,18 +51,6 @@ li{margin:0 0 7px}
 li::marker{color:var(--ink-faint)}
 button{font-family:inherit}
 
-/* ---- lock ---- */
-.lock{position:fixed;inset:0;z-index:200;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:24px}
-.lockcard{width:100%;max-width:380px;text-align:center}
-.lockcard .mono{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
-.lockcard h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.8rem;margin:0 0 6px;line-height:1.1}
-.lockcard p{color:var(--ink-soft);font-size:14.5px;margin:0 0 22px}
-.lockform{display:flex;gap:8px}
-.lockform input{flex:1;min-width:0;font-size:16px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-.lockform input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
-.lockform button{font-weight:600;font-size:15px;padding:12px 18px;border-radius:10px;border:none;background:var(--accent);color:#fff;cursor:pointer}
-.lockerr{color:var(--watch);font-size:13.5px;margin-top:12px;min-height:18px}
-
 /* ---- top bar ---- */
 .topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .topbar-inner{max-width:840px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:14px;min-height:52px}
