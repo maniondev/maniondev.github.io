@@ -256,7 +256,7 @@ function vHome(){
     var ls = lessonStub(nx.id);
     h += '<a class="next" href="#/l/' + nx.id + '"><span class="k">Next lesson // Module ' + ls.m.num + '</span><div class="t">' + esc(nx.title) + '</div><p class="s">' + esc(nx.summary) + '</p></a>';
   } else if(ready.length){
-    h += '<div class="card"><h3>Every published lesson is complete.</h3><p class="muted">Keep your review queue at zero while the next phase is built.</p></div>';
+    h += '<div class="card"><h3>You have completed every lesson.</h3><p class="muted">Keep your review queue at zero, retake the diagnostic, and work through the practice exams in Module 19 before the CEPA.</p></div>';
   }
   h += '<dl class="stats">';
   h += '<div><dt>Lessons done</dt><dd>' + done + ' / ' + ready.length + '<small>' + all.length + ' in the full program</small></dd></div>';

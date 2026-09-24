@@ -198,6 +198,8 @@ window.FBE = {
     /* ---------------- PHASE 4 ---------------- */
     {id: 'm18', phase: 'p4', num: 18, title: 'Capstone Cases',
      summary: 'Full cases from first meeting through roadmap, each testing a different combination of skills.',
+     why: 'Real situations never arrive sorted by module. These cases combine valuation, tax, estate, family, deal, and advisory skills the way client work does.',
+     job: 'Each case asks you to do what the role does: read a messy situation, find the themes and decision points, and recommend next steps and the partners to involve.',
      lessons: [
        {id: 'm18-l01', title: 'Case: the second-generation HVAC company', summary: 'Owner dependence, a private equity approach, and a son who wants in.'},
        {id: 'm18-l02', title: 'Case: the family restaurant group', summary: 'Three siblings, one operator, and real estate held separately.'},
@@ -207,6 +209,8 @@ window.FBE = {
      ]},
     {id: 'm19', phase: 'p4', num: 19, title: 'CEPA Preparation',
      summary: 'How the CEPA program works, the concepts it emphasizes, and practice exams.',
+     why: 'A structured path to the credential the role expects, with a concept review and two full practice exams.',
+     job: 'The job description expects a commitment to pursue the CEPA. This module turns that commitment into a plan.',
      lessons: [
        {id: 'm19-l01', title: 'The CEPA program and exam', summary: 'Eligibility, format, and how to prepare.'},
        {id: 'm19-l02', title: 'Concept review: EPI frameworks', summary: 'A structured review of the methodology and terms the program stresses.'},
