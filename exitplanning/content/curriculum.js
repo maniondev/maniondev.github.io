@@ -60,6 +60,8 @@ window.FBE = {
     /* ---------------- PHASE 2 ---------------- */
     {id: 'm05', phase: 'p2', num: 5, title: 'Business Valuation',
      summary: 'Standards of value, the three approaches, multiples, discounts, and why one business legitimately has several values.',
+     why: 'Almost every planning decision depends on value: the wealth gap, gifting, buy-sell prices, exit options, and financing. Understanding how value is built lets you read reports critically and explain them in plain language.',
+     job: 'The job description names valuation specialists as a core internal partner. This module lets you work with them as a peer, frame the right question for them, and translate their results for clients.',
      lessons: [
        {id: 'm05-l01', title: 'Value is a range: standards and premises of value', summary: 'Fair market value, investment value, strategic value, and why the purpose of a valuation changes the answer.'},
        {id: 'm05-l02', title: 'The income approach', summary: 'Capitalization of earnings, discounted cash flow, and building a discount rate for a private company.'},
@@ -69,6 +71,8 @@ window.FBE = {
      ]},
     {id: 'm06', phase: 'p2', num: 6, title: 'Exit Options: Insiders and Outsiders',
      summary: 'Every realistic path out of a business, what each requires, and how to compare them against the owner\'s goals.',
+     why: 'Owners usually see only one or two exit paths. This module lays out every realistic option and a way to compare them against the owner\'s goals.',
+     job: 'Planning pathways and roadmaps in the job description start here: which paths are realistic for this owner, and what each requires.',
      lessons: [
        {id: 'm06-l01', title: 'The map of exit options', summary: 'Internal and external transfers, recapitalizations, and orderly wind-downs.'},
        {id: 'm06-l02', title: 'Transferring to family', summary: 'Gift, sale, or a blend; readiness of the next generation; and financing the transfer.'},
@@ -78,6 +82,8 @@ window.FBE = {
      ]},
     {id: 'm07', phase: 'p2', num: 7, title: 'Deal Structure and the Sale Process',
      summary: 'How a sale actually runs, from preparation to closing, and the deal terms that move real dollars.',
+     why: 'Deal terms and process decide how much of a headline price the owner actually keeps, and when. Knowing them lets you prepare owners before a buyer arrives.',
+     job: 'Owners will bring you offers and letters of intent. This module helps you support them, and it connects directly to the commercial banking partner who often finances the buyer.',
      lessons: [
        {id: 'm07-l01', title: 'The sale process from start to close', summary: 'Advisors, teasers, the confidential information memorandum, LOIs, diligence, and closing.'},
        {id: 'm07-l02', title: 'Deal terms that move the money', summary: 'Cash at close, earnouts, seller notes, escrows, holdbacks, and rollover equity.'},
@@ -86,6 +92,8 @@ window.FBE = {
      ]},
     {id: 'm08', phase: 'p2', num: 8, title: 'The Value Acceleration Methodology',
      summary: 'The Exit Planning Institute\'s core framework: Discover, Prepare, Decide, the Four Cs of intangible capital, and the three gaps.',
+     why: 'This is the Exit Planning Institute\'s core framework and the backbone of the CEPA. Everything in the program so far fits inside it.',
+     job: 'The exit readiness assessment in the job description is essentially the Discover stage of this methodology.',
      lessons: [
        {id: 'm08-l01', title: 'Business attractiveness versus business readiness', summary: 'Why a valuable business can still be unsellable, and the EPI view of value creation.'},
        {id: 'm08-l02', title: 'The Four Cs of intangible capital', summary: 'Human, customer, structural, and social capital, and how each shows up in value.'},
@@ -94,6 +102,8 @@ window.FBE = {
      ]},
     {id: 'm09', phase: 'p2', num: 9, title: 'Owner Readiness: Personal and Financial',
      summary: 'Whether the owner is ready to leave, can afford to leave, and has somewhere to go.',
+     why: 'Many transitions fail on the personal or financial side even when the business is ready. This module covers the owner\'s readiness as carefully as the company\'s.',
+     job: 'The job description asks for personal and business readiness assessments. This module supplies the personal and financial half, and the scorecard you build here carries into Module 14.',
      lessons: [
        {id: 'm09-l01', title: 'The three legs: business, personal, and financial', summary: 'Why owners who are ready in only one or two dimensions struggle after an exit.'},
        {id: 'm09-l02', title: 'Financial readiness and "the number"', summary: 'Building the owner\'s post-exit cash flow need and testing it against net proceeds.'},
@@ -102,6 +112,8 @@ window.FBE = {
      ]},
     {id: 'm10', phase: 'p2', num: 10, title: 'Family Business Systems and Governance',
      summary: 'How family, ownership and business interact, and the governance structures that keep them working.',
+     why: 'Family businesses fail across generations far more often from family and governance problems than from business problems. This module gives you the frameworks family business advisors use.',
+     job: 'Most clients of a Family Business &amp; Entrepreneurs practice are exactly this: families who own businesses together. These tools shape how you run meetings and design plans with them.',
      lessons: [
        {id: 'm10-l01', title: 'The three-circle model', summary: 'Seven positions, seven perspectives, and why the same decision looks different from each.'},
        {id: 'm10-l02', title: 'How family businesses develop over generations', summary: 'Controlling owner, sibling partnership, cousin consortium, and what changes at each stage.'},
@@ -111,6 +123,8 @@ window.FBE = {
      ]},
     {id: 'm11', phase: 'p2', num: 11, title: 'Wealth Planning Around a Liquidity Event',
      summary: 'Planning before, during, and after the sale so the proceeds support the owner\'s life and legacy.',
+     why: 'The owner\'s outcome is decided by what happens to the proceeds and to their life after the sale. This module covers the planning around the event itself.',
+     job: 'This is where the wealth strategy, trust, and investment teams take the lead, and where a clean handoff from the Family Business team matters most.',
      lessons: [
        {id: 'm11-l01', title: 'Pre-transaction planning windows', summary: 'What must happen years, months, and weeks before a deal, and what becomes impossible after the LOI.'},
        {id: 'm11-l02', title: 'Charitable strategies', summary: 'Donor-advised funds, charitable remainder trusts, and gifting pre-sale interests.'},
