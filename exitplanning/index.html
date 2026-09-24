@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exit Planning Program</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div class="lock" id="lock">
+  <div class="lockcard">
+    <p class="mono">Private // John Manion</p>
+    <h1>Exit Planning Program</h1>
+    <p>Enter the passcode to continue.</p>
+    <form class="lockform" id="lockform" autocomplete="off">
+      <input type="password" id="pw" aria-label="Passcode" placeholder="Passcode" autofocus>
+      <button type="submit">Enter</button>
+    </form>
+    <div class="lockerr" id="lockerr" role="alert"></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" hidden>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brandmark" href="#/">FB&amp;E // Program</a>
+      <nav class="nav" id="nav">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/roadmap" data-nav="roadmap">Roadmap</a>
+        <a href="#/review" data-nav="review">Review<span class="badge" id="dueBadge" hidden></span></a>
+        <a href="#/glossary" data-nav="glossary">Glossary</a>
+        <a href="#/library" data-nav="library">Library</a>
+        <a href="#/role" data-nav="role">The Role</a>
+        <a href="#/settings" data-nav="settings" class="navsync" title="Sync and settings"><span class="syncdot" id="syncdot"></span>Sync</a>
+      </nav>
+    </div>
+  </header>
+  <main id="view" class="view" tabindex="-1"></main>
+  <footer class="foot"><div class="wrap">Private study program. Tax and legal figures reflect the author's understanding as of 2026; confirm current numbers with specialists before relying on them with a client.</div></footer>
+</div>
+
+<script src="content/curriculum.js"></script>
+<script src="content/m01.js"></script>
+<script src="content/m02.js"></script>
+<script src="content/m03.js"></script>
+<script src="content/m04.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
