@@ -135,6 +135,8 @@ window.FBE = {
     /* ---------------- PHASE 3 ---------------- */
     {id: 'm12', phase: 'p3', num: 12, title: 'Business Owner Psychology',
      summary: 'Why owners delay, how identity and control shape decisions, and what seller\'s remorse teaches advisors.',
+     why: 'Owners rarely decide based on information alone. Understanding why they delay, what they fear losing, and who else influences them is what turns technical knowledge into progress.',
+     job: 'Consultative engagement, the first responsibility in the job description, depends on reading the owner as well as the business.',
      lessons: [
        {id: 'm12-l01', title: 'Why owners avoid exit planning', summary: 'Mortality, identity, control, and the belief that the business will always be there.'},
        {id: 'm12-l02', title: 'Identity, control, and seller\'s remorse', summary: 'What owners lose when they sell, and how to plan for it.'},
@@ -143,6 +145,8 @@ window.FBE = {
      ]},
     {id: 'm13', phase: 'p3', num: 13, title: 'Discovery and Consultative Conversations',
      summary: 'The conversation skills behind "engages in consultative discussions" in the job description.',
+     why: 'This is the conversation skill set behind every engagement: first meetings, listening, guiding toward a next step, and delivering hard news.',
+     job: 'The job description asks you to engage in consultative discussions and guide them toward defined planning pathways. This module is that skill, practiced.',
      lessons: [
        {id: 'm13-l01', title: 'The first meeting', summary: 'Structure, questions, and what a good first meeting produces.'},
        {id: 'm13-l02', title: 'Questioning and listening', summary: 'Open questions, follow-ups, summarizing, and the discipline of not solving too early.'},
@@ -151,6 +155,8 @@ window.FBE = {
      ]},
     {id: 'm14', phase: 'p3', num: 14, title: 'The Exit Readiness Assessment',
      summary: 'Hands-on: gathering qualitative and quantitative inputs and turning them into themes, action items, and decision points.',
+     why: 'This module turns everything so far into the core work product of the role. It ends with a full case you complete yourself.',
+     job: 'Gathering, organizing, and analyzing inputs, and synthesizing them into themes, action items, and decision points, is word for word the exit readiness responsibility in the job description.',
      lessons: [
        {id: 'm14-l01', title: 'Intake and data gathering', summary: 'What to request, in what order, and how to make it easy for the owner.'},
        {id: 'm14-l02', title: 'Assessing business readiness', summary: 'Financial, operational, and intangible capital review.'},
@@ -160,6 +166,8 @@ window.FBE = {
      ]},
     {id: 'm15', phase: 'p3', num: 15, title: 'Orchestrating the Advisory Team',
      summary: 'Working with commercial banking, wealth planning, trust and estate, valuation, and outside CPAs and attorneys.',
+     why: 'Exit plans involve many specialists who do not report to you. Coordination is what keeps the plan moving and the owner at the center.',
+     job: 'Cross-functional coordination (Advisor) and orchestration with influence without authority (Senior Advisor) are named directly in the job description.',
      lessons: [
        {id: 'm15-l01', title: 'Who does what', summary: 'Each partner\'s role, incentives, and language.'},
        {id: 'm15-l02', title: 'Running workstreams and keeping momentum', summary: 'Timelines, owners of tasks, and status rhythms that keep a plan moving.'},
@@ -168,6 +176,8 @@ window.FBE = {
      ]},
     {id: 'm16', phase: 'p3', num: 16, title: 'Client Materials, Meetings, and Events',
      summary: 'Client-ready summaries, roadmaps, meeting facilitation, documentation, and client events.',
+     why: 'Owners act on what they read and remember. Clear materials, well-run meetings, and events that lead to conversations are how advisory work becomes visible.',
+     job: 'Client materials, meeting follow-through, documentation, and event activation are all listed responsibilities.',
      lessons: [
        {id: 'm16-l01', title: 'Writing for business owners', summary: 'Summaries and recommendations an owner will read and act on.'},
        {id: 'm16-l02', title: 'The roadmap deliverable', summary: 'Structuring findings, options, and a sequenced plan.'},
@@ -176,6 +186,8 @@ window.FBE = {
      ]},
     {id: 'm17', phase: 'p3', num: 17, title: 'The Hawaii Market',
      summary: 'Family enterprise in Hawaii: land, relationships, a limited buyer pool, and multigenerational expectations.',
+     why: 'The same planning tools apply everywhere, but Hawaii changes which ones matter most: land, leases, a small buyer pool, children on the mainland, and a relationship-driven culture.',
+     job: 'The role serves Hawaii owners through a Hawaii bank. Local fluency is part of credibility with owners and colleagues.',
      lessons: [
        {id: 'm17-l01', title: 'Family business in Hawaii', summary: 'Industry mix, generational patterns, and the role of relationships.'},
        {id: 'm17-l02', title: 'Land, real estate, and operating companies', summary: 'Separating property from operations, and why it matters for value and estate planning.'},
@@ -314,7 +326,12 @@ window.FBE = {
         {title: 'The Trusted Advisor', by: 'David Maister, Charles Green, Robert Galford', when: 'Phase 3', note: 'The standard book on how professional advisors earn trust. Its trust equation is a useful self-check.'},
         {title: 'Humble Inquiry', by: 'Edgar Schein', when: 'Phase 3', note: 'A short book on asking instead of telling. Directly useful for discovery meetings.'},
         {title: 'Crucial Conversations', by: 'Kerry Patterson and co-authors', when: 'Phase 3', note: 'Tools for high-stakes conversations where emotions run high, which describes most family succession meetings.'},
-        {title: 'The Coaching Habit', by: 'Michael Bungay Stanier', when: 'Phase 3', note: 'Seven questions that keep you curious and stop you from giving advice too early.'}
+        {title: 'The Coaching Habit', by: 'Michael Bungay Stanier', when: 'Phase 3', note: 'Seven questions that keep you curious and stop you from giving advice too early.'},
+        {title: 'Managing Transitions', by: 'William Bridges', when: 'Phase 3', note: 'Endings, the neutral zone, and new beginnings. The best framework for what owners go through emotionally after a sale.'},
+        {title: 'Motivational Interviewing', by: 'William R. Miller and Stephen Rollnick', when: 'Phase 3', note: 'How to help people find their own reasons to change. Written for helping professions; the core skills transfer directly.'},
+        {title: 'Difficult Conversations', by: 'Douglas Stone, Bruce Patton, Sheila Heen', when: 'Phase 3', note: 'From the Harvard Negotiation Project. Useful for delivering hard news about value, readiness, and successors.'},
+        {title: 'Influence Without Authority', by: 'Allan R. Cohen and David L. Bradford', when: 'Phase 3', note: 'The currencies framework for getting results through partners who do not report to you.'},
+        {title: 'The Pyramid Principle', by: 'Barbara Minto', when: 'Phase 3', note: 'Structuring findings and client materials around the conclusion.'}
       ]},
       {title: 'Organizations, podcasts, and ongoing learning', items: [
         {title: 'Exit Planning Institute', by: 'exit-planning-institute.org', when: 'Ongoing', url: 'https://exit-planning-institute.org/', note: 'The CEPA credentialing body. Its State of Owner Readiness research reports are useful for client conversations and for understanding what the CEPA emphasizes.'},
