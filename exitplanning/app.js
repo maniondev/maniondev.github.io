@@ -13,9 +13,9 @@ var BOX_DAYS = {1:1, 2:3, 3:7, 4:16, 5:35};
 function readJSON(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
 function writeJSON(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 
-function blankState(){ return {v:1, lessons:{}, quiz:{}, notes:{}, read:{}, diag:[]}; }
+function blankState(){ return {v:1, lessons:{}, quiz:{}, notes:{}, read:{}, clips:{}, cats:{}, diag:[]}; }
 var S = readJSON(STATE_KEY, null) || blankState();
-['lessons','quiz','notes','read'].forEach(function(k){ if(!S[k]) S[k] = {}; });
+['lessons','quiz','notes','read','clips','cats'].forEach(function(k){ if(!S[k]) S[k] = {}; });
 if(!Array.isArray(S.diag)) S.diag = [];
 
 function save(){ writeJSON(STATE_KEY, S); Sync.schedule(); updateChrome(); }
@@ -24,7 +24,7 @@ function now(){ return Date.now(); }
 /* merge two states: newest timestamp wins per entry */
 function merge(a, b){
   var out = blankState();
-  ['lessons','quiz','notes','read'].forEach(function(k){
+  ['lessons','quiz','notes','read','clips','cats'].forEach(function(k){
     var x = a[k] || {}, y = b[k] || {};
     Object.keys(x).concat(Object.keys(y)).forEach(function(id){
       var p = x[id], q = y[id];
@@ -275,6 +275,7 @@ function vHome(){
   h += '<li><b>Complete modules in order.</b> Later modules use terms and concepts introduced in earlier ones.</li>';
   h += '<li><b>Take the quiz at the end of each lesson.</b> Answered questions enter the review queue. Missed questions return the next day; correct answers return after 3, 7, 16, and 35 days.</li>';
   h += '<li><b>Write out exercise answers.</b> Each exercise applies the lesson to a client situation. Answers are saved and synced.</li>';
+  h += '<li><b>Save passages.</b> Select any text in a lesson and choose Save to file it under a category, with an optional note. Saved passages are collected on the Saved page.</li>';
   h += '<li><b>Questions and feedback.</b> Bring questions or exercise answers to chat for review.</li>';
   h += '</ul></div></div>';
   view.innerHTML = h;
@@ -324,12 +325,12 @@ function vModule(id){
   view.innerHTML = h;
 }
 
-function vLesson(id){
+function vLesson(id, clipId){
   setNav('roadmap');
   var ls = lessonStub(id), L = C.lessons[id];
   if(!ls || !L){ return vNotFound(); }
   var m = ls.m, p = phaseById(m.phase);
-  var h = '<div class="wrap page"><p class="crumbs"><a href="#/roadmap">Roadmap</a> / <a href="#/m/' + m.id + '">Module ' + m.num + '. ' + esc(m.title) + '</a></p>';
+  var h = '<div class="wrap page" data-lesson="' + esc(id) + '"><p class="crumbs"><a href="#/roadmap">Roadmap</a> / <a href="#/m/' + m.id + '">Module ' + m.num + '. ' + esc(m.title) + '</a></p>';
   h += '<p class="eyebrow">Lesson ' + m.num + '.' + (ls.i + 1) + (L.minutes ? ' // about ' + L.minutes + ' min' : '') + '</p>';
   h += '<h1 class="big">' + esc(ls.stub.title) + '</h1><p class="lede">' + esc(ls.stub.summary) + '</p>';
   if(L.objectives){
@@ -572,6 +573,326 @@ function vNotFound(){
   view.innerHTML = '<div class="wrap page"><h1 class="big">Not found</h1><p class="lede">That page is not published yet.</p><a class="btn" href="#/">Home</a></div>';
 }
 
+
+/* ================= saved passages ================= */
+var UNCAT = '_none';
+function uid(p){ return p + now().toString(36) + Math.random().toString(36).slice(2, 7); }
+function squash(s){ return String(s || '').replace(/\s+/g, ''); }
+function normText(s){ return String(s || '').replace(/\s+/g, ' ').trim(); }
+function liveCats(){
+  return Object.keys(S.cats).filter(function(id){ return S.cats[id] && !S.cats[id].deleted; })
+    .map(function(id){ return {id: id, name: S.cats[id].name}; })
+    .sort(function(a, b){ return a.name.toLowerCase().localeCompare(b.name.toLowerCase()); });
+}
+function liveClips(){
+  return Object.keys(S.clips).map(function(id){ var c = S.clips[id]; if(!c || c.deleted) return null; var o = {id: id}; for(var k in c) o[k] = c[k]; return o; })
+    .filter(Boolean).sort(function(a, b){ return (b.created || 0) - (a.created || 0); });
+}
+function catOf(c){ return (c.cat && S.cats[c.cat] && !S.cats[c.cat].deleted) ? c.cat : UNCAT; }
+function catName(id){ return id === UNCAT ? 'Uncategorized' : (S.cats[id] ? S.cats[id].name : 'Uncategorized'); }
+function lessonLabel(lid){ var ls = lessonStub(lid); return ls ? 'Lesson ' + ls.m.num + '.' + (ls.i + 1) + ': ' + ls.stub.title : lid; }
+function lessonShort(lid){ var ls = lessonStub(lid); return ls ? 'Lesson ' + ls.m.num + '.' + (ls.i + 1) : lid; }
+function fmtDate(t){ try{ return new Date(t).toLocaleDateString(undefined, {year: 'numeric', month: 'short', day: 'numeric'}); }catch(e){ return ''; } }
+function findCatByName(name){ var n = name.trim().toLowerCase(); var hit = liveCats().filter(function(c){ return c.name.toLowerCase() === n; })[0]; return hit ? hit.id : null; }
+function makeCat(name){
+  name = normText(name).slice(0, 60);
+  if(!name) return null;
+  var ex = findCatByName(name); if(ex) return ex;
+  var id = uid('k'); S.cats[id] = {name: name, created: now(), t: now()}; return id;
+}
+
+/* toast */
+var toastTimer = null;
+function toast(html){
+  var el = document.getElementById('toast');
+  if(!el){ el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+  el.innerHTML = html; el.hidden = false; el.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(function(){ el.classList.remove('show'); setTimeout(function(){ el.hidden = true; }, 250); }, 3200);
+}
+
+/* clipboard with fallbacks */
+function copyText(t){
+  var fallback = function(){
+    var ta = document.createElement('textarea');
+    ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.left = '0'; ta.style.opacity = '0'; ta.style.fontSize = '16px';
+    document.body.appendChild(ta); ta.focus(); ta.select(); try{ ta.setSelectionRange(0, t.length); }catch(e){}
+    var ok = false; try{ ok = document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta);
+    if(!ok) throw new Error('copy failed');
+  };
+  if(navigator.clipboard && window.isSecureContext){ return navigator.clipboard.writeText(t).catch(function(){ fallback(); }); }
+  return new Promise(function(res){ fallback(); res(); });
+}
+function copyOrShow(t, label){
+  copyText(t).then(function(){ toast(esc(label) + ' copied. Paste it into Claude or your AI chat.'); })
+  .catch(function(){ openSheet('<h3>Copy for AI</h3><p class="small muted">Automatic copy was blocked by this browser. Select the text below and copy it.</p><textarea class="notes" style="min-height:260px" readonly>' + esc(t) + '</textarea><div class="btnrow"><button class="btn" data-close>Done</button></div>', function(sh){ var ta = $('textarea', sh); ta.focus(); ta.select(); }); });
+}
+var AI_INTRO = 'I am studying exit planning, succession planning, business valuation, and family business advisory. I am preparing for a Family Business & Entrepreneurs Advisor role at a bank and for the CEPA (Certified Exit Planning Advisor) credential. Below are passages I saved from my study program';
+var AI_ASK = ['Please:', '1. Summarize the key concepts in plain language.', '2. Explain how the passages connect to each other and to exit planning practice, including the Exit Planning Institute\'s Value Acceleration Methodology where relevant.', '3. Point out anything that seems incomplete, outdated, or worth verifying.', '4. Write 5 review questions with answers based on these passages.'];
+function clipLines(list){
+  var out = [];
+  list.forEach(function(c, i){ out.push((i + 1) + '. "' + c.text + '"'); out.push('   Source: ' + lessonLabel(c.lesson)); if(c.note) out.push('   My note: ' + c.note); out.push(''); });
+  return out;
+}
+function aiTextForCat(name, list){
+  return [AI_INTRO + ', in the category "' + name + '".', ''].concat(AI_ASK, ['', 'Saved passages:', ''], clipLines(list)).join('\n').trim();
+}
+function aiTextAll(groups){
+  var out = [AI_INTRO + ', grouped by category.', ''].concat(AI_ASK.slice(0, 1), ['1. For each category, summarize the key concepts in plain language.'], AI_ASK.slice(2), ['']);
+  groups.forEach(function(g){ out.push('## ' + g.name); out.push(''); out = out.concat(clipLines(g.clips)); });
+  return out.join('\n').trim();
+}
+
+/* modal sheet */
+function closeSheet(){
+  var bd = document.querySelector('.sheet-backdrop'); if(bd) bd.parentNode.removeChild(bd);
+  document.body.classList.remove('sheet-open');
+  if(closeSheet.restore){ try{ closeSheet.restore.focus(); }catch(e){} closeSheet.restore = null; }
+}
+function openSheet(inner, onOpen){
+  closeSheet();
+  closeSheet.restore = document.activeElement;
+  var bd = document.createElement('div'); bd.className = 'sheet-backdrop';
+  bd.innerHTML = '<div class="sheet" role="dialog" aria-modal="true">' + inner + '</div>';
+  document.body.appendChild(bd); document.body.classList.add('sheet-open');
+  var sh = $('.sheet', bd);
+  bd.addEventListener('mousedown', function(e){ if(e.target === bd) closeSheet(); });
+  $all('[data-close]', sh).forEach(function(b){ b.addEventListener('click', closeSheet); });
+  sh.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ e.preventDefault(); closeSheet(); } });
+  if(onOpen) onOpen(sh);
+  return sh;
+}
+
+/* save sheet */
+function openSaveSheet(p){
+  var cats = liveCats(), last = null;
+  try{ last = localStorage.getItem('fbe.lastCat'); }catch(e){}
+  if(!last || !S.cats[last] || S.cats[last].deleted) last = cats.length ? cats[0].id : '';
+  var h = '<h3>Save passage</h3>';
+  h += '<blockquote class="sheet-quote">' + esc(p.text) + '</blockquote>';
+  h += '<p class="small faint" style="margin:-4px 0 14px">' + esc(lessonLabel(p.lesson)) + '</p>';
+  h += '<p class="flabel">Category</p><div class="chips" role="radiogroup" aria-label="Category">';
+  cats.forEach(function(c){ h += '<button type="button" class="chip" role="radio" data-cat="' + c.id + '" aria-checked="' + (c.id === last) + '">' + esc(c.name) + '</button>'; });
+  h += '<button type="button" class="chip chip-new" role="radio" data-cat="__new" aria-checked="' + (!cats.length) + '">+ New category</button></div>';
+  h += '<div class="field newcat"' + (cats.length ? ' hidden' : '') + '><input id="newcat" type="text" maxlength="60" placeholder="Category name, for example Valuation" autocomplete="off" enterkeyhint="done"></div>';
+  h += '<div class="field"><label for="clipnote" class="flabel">Note <span class="faint">(optional)</span></label><input id="clipnote" type="text" maxlength="200" placeholder="Why this matters, or what to remember" autocomplete="off" enterkeyhint="done"></div>';
+  h += '<p class="sheet-err" id="sheeterr" role="alert"></p>';
+  h += '<div class="btnrow sheet-actions"><button type="button" class="btn ghost" data-close>Cancel</button><button type="button" class="btn" id="dosave">Save</button></div>';
+  openSheet(h, function(sh){
+    var chosen = cats.length ? last : '__new';
+    var newWrap = $('.newcat', sh), newIn = $('#newcat', sh);
+    $all('.chip', sh).forEach(function(ch){ ch.addEventListener('click', function(){
+      chosen = ch.getAttribute('data-cat');
+      $all('.chip', sh).forEach(function(x){ x.setAttribute('aria-checked', x === ch ? 'true' : 'false'); });
+      newWrap.hidden = chosen !== '__new';
+      if(chosen === '__new') newIn.focus();
+    }); });
+    var doSave = function(){
+      var catId = chosen;
+      if(chosen === '__new'){
+        if(!normText(newIn.value)){ $('#sheeterr', sh).textContent = 'Enter a name for the new category.'; newIn.focus(); return; }
+        catId = makeCat(newIn.value);
+      }
+      var id = uid('c');
+      S.clips[id] = {text: p.text, lesson: p.lesson, cat: catId, note: normText($('#clipnote', sh).value).slice(0, 200), created: now(), t: now()};
+      try{ localStorage.setItem('fbe.lastCat', catId); }catch(e){}
+      save(); closeSheet();
+      try{ window.getSelection().removeAllRanges(); }catch(e){}
+      toast('Saved to <b>' + esc(catName(catId)) + '</b>. <a href="#/saved">View saved</a>');
+    };
+    $('#dosave', sh).addEventListener('click', doSave);
+    [newIn, $('#clipnote', sh)].forEach(function(inp){ inp.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSave(); } }); });
+    if(!cats.length) newIn.focus(); else $('#dosave', sh).focus();
+  });
+}
+
+/* selection -> floating save button */
+var selBtn = null, pending = null, selTimer = null, pressing = false, suppressSel = 0;
+function hideSelBtn(){ if(selBtn) selBtn.hidden = true; }
+function ensureSelBtn(){
+  if(selBtn) return selBtn;
+  selBtn = document.createElement('button');
+  selBtn.type = 'button'; selBtn.className = 'selsave'; selBtn.hidden = true;
+  selBtn.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Save selection</span>';
+  var press = function(){ pressing = true; setTimeout(function(){ pressing = false; }, 900); };
+  selBtn.addEventListener('pointerdown', press);
+  selBtn.addEventListener('touchstart', press, {passive: true});
+  selBtn.addEventListener('mousedown', function(e){ e.preventDefault(); });
+  selBtn.addEventListener('click', function(){ var p = pending; hideSelBtn(); if(p) openSaveSheet(p); });
+  document.body.appendChild(selBtn);
+  return selBtn;
+}
+function checkSelection(){
+  if(now() < suppressSel || document.querySelector('.sheet')) return;
+  var sel = window.getSelection ? window.getSelection() : null;
+  if(!sel || sel.isCollapsed || !sel.rangeCount){ if(!pressing){ hideSelBtn(); pending = null; } return; }
+  var text = normText(sel.toString());
+  var range = sel.getRangeAt(0);
+  var node = range.commonAncestorContainer; if(node && node.nodeType !== 1) node = node.parentNode;
+  if(!node || !node.closest){ hideSelBtn(); return; }
+  var page = node.closest('[data-lesson]');
+  if(!page || text.length < 3 || node.closest('textarea, input, button, .quiz, .completebar, .pager')){ hideSelBtn(); return; }
+  pending = {text: text.slice(0, 3000), lesson: page.getAttribute('data-lesson')};
+  var rects = range.getClientRects();
+  var r = rects.length ? rects[rects.length - 1] : range.getBoundingClientRect();
+  var b = ensureSelBtn(); b.hidden = false;
+  var bw = b.offsetWidth || 84, vw = document.documentElement.clientWidth;
+  var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  if(coarse){ b.classList.add('docked'); b.style.left = ''; b.style.top = ''; return; }
+  b.classList.remove('docked');
+  var left = Math.max(8, Math.min(r.left + r.width / 2 - bw / 2, vw - bw - 8)) + window.pageXOffset;
+  var top = r.bottom + window.pageYOffset + 10;
+  b.style.left = left + 'px'; b.style.top = top + 'px';
+}
+document.addEventListener('selectionchange', function(){ clearTimeout(selTimer); selTimer = setTimeout(checkSelection, 220); });
+document.addEventListener('mouseup', function(){ clearTimeout(selTimer); selTimer = setTimeout(checkSelection, 20); });
+document.addEventListener('keyup', function(e){ if(e.shiftKey){ clearTimeout(selTimer); selTimer = setTimeout(checkSelection, 60); } });
+window.addEventListener('resize', function(){ if(selBtn && !selBtn.hidden) checkSelection(); });
+
+/* jump to a saved passage in its lesson */
+function findTextRange(root, text){
+  var target = squash(text); if(!target) return null;
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+  var full = '', map = [], n;
+  while((n = walker.nextNode())){
+    var v = n.nodeValue;
+    for(var i = 0; i < v.length; i++){ if(!/\s/.test(v[i])){ full += v[i]; map.push([n, i]); } }
+  }
+  var idx = full.indexOf(target);
+  if(idx < 0) idx = full.toLowerCase().indexOf(target.toLowerCase());
+  if(idx < 0) return null;
+  var a = map[idx], z = map[idx + target.length - 1];
+  var rg = document.createRange(); rg.setStart(a[0], a[1]); rg.setEnd(z[0], z[1] + 1);
+  return rg;
+}
+function jumpToClip(){
+  var parts = location.hash.replace(/^#\/?/, '').split('/');
+  if(parts[0] !== 'l' || !parts[2]) return;
+  var c = S.clips[parts[2]]; if(!c || c.deleted) return;
+  setTimeout(function(){
+    var page = document.querySelector('[data-lesson]'); if(!page) return;
+    var rg = findTextRange(page, c.text);
+    if(!rg){ toast('That passage could not be found. The lesson text may have changed since you saved it.'); return; }
+    var rect = rg.getBoundingClientRect();
+    window.scrollTo(0, Math.max(0, rect.top + window.pageYOffset - 140));
+    if(window.CSS && CSS.highlights && window.Highlight){
+      CSS.highlights.set('savedflash', new Highlight(rg));
+      setTimeout(function(){ try{ CSS.highlights.delete('savedflash'); }catch(e){} }, 6000);
+    } else {
+      suppressSel = now() + 1500;
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(rg);
+    }
+  }, 80);
+}
+
+/* saved page */
+var savedQuery = '';
+function vSaved(){
+  setNav('saved');
+  var clips = liveClips(), cats = liveCats();
+  var open = readJSON('fbe.savedOpen', {}), more = vSaved.more || (vSaved.more = {});
+  var q = savedQuery.toLowerCase();
+  var groups = cats.map(function(c){ return {id: c.id, name: c.name, clips: []}; });
+  var byId = {}; groups.forEach(function(g){ byId[g.id] = g; });
+  var unc = {id: UNCAT, name: 'Uncategorized', clips: []};
+  clips.forEach(function(c){ var g = byId[catOf(c)] || unc; g.clips.push(c); });
+  if(unc.clips.length) groups.push(unc);
+  var h = '<div class="wrap page"><p class="eyebrow">Saved passages</p><h1 class="big">Saved</h1>';
+  h += '<p class="lede">' + (clips.length ? clips.length + ' passage' + (clips.length === 1 ? '' : 's') + ' in ' + groups.length + ' categor' + (groups.length === 1 ? 'y' : 'ies') + '.' : 'Nothing saved yet.') + ' Select any text in a lesson and choose Save to add it here.</p>';
+  if(!clips.length && !cats.length){
+    h += '<div class="card"><h3>How to save a passage</h3><ol class="muted"><li>Open any lesson.</li><li>Select text by dragging with a mouse, or by pressing and holding on a phone and adjusting the handles.</li><li>Tap the <b>Save</b> button that appears below the selection.</li><li>Choose or create a category, add a note if you like, and save.</li></ol></div></div>';
+    view.innerHTML = h; return;
+  }
+  h += '<div class="savedbar"><input class="search" id="sq" type="search" placeholder="Search saved passages and notes" value="' + esc(savedQuery) + '">';
+  h += '<div class="btnrow" style="margin:0"><button class="btn ghost" id="copyall"' + (clips.length ? '' : ' disabled') + '>Copy all for AI</button><button class="btn ghost" id="newcatbtn">New category</button><button class="btn ghost" id="toggleall">Expand all</button></div></div>';
+  var anyShown = false;
+  groups.forEach(function(g){
+    var shown = g.clips.filter(function(c){ return !q || (c.text + ' ' + (c.note || '') + ' ' + lessonLabel(c.lesson) + ' ' + g.name).toLowerCase().indexOf(q) > -1; });
+    if(q && !shown.length) return;
+    anyShown = true;
+    var isOpen = q ? true : !!open[g.id];
+    h += '<section class="catgrp' + (isOpen ? ' open' : '') + '" data-g="' + g.id + '">';
+    h += '<button class="cathead" aria-expanded="' + isOpen + '" data-toggle="' + g.id + '"><span class="chev" aria-hidden="true"></span><span class="catname">' + esc(g.name) + '</span><span class="count">' + (q ? shown.length + ' of ' : '') + g.clips.length + '</span></button>';
+    h += '<div class="catbody"' + (isOpen ? '' : ' hidden') + '>';
+    h += '<div class="catactions"><button class="linkbtn" data-copy="' + g.id + '"' + (g.clips.length ? '' : ' disabled') + '>Copy for AI</button>';
+    if(g.id !== UNCAT) h += '<button class="linkbtn" data-rename="' + g.id + '">Rename</button><button class="linkbtn danger" data-delcat="' + g.id + '">Delete category</button>';
+    h += '</div>';
+    if(!shown.length) h += '<p class="small faint" style="padding:6px 0 10px">No passages in this category yet.</p>';
+    h += '<ul class="cliplist">';
+    shown.forEach(function(c){
+      var m = !!more[c.id];
+      h += '<li class="clip' + (m ? ' expanded' : '') + '" data-clip="' + c.id + '">';
+      h += '<blockquote class="cliptext">' + esc(c.text) + '</blockquote>';
+      h += '<div class="clipmeta"><span>' + esc(lessonShort(c.lesson)) + (c.note ? ' &middot; has note' : '') + '</span><button class="linkbtn" data-more="' + c.id + '" aria-expanded="' + m + '">' + (m ? 'Less' : 'More') + '</button></div>';
+      if(m){
+        h += '<div class="clipmore">';
+        h += '<dl><div><dt>Note</dt><dd>' + (c.note ? esc(c.note) : '<span class="faint">No note</span>') + ' <button class="linkbtn" data-note="' + c.id + '">' + (c.note ? 'Edit' : 'Add') + '</button></dd></div>';
+        h += '<div><dt>Saved</dt><dd>' + esc(fmtDate(c.created)) + '</dd></div>';
+        h += '<div><dt>Source</dt><dd><a href="#/l/' + esc(c.lesson) + '/' + c.id + '">' + esc(lessonLabel(c.lesson)) + '</a></dd></div>';
+        h += '<div><dt>Category</dt><dd><select class="movesel" data-move="' + c.id + '" aria-label="Move to category">';
+        cats.forEach(function(k){ h += '<option value="' + k.id + '"' + (catOf(c) === k.id ? ' selected' : '') + '>' + esc(k.name) + '</option>'; });
+        h += '<option value="' + UNCAT + '"' + (catOf(c) === UNCAT ? ' selected' : '') + '>Uncategorized</option></select></dd></div></dl>';
+        h += '<div class="btnrow" style="margin:10px 0 0"><a class="btn ghost" href="#/l/' + esc(c.lesson) + '/' + c.id + '">Go to passage</a><button class="btn danger" data-delclip="' + c.id + '">Delete</button></div>';
+        h += '</div>';
+      }
+      h += '</li>';
+    });
+    h += '</ul></div></section>';
+  });
+  if(!anyShown) h += '<p class="muted">No saved passages match "' + esc(savedQuery) + '".</p>';
+  h += '</div>';
+  var y = window.pageYOffset;
+  view.innerHTML = h;
+  if(vSaved.keepScroll){ window.scrollTo(0, y); vSaved.keepScroll = false; }
+  var redraw = function(){ vSaved.keepScroll = true; vSaved(); };
+  var sq = $('#sq');
+  if(sq){ sq.addEventListener('input', function(){ savedQuery = sq.value; var pos = sq.selectionStart; redraw(); var n = $('#sq'); if(n){ n.focus(); try{ n.setSelectionRange(pos, pos); }catch(e){} } }); }
+  $all('[data-toggle]').forEach(function(b){ b.addEventListener('click', function(){ var id = b.getAttribute('data-toggle'); var o = readJSON('fbe.savedOpen', {}); o[id] = !o[id]; writeJSON('fbe.savedOpen', o); redraw(); }); });
+  var tg = $('#toggleall');
+  if(tg){
+    var allOpen = groups.length && groups.every(function(g){ return open[g.id]; });
+    tg.textContent = allOpen ? 'Collapse all' : 'Expand all';
+    tg.addEventListener('click', function(){ var o = {}; groups.forEach(function(g){ o[g.id] = !allOpen; }); writeJSON('fbe.savedOpen', o); redraw(); });
+  }
+  $all('[data-more]').forEach(function(b){ b.addEventListener('click', function(){ var id = b.getAttribute('data-more'); more[id] = !more[id]; redraw(); }); });
+  $all('[data-copy]').forEach(function(b){ b.addEventListener('click', function(){ var g = groups.filter(function(x){ return x.id === b.getAttribute('data-copy'); })[0]; if(g && g.clips.length) copyOrShow(aiTextForCat(g.name, g.clips), '"' + g.name + '"'); }); });
+  var ca = $('#copyall'); if(ca) ca.addEventListener('click', function(){ copyOrShow(aiTextAll(groups.filter(function(g){ return g.clips.length; })), 'All saved passages'); });
+  var nc = $('#newcatbtn'); if(nc) nc.addEventListener('click', function(){ var n = window.prompt('New category name'); if(n && normText(n)){ var id = makeCat(n); var o = readJSON('fbe.savedOpen', {}); o[id] = true; writeJSON('fbe.savedOpen', o); save(); redraw(); } });
+  $all('[data-rename]').forEach(function(b){ b.addEventListener('click', function(){
+    var id = b.getAttribute('data-rename'); var n = window.prompt('Rename category', S.cats[id].name);
+    if(!n || !normText(n)) return;
+    var ex = findCatByName(n);
+    if(ex && ex !== id){
+      if(!window.confirm('A category named "' + S.cats[ex].name + '" already exists. Merge "' + S.cats[id].name + '" into it?')) return;
+      liveClips().forEach(function(c){ if(catOf(c) === id){ S.clips[c.id].cat = ex; S.clips[c.id].t = now(); } });
+      S.cats[id] = {name: S.cats[id].name, deleted: true, t: now()};
+    } else { S.cats[id] = {name: normText(n).slice(0, 60), created: S.cats[id].created, t: now()}; }
+    save(); redraw();
+  }); });
+  $all('[data-delcat]').forEach(function(b){ b.addEventListener('click', function(){
+    var id = b.getAttribute('data-delcat'); var g = byId[id]; var cnt = g ? g.clips.length : 0;
+    if(!window.confirm('Delete the category "' + S.cats[id].name + '"?' + (cnt ? ' Its ' + cnt + ' passage' + (cnt === 1 ? '' : 's') + ' will move to Uncategorized.' : ''))) return;
+    liveClips().forEach(function(c){ if(catOf(c) === id){ S.clips[c.id].cat = null; S.clips[c.id].t = now(); } });
+    S.cats[id] = {name: S.cats[id].name, deleted: true, t: now()};
+    save(); redraw();
+  }); });
+  $all('[data-note]').forEach(function(b){ b.addEventListener('click', function(){
+    var id = b.getAttribute('data-note'); var n = window.prompt('Note (leave blank to remove)', S.clips[id].note || '');
+    if(n === null) return;
+    S.clips[id].note = normText(n).slice(0, 200); S.clips[id].t = now(); save(); redraw();
+  }); });
+  $all('[data-move]').forEach(function(sel){ sel.addEventListener('change', function(){
+    var id = sel.getAttribute('data-move'); var v = sel.value;
+    S.clips[id].cat = v === UNCAT ? null : v; S.clips[id].t = now(); save();
+    toast('Moved to <b>' + esc(catName(v)) + '</b>.'); redraw();
+  }); });
+  $all('[data-delclip]').forEach(function(b){ b.addEventListener('click', function(){
+    var id = b.getAttribute('data-delclip');
+    if(!window.confirm('Delete this saved passage?')) return;
+    S.clips[id] = {deleted: true, t: now()}; save(); redraw();
+  }); });
+}
+
 /* ================= router ================= */
 function route(){
   var h = location.hash.replace(/^#\/?/, '');
@@ -580,11 +901,12 @@ function route(){
   if(!r) vHome();
   else if(r === 'roadmap') vRoadmap();
   else if(r === 'm') vModule(a);
-  else if(r === 'l') vLesson(a);
+  else if(r === 'l') vLesson(a, parts[2]);
   else if(r === 'quiz') vModuleQuiz(a);
   else if(r === 'review') vReview();
   else if(r === 'diagnostic') vDiagnostic();
   else if(r === 'glossary') vGlossary();
+  else if(r === 'saved') vSaved();
   else if(r === 'library') vLibrary();
   else if(r === 'role') vRole();
   else if(r === 'settings') vSettings();
@@ -596,15 +918,17 @@ function rerenderSoft(){
   var ae = document.activeElement;
   if(ae && (ae.tagName === 'TEXTAREA' || ae.tagName === 'INPUT')) return;
   if(document.querySelector('.quiz .opt:not(:disabled)') || document.querySelector('.quiz .nextq')) return;
+  if(document.querySelector('.sheet')) return;
   route();
 }
-window.addEventListener('hashchange', function(){ route(); window.scrollTo(0, 0); });
+window.addEventListener('hashchange', function(){ hideSelBtn(); route(); window.scrollTo(0, 0); jumpToClip(); });
 
 /* ================= boot ================= */
 try{ var th = localStorage.getItem('fbe.theme'); if(th) document.documentElement.setAttribute('data-theme', th); }catch(e){}
 
 var app = document.getElementById('app');
 route();
+jumpToClip();
 if(Sync.on()) Sync.run(); else Sync.set('off', Sync.msg);
 document.addEventListener('visibilitychange', function(){ if(!document.hidden && Sync.on()) Sync.run(); });
 })();
