@@ -551,11 +551,17 @@ function vSettings(){
     rd.onload = function(){ try{ S = merge(S, JSON.parse(rd.result)); save(); alert('Imported and merged.'); vSettings(); }catch(e){ alert('That file could not be read.'); } };
     rd.readAsText(f);
   });
+  function markTheme(){
+    var cur = document.documentElement.getAttribute('data-theme') || '';
+    $all('[data-theme-set]').forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-theme-set') === cur ? 'true' : 'false'); });
+  }
   $all('[data-theme-set]').forEach(function(b){ b.addEventListener('click', function(){
     var v = b.getAttribute('data-theme-set');
     if(v) document.documentElement.setAttribute('data-theme', v); else document.documentElement.removeAttribute('data-theme');
     try{ localStorage.setItem('fbe.theme', v); }catch(e){}
+    markTheme();
   }); });
+  markTheme();
   $('#reset').addEventListener('click', function(){
     if(!confirm('Clear all progress, quiz history and notes on this device?')) return;
     S = blankState(); writeJSON(STATE_KEY, S); updateChrome(); vSettings();
