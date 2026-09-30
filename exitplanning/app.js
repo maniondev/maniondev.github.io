@@ -354,6 +354,7 @@ function vLesson(id, clipId){
       return '<li><div class="rt">' + (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>' : esc(r.title)) + (r.by ? ' <span class="faint">// ' + esc(r.by) + '</span>' : '') + '</div>' + (r.note ? '<p class="rn">' + r.note + '</p>' : '') + '</li>';
     }).join('') + '</ul>';
   }
+  h += '<div class="aicopy"><div><p class="k">Discuss this lesson</p><p class="small muted">Copies the lesson text (objectives, reading, worked examples, key terms) with a short prompt, ready to paste into your AI chat. Quiz, exercise, and discussion are left out.</p></div><button class="btn ghost" id="copylesson">Copy lesson for AI</button></div>';
   var d = isDone(id);
   h += '<div class="completebar"><button class="btn' + (d ? ' done' : '') + '" id="markdone">' + (d ? '&#10003; Completed' : 'Mark lesson complete') + '</button><span class="small faint">' + (d ? 'Completed ' + new Date(S.lessons[id].t).toLocaleDateString() + '. Click to undo.' : 'Mark it when you have read it and done the check.') + '</span></div>';
   // pager across all ready lessons
@@ -368,10 +369,125 @@ function vLesson(id, clipId){
     mountQuiz(document.getElementById('lq'), L.quiz.map(function(q, i){ return {id: qid(id, i), q: q}; }), {title: 'Lesson ' + m.num + '.' + (ls.i + 1)});
   }
   bindNotes();
+  document.getElementById('copylesson').addEventListener('click', function(){
+    copyOrShow(lessonAiText(id), 'Lesson ' + m.num + '.' + (ls.i + 1));
+  });
   document.getElementById('markdone').addEventListener('click', function(){
     S.lessons[id] = {done: !isDone(id), t: now()};
     save(); vLesson(id);
   });
+}
+
+/* lesson to Markdown for pasting into an AI chat */
+function mdInline(node){
+  var out = '';
+  Array.prototype.forEach.call(node.childNodes, function(c){
+    if(c.nodeType === 3){ out += c.nodeValue.replace(/\s+/g, ' '); return; }
+    if(c.nodeType !== 1) return;
+    var tg = c.tagName.toLowerCase(), inner = mdInline(c);
+    if(tg === 'br') out += '\n';
+    else if((tg === 'b' || tg === 'strong') && inner.trim()) out += '**' + inner.trim() + '** ';
+    else if((tg === 'i' || tg === 'em') && inner.trim()) out += '*' + inner.trim() + '* ';
+    else out += inner;
+  });
+  return out.replace(/ +([.,;:)])/g, '$1').replace(/[ \t]+/g, ' ');
+}
+function mdBlocks(el, out, indent){
+  indent = indent || '';
+  var buf = '';
+  var flush = function(){ var t = buf.trim(); if(t) out.push(indent + t, ''); buf = ''; };
+  Array.prototype.forEach.call(el.childNodes, function(c){
+    if(c.nodeType === 3){ buf += c.nodeValue.replace(/\s+/g, ' '); return; }
+    if(c.nodeType !== 1) return;
+    var tg = c.tagName.toLowerCase();
+    if(/^(b|strong|i|em|a|span|br|code|sup|sub)$/.test(tg) && !(tg === 'span' && c.classList.contains('tag'))){ buf += mdInline({childNodes: [c]}); return; }
+    flush();
+    if(/^h[1-6]$/.test(tg)){ out.push(indent + '#'.repeat(Math.min(6, +tg[1] + 1)) + ' ' + mdInline(c).trim(), ''); }
+    else if(tg === 'p'){ var t = mdInline(c).trim(); if(t) out.push(indent + t, ''); }
+    else if(tg === 'ul' || tg === 'ol'){
+      var n = 0;
+      Array.prototype.forEach.call(c.children, function(li){
+        if(li.tagName.toLowerCase() !== 'li') return;
+        n++;
+        var sub = li.querySelectorAll(':scope > ul, :scope > ol'), clone = li.cloneNode(true);
+        Array.prototype.forEach.call(clone.querySelectorAll(':scope > ul, :scope > ol'), function(x){ x.parentNode.removeChild(x); });
+        out.push(indent + (tg === 'ol' ? n + '. ' : '- ') + mdInline(clone).trim());
+        Array.prototype.forEach.call(sub, function(x){ var o = []; mdBlocks({childNodes: [x]}, o, indent + '   '); o.forEach(function(l){ if(l) out.push(l); }); });
+      });
+      out.push('');
+    }
+    else if(tg === 'table'){
+      var rows = Array.prototype.map.call(c.querySelectorAll('tr'), function(tr){
+        return Array.prototype.map.call(tr.children, function(td){ return mdInline(td).trim().replace(/\n/g, ' ').replace(/\|/g, '/'); });
+      }).filter(function(r){ return r.length; });
+      if(rows.length){
+        var w = Math.max.apply(null, rows.map(function(r){ return r.length; }));
+        rows.forEach(function(r, i){
+          while(r.length < w) r.push('');
+          out.push(indent + '| ' + r.join(' | ') + ' |');
+          if(i === 0) out.push(indent + '|' + new Array(w + 1).join(' --- |'));
+        });
+        out.push('');
+      }
+    }
+    else if(tg === 'span' && c.classList.contains('tag')){ out.push(indent + '**[' + mdInline(c).trim() + ']**', ''); }
+    else if(tg === 'details'){
+      var sm = c.querySelector('summary');
+      out.push(indent + '**[' + (sm ? mdInline(sm).trim() : 'Details') + ']**', '');
+      var cl = c.cloneNode(true), s2 = cl.querySelector('summary'); if(s2) s2.parentNode.removeChild(s2);
+      mdBlocks(cl, out, indent);
+    }
+    else if(tg === 'summary'){ out.push(indent + '**[' + mdInline(c).trim() + ']**', ''); }
+    else if(tg === 'blockquote'){ var o = []; mdBlocks(c, o, ''); while(o.length && o[o.length - 1] === '') o.pop(); o.forEach(function(l){ out.push(indent + (l ? '> ' + l : '>')); }); out.push(''); }
+    else if(tg === 'hr'){ out.push(indent + '---', ''); }
+    else if(tg === 'div' && /\bcall\b/.test(c.className)){ mdBlocks(c, out, indent); out.push(indent + '[End of ' + ((c.querySelector('.tag') || {}).textContent || 'box').trim() + ']', ''); }
+    else mdBlocks(c, out, indent);
+  });
+  flush();
+  return out;
+}
+function htmlToMd(html){
+  var d = document.createElement('div'); d.innerHTML = html;
+  var lines = mdBlocks(d, []), res = [];
+  lines.forEach(function(l){ l = l.replace(/\s+$/, ''); if(l === '' && res.length && res[res.length - 1] === '') return; res.push(l); });
+  return res.join('\n').trim();
+}
+function lessonAiText(id){
+  var ls = lessonStub(id), L = C.lessons[id], m = ls.m, p = phaseById(m.phase);
+  var num = m.num + '.' + (ls.i + 1);
+  var out = [
+    'I am studying exit planning, succession planning, business valuation, and family business advisory. I am preparing for a Family Business & Entrepreneurs Advisor role at a bank and for the CEPA (Certified Exit Planning Advisor) credential. Below is the full text of one lesson from my study program. I want to discuss it with you as my teacher.',
+    '',
+    'Please:',
+    '1. Start by asking me what I found unclear, then explain those parts in plain language.',
+    '2. Check my understanding with questions one at a time, and correct me where I am wrong.',
+    '3. Connect the material to real client situations and to the Exit Planning Institute\'s Value Acceleration Methodology where relevant.',
+    '4. Point out anything in the lesson that seems incomplete, outdated, or worth verifying.',
+    '',
+    '---',
+    '',
+    '# Lesson ' + num + ': ' + ls.stub.title,
+    'Module ' + m.num + ': ' + m.title + (p ? ' (' + p.title + ')' : ''),
+    ''
+  ];
+  if(ls.stub.summary) out.push(ls.stub.summary, '');
+  if(L.objectives && L.objectives.length){
+    out.push('## Objectives', '');
+    L.objectives.forEach(function(o){ out.push('- ' + htmlToMd(o).replace(/\n+/g, ' ')); });
+    out.push('');
+  }
+  out.push(htmlToMd(L.body), '');
+  if(L.terms && L.terms.length){
+    out.push('## Key terms', '');
+    L.terms.forEach(function(t){ out.push('- **' + t[0] + ':** ' + htmlToMd(t[1]).replace(/\n+/g, ' ')); });
+    out.push('');
+  }
+  if(L.resources && L.resources.length){
+    out.push('## Further reading', '');
+    L.resources.forEach(function(r){ out.push('- ' + r.title + (r.by ? ' (' + r.by + ')' : '') + (r.url ? ' ' + r.url : '') + (r.note ? ': ' + htmlToMd(r.note).replace(/\n+/g, ' ') : '')); });
+    out.push('');
+  }
+  return out.join('\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
 function notesBox(key, ph){
@@ -731,7 +847,7 @@ function checkSelection(){
   var node = range.commonAncestorContainer; if(node && node.nodeType !== 1) node = node.parentNode;
   if(!node || !node.closest){ hideSelBtn(); return; }
   var page = node.closest('[data-lesson]');
-  if(!page || text.length < 3 || node.closest('textarea, input, button, .quiz, .completebar, .pager')){ hideSelBtn(); return; }
+  if(!page || text.length < 3 || node.closest('textarea, input, button, .quiz, .completebar, .aicopy, .pager')){ hideSelBtn(); return; }
   pending = {text: text.slice(0, 3000), lesson: page.getAttribute('data-lesson')};
   var rects = range.getClientRects();
   var r = rects.length ? rects[rects.length - 1] : range.getBoundingClientRect();
