@@ -823,7 +823,7 @@ function vSaved(){
       var m = !!more[c.id];
       h += '<li class="clip' + (m ? ' expanded' : '') + '" data-clip="' + c.id + '">';
       h += '<blockquote class="cliptext">' + esc(c.text) + '</blockquote>';
-      h += '<div class="clipmeta"><span>' + esc(lessonShort(c.lesson)) + (c.note ? ' &middot; has note' : '') + '</span><button class="linkbtn" data-more="' + c.id + '" aria-expanded="' + m + '">' + (m ? 'Less' : 'More') + '</button></div>';
+      h += '<div class="clipmeta"><span>' + esc(lessonShort(c.lesson)) + (c.note ? ' &middot; has note' : '') + '</span><button class="linkbtn" data-more="' + c.id + '" aria-expanded="' + m + '">' + (m ? 'Hide details' : 'Details') + '</button></div>';
       if(m){
         h += '<div class="clipmore">';
         h += '<dl><div><dt>Note</dt><dd>' + (c.note ? esc(c.note) : '<span class="faint">No note</span>') + ' <button class="linkbtn" data-note="' + c.id + '">' + (c.note ? 'Edit' : 'Add') + '</button></dd></div>';

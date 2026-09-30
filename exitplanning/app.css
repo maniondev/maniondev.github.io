@@ -283,8 +283,8 @@ body.sheet-open{overflow:hidden}
 .cliplist{list-style:none;padding:0;margin:0}
 .clip{padding:12px 0;border-top:1px solid var(--line-soft)}
 .clip:first-child{border-top:0}
-.cliptext{margin:0;padding:0 0 0 12px;border-left:3px solid var(--line);font-size:15.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-.clip.expanded .cliptext{display:block;-webkit-line-clamp:unset;border-left-color:var(--accent)}
+.cliptext{margin:0;padding:0 0 0 12px;border-left:3px solid var(--line);font-size:15.5px;line-height:1.55;white-space:normal;overflow-wrap:anywhere}
+.clip.expanded .cliptext{border-left-color:var(--accent)}
 .clipmeta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0 0 15px;font-size:13px;color:var(--ink-faint);font-family:"IBM Plex Mono",monospace}
 .clipmore{margin:10px 0 4px 15px;padding:12px 14px;background:var(--surface-2);border-radius:10px}
 .clipmore dl{margin:0;display:grid;gap:8px}
