@@ -18,13 +18,15 @@
 <meta name="twitter:description" content="Independent apps for iOS, Android, and the web.">
 <meta name="twitter:image" content="https://manionjohn.com/og-image.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #FAF6EE; color: #1F1A14; }
   a { text-decoration: none; color: inherit; }
 
   .hero { padding: 4rem 2rem 2.25rem; text-align: center; border-bottom: 1px solid #E8D8BC; }
+  .hero-logo { display: block; width: 46px; height: auto; margin: 0 auto 1.1rem; }
   .hero h1 { font-size: 42px; font-weight: 680; line-height: 1.06; margin-bottom: 0.85rem; color: #1F1A14; letter-spacing: -0.033em; }
   .hero p { font-size: 17px; color: #705A40; max-width: 420px; margin: 0 auto; line-height: 1.7; }
 
@@ -84,6 +86,10 @@
 <body>
 
 <div class="hero">
+  <picture>
+    <source srcset="/brand/jm-logo-cream.svg" media="(prefers-color-scheme: dark)">
+    <img class="hero-logo" src="/brand/jm-logo-dark-brown.svg" width="46" height="60" alt="jm logo">
+  </picture>
   <h1>John Manion</h1>
   <div class="links">
     <a href="https://www.linkedin.com/in/manion-john/" target="_blank" rel="noopener">LinkedIn</a>
