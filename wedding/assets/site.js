@@ -1,15 +1,30 @@
-// Menu toggle and countdown. Reads settings from config.js (window.WEDDING_CONFIG).
+// Header, menu toggle and countdown. Reads settings from config.js (window.WEDDING_CONFIG).
 (function () {
   var cfg = window.WEDDING_CONFIG || {};
 
-  // ----- Menu (phones). On wide screens the nav is always visible. -----
+  var header = document.getElementById("site-header");
   var button = document.getElementById("menu-button");
   var nav = document.getElementById("site-nav");
+
+  // ----- Header. On phones it sits over the photo until you scroll or open the menu. -----
+  function menuIsOpen() { return Boolean(button) && button.getAttribute("aria-expanded") === "true"; }
+  function syncHeader() {
+    if (header) header.classList.toggle("is-solid", menuIsOpen() || window.scrollY > 24);
+  }
+  window.addEventListener("scroll", syncHeader, { passive: true });
+  syncHeader();
+
+  // ----- Menu (phones). On wide screens the nav is always visible. -----
   if (button && nav) {
     var setOpen = function (open) {
       button.setAttribute("aria-expanded", String(open));
       nav.classList.toggle("is-open", open);
+      document.documentElement.classList.toggle("menu-open", open);
+      syncHeader();
     };
+    window.matchMedia("(min-width: 960px)").addEventListener("change", function (e) {
+      if (e.matches) setOpen(false);
+    });
     button.addEventListener("click", function () {
       setOpen(button.getAttribute("aria-expanded") !== "true");
     });
