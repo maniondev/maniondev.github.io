@@ -13,8 +13,8 @@ Nothing on the personal site links here.
 | `assets/site.css` | All styles. Colors and fonts are tokens at the top |
 | `assets/site.js` | Phone menu and countdown |
 | `assets/config.js` | Generated from `site.config.json`. Don't edit by hand |
-| `assets/fonts/` | Self-hosted Young Serif and Nunito Sans, with their OFL licenses |
-| `assets/img/` | Photos (empty for now) |
+| `assets/fonts/` | Self-hosted Cormorant Garamond and Nunito Sans, with their OFL licenses |
+| `assets/img/` | Photos. `hero-tall.jpg` is the phone crop of the top photo, `hero.jpg` the desktop crop |
 | `og-image.png` | Picture shown when the link is texted or posted |
 | `site.config.json` | Site URL, wedding date, ceremony start, contact email, RSVP settings |
 | `build.mjs` | Writes config values into the pages and checks for hardcoded paths |
@@ -84,7 +84,7 @@ node tools/render-images.mjs   # needs Playwright
 
 ## Fonts
 
-Young Serif (headings) and Nunito Sans (body) are both under the SIL Open Font License. They were picked because they include the ʻokina (U+02BB) and the kahakō vowels. Fraunces, used elsewhere on manionjohn.com, has no ʻokina. Write the ʻokina as the real character `ʻ`, not an apostrophe or a curly quote.
+Cormorant Garamond (names and headings, with its italic for the ampersand) and Nunito Sans (body) are both under the SIL Open Font License. They were picked because they include the ʻokina (U+02BB) and the kahakō vowels. Fraunces, used elsewhere on manionjohn.com, has no ʻokina. Write the ʻokina as the real character `ʻ`, not an apostrophe or a curly quote.
 
 ## Deploying
 

@@ -14,20 +14,21 @@
   html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
   .og { width: 1200px; height: 630px; display: grid; grid-template-columns: 504px 1fr; background: var(--seafoam); color: var(--ink); }
   .og img { width: 504px; height: 630px; object-fit: cover; object-position: center 60%; }
-  .og-text { display: grid; place-content: center; text-align: center; gap: 22px; padding: 0 40px; }
-  .og h1 { font-size: 104px; line-height: 1; color: var(--teal); }
-  .og .date { font-family: var(--body); font-weight: 700; font-size: 36px; }
-  .og .place { font-family: var(--body); font-size: 30px; color: var(--muted); line-height: 1.35; }
-  .og .rule { width: 72px; height: 2px; background: var(--seafoam-deep); justify-self: center; }
+  .og-text { display: grid; place-content: center; justify-items: center; text-align: center; gap: 22px; padding: 0 40px; }
+  .og h1 { font-size: 118px; font-weight: 500; line-height: 1; color: var(--teal); }
+  .og .date { font-family: var(--display); font-size: 58px; font-weight: 500; letter-spacing: 0.1em; color: var(--teal); line-height: 1; }
+  .og .date .dot { font-size: 0.7em; vertical-align: 0.12em; margin: 0 0.1em; }
+  .og .place { font-family: var(--body); font-size: 24px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); line-height: 1.5; }
+  .og .rule { width: 84px; height: 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 12'%3E%3Cpath d='M2 6c5-5 10-5 15 0s10 5 15 0 10-5 15 0 10 5 15 0' fill='none' stroke='%2305474A' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat; }
 </style>
 </head>
 <body>
   <div class="og">
     <img src="../assets/img/hero.jpg" alt="">
     <div class="og-text">
-      <h1>John &amp; Ani</h1>
+      <h1>John <span class="amp">&amp;</span> Ani</h1>
       <span class="rule"></span>
-      <p class="date">Sunday, September 5, 2027</p>
+      <p class="date">9<span class="dot">·</span>5<span class="dot">·</span>27</p>
       <p class="place">Heʻeia State Park<br>Kāneʻohe, Oʻahu</p>
     </div>
   </div>

@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>John &amp; Ani · September 5, 2027</title>
+<title>John &amp; Ani · 9.5.27</title>
 <meta name="description" content="John and Ani’s wedding on Sunday, September 5, 2027 at Heʻeia State Park, Kāneʻohe, Oʻahu. Schedule, travel, and RSVP.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F0F8F5">
 <meta property="og:type" content="website">
-<meta property="og:title" content="John &amp; Ani · September 5, 2027">
-<meta property="og:description" content="Our wedding at Heʻeia State Park on Oʻahu. Schedule, travel, and RSVP.">
+<meta property="og:title" content="John &amp; Ani · 9.5.27">
+<meta property="og:description" content="Sunday, September 5, 2027 at Heʻeia State Park, Oʻahu. Schedule, travel, and RSVP.">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="John and Ani at a table on the beach at sunset, with the date September 5, 2027 and Heʻeia State Park, Kāneʻohe, Oʻahu">
+<meta property="og:image:alt" content="John and Ani at a table on the beach at sunset, with the date 9 · 5 · 27 and Heʻeia State Park, Kāneʻohe, Oʻahu">
 <meta name="twitter:card" content="summary_large_image">
 <!-- build:head -->
 <link rel="canonical" href="https://manionjohn.com/wedding/">
@@ -24,59 +24,70 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 <script>document.documentElement.className += " js";</script>
 <script src="assets/config.js" defer></script>
 <script src="assets/site.js" defer></script>
 </head>
-<body id="top">
+<body id="top" class="has-hero">
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="header-inner">
-    <a class="monogram" href="#top" aria-label="John and Ani, back to top">J &amp; A</a>
+    <a class="monogram" href="#top" aria-label="John and Ani, back to top">J <span class="amp">&amp;</span> A</a>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#attire">What to wear</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="nav-rsvp"><a class="btn btn-large" href="rsvp/">RSVP</a></li>
+      </ul>
+    </nav>
     <div class="header-actions">
-      <a class="btn btn-small" href="rsvp/">RSVP</a>
+      <a class="btn btn-small btn-header" href="rsvp/">RSVP</a>
       <button class="btn btn-small btn-outline menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="menu-open-label">Menu</span><span class="menu-close-label">Close</span>
       </button>
     </div>
   </div>
-  <nav class="site-nav" id="site-nav" aria-label="Sections">
-    <ul>
-      <li><a href="#story">Our story</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#venue">Venue and parking</a></li>
-      <li><a href="#travel">Travel and stay</a></li>
-      <li><a href="#attire">What to wear</a></li>
-      <li><a href="#registry">Registry</a></li>
-      <li><a href="#faq">Questions</a></li>
-      <li><a href="rsvp/">RSVP</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main id="main">
 
   <section class="hero" aria-labelledby="names">
-    <div class="hero-inner">
-      <h1 id="names">John &amp; Ani</h1>
-      <p class="hero-date">Sunday, September 5, 2027</p>
-      <p class="hero-place">Heʻeia State Park<br>Kāneʻohe, Oʻahu</p>
-      <img class="hero-photo" src="assets/img/hero.jpg" width="1080" height="1350" alt="John and Ani at a flower-covered table on the beach at sunset">
-      <div class="countdown" id="countdown" role="timer" aria-label="Countdown to the wedding" hidden></div>
-      <p class="hero-welcome"><span class="tbd">[TBD] Short welcome line</span></p>
-      <a class="btn btn-large" href="rsvp/">RSVP</a>
-      <p class="hero-rsvp-note">Please RSVP by <span class="tbd">[TBD] RSVP deadline</span></p>
+    <picture class="hero-photo">
+      <source media="(min-width: 960px)" srcset="assets/img/hero.jpg" width="1440" height="1800">
+      <img src="assets/img/hero-tall.jpg" width="1200" height="1800" alt="John and Ani at a flower-covered table on the beach at sunset">
+    </picture>
+    <div class="hero-names">
+      <h1 id="names">John <span class="amp">&amp;</span> Ani</h1>
     </div>
-    <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 28 C 180 4 360 4 540 22 C 720 40 900 44 1080 26 C 1230 12 1340 10 1440 18 L 1440 48 L 0 48 Z"/></svg>
+    <div class="hero-meta">
+      <p class="hero-date"><span aria-hidden="true">9<span class="dot">·</span>5<span class="dot">·</span>27</span><span class="visually-hidden">September 5, 2027</span></p>
+      <p class="hero-place">Heʻeia State Park · Oʻahu</p>
+    </div>
   </section>
+
+  <div class="intro">
+    <div class="intro-inner">
+      <p class="intro-date">Sunday, September 5, 2027</p>
+      <p class="intro-place">Heʻeia State Park, Kāneʻohe, Oʻahu</p>
+      <div class="countdown" id="countdown" role="timer" aria-label="Countdown to the wedding" hidden></div>
+      <p class="intro-welcome"><span class="tbd">[TBD] Short welcome line</span></p>
+      <a class="btn btn-large" href="rsvp/">RSVP</a>
+      <p class="intro-rsvp-note">Please RSVP by <span class="tbd">[TBD] RSVP deadline</span></p>
+    </div>
+  </div>
 
   <section class="section" id="story" aria-labelledby="story-title">
     <div class="section-inner">
-      <h2 id="story-title">Our story</h2>
+      <h2 class="section-title" id="story-title">Our story</h2>
       <div class="stack">
         <p class="tbd-block">[TBD] How we met: a paragraph or two.</p>
         <p class="tbd-block">[TBD] The proposal, and why we chose Oʻahu.</p>
@@ -94,7 +105,7 @@
 
   <section class="section band" id="schedule" aria-labelledby="schedule-title">
     <div class="section-inner">
-      <h2 id="schedule-title">Schedule</h2>
+      <h2 class="section-title" id="schedule-title">Schedule</h2>
       <p class="section-intro">Sunday, September 5, 2027. All times are Hawaiʻi time.</p>
       <ol class="timeline">
         <li><span class="time"><span class="tbd">[TBD]</span></span><span class="what">Guests arrive <span class="detail"><span class="tbd">[TBD] Where to go when you arrive</span></span></span></li>
@@ -117,18 +128,18 @@
 
   <section class="section" id="venue" aria-labelledby="venue-title">
     <div class="section-inner">
-      <h2 id="venue-title">Venue</h2>
-      <div class="stack">
+      <h2 class="section-title" id="venue-title">Venue</h2>
+      <div class="venue-name">
         <h3>Heʻeia State Park</h3>
         <address class="address">46-465 Kamehameha Hwy<br>Kāneʻohe, HI 96744</address>
-        <p>The park sits on Keʻalohi Point on the windward side of Oʻahu, looking out over Kāneʻohe Bay toward Mokuoloʻe (Coconut Island).</p>
-        <p><span class="tbd">[TBD] Where in the park the ceremony and reception are</span></p>
       </div>
+      <p>The park sits on Keʻalohi Point on the windward side of Oʻahu, looking out over Kāneʻohe Bay toward Mokuoloʻe (Coconut Island).</p>
+      <p><span class="tbd">[TBD] Where in the park the ceremony and reception are</span></p>
       <iframe class="map-frame" title="Map of Heʻeia State Park" loading="lazy" referrerpolicy="no-referrer"
         src="https://www.openstreetmap.org/export/embed.html?bbox=-157.8239%2C21.4317%2C-157.7939%2C21.4477&amp;layer=mapnik&amp;marker=21.43972%2C-157.80889"></iframe>
       <div class="button-row">
-        <a class="btn" href="https://maps.apple.com/?daddr=46-465+Kamehameha+Hwy,+Kaneohe,+HI+96744&amp;q=Heeia+State+Park" target="_blank" rel="noopener">Directions in Apple Maps</a>
-        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Heeia+State+Park%2C+46-465+Kamehameha+Hwy%2C+Kaneohe%2C+HI+96744" target="_blank" rel="noopener">Directions in Google Maps</a>
+        <a class="btn" href="https://maps.apple.com/?daddr=46-465+Kamehameha+Hwy,+Kaneohe,+HI+96744&amp;q=Heeia+State+Park" target="_blank" rel="noopener">Open in Apple Maps</a>
+        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Heeia+State+Park%2C+46-465+Kamehameha+Hwy%2C+Kaneohe%2C+HI+96744" target="_blank" rel="noopener">Open in Google Maps</a>
       </div>
 
       <div class="sub">
@@ -148,10 +159,13 @@
     </div>
   </section>
 
+  <figure class="photo-band">
+    <img src="assets/img/sunset.jpg" width="1280" height="853" loading="lazy" alt="Ani and John smiling at sunset with palm trees behind them">
+  </figure>
+
   <section class="section band" id="travel" aria-labelledby="travel-title">
     <div class="section-inner">
-      <h2 id="travel-title">Travel and stay</h2>
-      <img class="wide-photo" src="assets/img/sunset.jpg" width="1280" height="853" loading="lazy" alt="Ani and John smiling at sunset with palm trees behind them">
+      <h2 class="section-title" id="travel-title">Travel and stay</h2>
       <div class="note">
         <p class="note-title">It’s Labor Day weekend</p>
         <p>The wedding is on the Sunday of Labor Day weekend, and Monday, September 6 is the holiday. Flights, hotels, and rental cars on Oʻahu fill up and get expensive, so please book early.</p>
@@ -197,7 +211,7 @@
 
   <section class="section" id="attire" aria-labelledby="attire-title">
     <div class="section-inner">
-      <h2 id="attire-title">What to wear</h2>
+      <h2 class="section-title" id="attire-title">What to wear</h2>
       <p class="tbd-block">[TBD] Dress code</p>
       <ul class="list">
         <li><strong>Grass and uneven ground.</strong> Parts of the day are outdoors on grass. Flats, wedges, or block heels are easier than stilettos.</li>
@@ -210,7 +224,7 @@
 
   <section class="section band" id="registry" aria-labelledby="registry-title">
     <div class="section-inner">
-      <h2 id="registry-title">Registry</h2>
+      <h2 class="section-title" id="registry-title">Registry</h2>
       <p class="tbd-block">[TBD] A note about gifts</p>
       <div class="cards two">
         <div class="card">
@@ -227,7 +241,7 @@
 
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="section-inner">
-      <h2 id="faq-title">Questions</h2>
+      <h2 class="section-title" id="faq-title">Questions</h2>
       <div class="faq">
         <div class="faq-item">
           <h3>When do I need to RSVP by?</h3>
@@ -243,7 +257,7 @@
         </div>
         <div class="faq-item">
           <h3>Where do I park?</h3>
-          <p>In the park’s main lot or front lot. Please don’t park on the grass, and carpool if you can. See <a href="#venue">Venue and parking</a>.</p>
+          <p>In the park’s main lot or front lot. Please don’t park on the grass, and carpool if you can. See <a href="#venue">Venue</a>.</p>
         </div>
         <div class="faq-item">
           <h3>What happens if it rains?</h3>
@@ -281,9 +295,10 @@
 
 <footer class="site-footer">
   <div class="section-inner">
-    <p class="footer-names">John &amp; Ani</p>
+    <p class="footer-names">John <span class="amp">&amp;</span> Ani</p>
+    <p class="footer-date"><span aria-hidden="true">9 · 5 · 27</span><span class="visually-hidden">September 5, 2027</span></p>
     <p>Questions? Email us at <!-- build:contact --><span class="tbd">[TBD] contact email</span><!-- /build:contact --></p>
-    <p class="footer-small">Sunday, September 5, 2027 · Heʻeia State Park, Kāneʻohe, Oʻahu</p>
+    <p class="footer-small">Heʻeia State Park, Kāneʻohe, Oʻahu</p>
     <p class="footer-small"><a href="#top">Back to top</a></p>
   </div>
 </footer>
