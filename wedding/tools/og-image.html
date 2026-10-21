@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Link preview image source</title>
+<!--
+  Source for ../og-image.png (the picture shown when the link is texted or posted).
+  To regenerate: open this file in Chrome at a 1200x630 window and take a screenshot,
+  or run: node tools/render-images.mjs
+-->
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  .og { width: 1200px; height: 630px; display: grid; grid-template-columns: 504px 1fr; background: var(--seafoam); color: var(--ink); }
+  .og img { width: 504px; height: 630px; object-fit: cover; object-position: center 60%; }
+  .og-text { display: grid; place-content: center; text-align: center; gap: 22px; padding: 0 40px; }
+  .og h1 { font-size: 104px; line-height: 1; color: var(--teal); }
+  .og .date { font-family: var(--body); font-weight: 700; font-size: 36px; }
+  .og .place { font-family: var(--body); font-size: 30px; color: var(--muted); line-height: 1.35; }
+  .og .rule { width: 72px; height: 2px; background: var(--seafoam-deep); justify-self: center; }
+</style>
+</head>
+<body>
+  <div class="og">
+    <img src="../assets/img/hero.jpg" alt="">
+    <div class="og-text">
+      <h1>John &amp; Ani</h1>
+      <span class="rule"></span>
+      <p class="date">Sunday, September 5, 2027</p>
+      <p class="place">Heʻeia State Park<br>Kāneʻohe, Oʻahu</p>
+    </div>
+  </div>
+</body>
+</html>
