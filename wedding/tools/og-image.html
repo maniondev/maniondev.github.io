@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Link preview image source</title>
+<!--
+  Source for ../og-image.png (the picture shown when the link is texted or posted).
+  To regenerate: open this file in Chrome at a 1200x630 window and take a screenshot,
+  or run: node tools/render-images.mjs
+-->
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  .og {
+    width: 1200px; height: 630px; position: relative; background: var(--seafoam);
+    display: grid; place-content: center; text-align: center; gap: 18px; color: var(--ink);
+  }
+  .og h1 { font-size: 132px; line-height: 1; }
+  .og .date { font-family: var(--body); font-weight: 700; font-size: 40px; }
+  .og .place { font-family: var(--body); font-size: 34px; color: var(--muted); }
+  .og svg { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 120px; }
+</style>
+</head>
+<body>
+  <div class="og">
+    <h1>John &amp; Ani</h1>
+    <p class="date">Sunday, September 5, 2027</p>
+    <p class="place">Heʻeia State Park · Kāneʻohe, Oʻahu</p>
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C 150 30 300 30 450 54 C 600 78 750 84 900 60 C 1025 42 1120 40 1200 48 L 1200 120 L 0 120 Z" fill="#B7DECF"/>
+      <path d="M0 90 C 160 70 320 70 480 86 C 640 102 800 106 960 90 C 1070 80 1140 78 1200 82 L 1200 120 L 0 120 Z" fill="#0B6466"/>
+    </svg>
+  </div>
+</body>
+</html>

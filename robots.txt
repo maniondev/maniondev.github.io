@@ -1,0 +1,3 @@
+# The wedding site is private. Keep it out of search engines.
+User-agent: *
+Disallow: /wedding/
