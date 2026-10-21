@@ -36,15 +36,16 @@
 
 :root {
   /* Seafoam and teal. Text colors pass WCAG AA on both --sand and --seafoam. */
-  --sand: #FBFAF6;
+  --sand: #FDFDFB;
   --white: #FFFFFF;
-  --seafoam: #E2F2EC;
-  --seafoam-deep: #B7DECF;
-  --ink: #1D2B2C;
-  --muted: #475858;
-  --teal: #0B6466;
-  --teal-dark: #084A4C;
-  --line: #CFE2DB;
+  --seafoam: #F0F8F5;
+  --seafoam-deep: #D4EAE2;
+  --ink: #1B2A2B;
+  --muted: #455657;
+  --teal: #05474A;
+  --teal-dark: #033234;
+  --footer: #06363A;
+  --line: #DCEAE5;
   --field-border: #637877;
   --tbd-bg: #FFF4C2;
   --tbd-border: #8A6D00;
@@ -96,8 +97,8 @@ p { margin: 0; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   min-height: 48px; padding: 10px 22px; border-radius: 12px;
-  font: inherit; font-weight: 700; font-size: 1.0625rem; text-decoration: none; cursor: pointer;
-  background: var(--teal); color: var(--white); border: 2px solid var(--teal);
+  font: inherit; font-weight: 600; font-size: 1.0625rem; letter-spacing: 0.01em; text-decoration: none; cursor: pointer;
+  background: var(--teal); color: var(--white); border: 1.5px solid var(--teal);
 }
 .btn:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: var(--white); }
 .btn-outline { background: var(--white); color: var(--teal); }
@@ -151,7 +152,8 @@ main section { scroll-margin-top: var(--scroll-offset); }
 /* Hero */
 .hero { background: var(--seafoam); text-align: center; padding: 48px 0 0; }
 .hero-inner { max-width: 40rem; margin: 0 auto; padding: 0 16px; display: grid; gap: 16px; justify-items: center; }
-.hero h1 { font-size: clamp(3rem, 15vw, 5rem); line-height: 1; letter-spacing: -0.01em; }
+.hero h1 { font-size: clamp(3rem, 15vw, 5rem); line-height: 1; letter-spacing: -0.01em; color: var(--teal); }
+.hero-photo { width: 100%; max-width: 26rem; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; margin: 8px 0; box-shadow: 0 14px 32px rgba(5, 71, 74, 0.14); }
 .hero-date { font-size: 1.3125rem; font-weight: 700; }
 .hero-place { color: var(--muted); font-size: 1.1875rem; }
 .hero-welcome { max-width: 32rem; }
@@ -162,19 +164,17 @@ main section { scroll-margin-top: var(--scroll-offset); }
 /* Countdown */
 .countdown { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0; }
 .countdown[hidden] { display: none; }
-.count-box { background: var(--white); border: 1px solid var(--seafoam-deep); border-radius: 12px; min-width: 88px; padding: 10px 8px 8px; }
-.count-num { display: block; font-family: var(--display); font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.count-box { min-width: 80px; padding: 4px 10px; }
+.count-box + .count-box { border-left: 1px solid var(--seafoam-deep); }
+.count-num { display: block; font-family: var(--display); font-size: 2.25rem; line-height: 1.1; color: var(--teal); font-variant-numeric: tabular-nums; }
 .count-label { font-size: 0.9375rem; color: var(--muted); }
 .countdown-today { font-family: var(--display); font-size: 1.75rem; }
 
 /* Photos */
 .photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.photo-grid figure { margin: 0; display: grid; gap: 6px; }
-.photo-slot {
-  aspect-ratio: 4 / 5; max-width: 100%; border-radius: 12px; background: var(--seafoam);
-  border: 1.5px dashed var(--tbd-border); display: grid; place-items: center; text-align: center;
-  font-weight: 700; color: var(--ink); padding: 8px;
-}
+.photo-grid figure { margin: 0; display: grid; gap: 6px; align-content: start; }
+.photo-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; background: var(--seafoam); }
+.wide-photo { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); background: var(--seafoam); }
 .photo-grid figcaption { font-size: 0.9375rem; color: var(--muted); }
 
 /* Schedule */
@@ -211,7 +211,7 @@ main section { scroll-margin-top: var(--scroll-offset); }
 .faq-item h3 { font-size: 1.25rem; }
 
 /* Footer */
-.site-footer { background: var(--ink); color: #EAF4F0; padding: 40px 16px 48px; text-align: center; }
+.site-footer { background: var(--footer); color: #EAF4F0; padding: 40px 16px 48px; text-align: center; }
 .site-footer .section-inner { gap: 12px; justify-items: center; }
 .site-footer a { color: #9FE0D2; }
 .site-footer a:hover { color: var(--white); }

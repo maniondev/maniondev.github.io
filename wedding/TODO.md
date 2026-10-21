@@ -11,7 +11,7 @@ Every `[TBD]` still on the site, by section. Fill these in `index.html` unless a
 
 - [ ] "How we met" paragraphs
 - [ ] "The proposal, and why we chose Oʻahu" paragraphs
-- [ ] Photos 1 to 6, with captions. Upload them on the photo drop page and I'll add them
+- [ ] Caption for photo 2 (balcony above the ocean, September 2022)
 
 ## Schedule
 
@@ -64,7 +64,6 @@ From public sources:
 
 - Address: 46-465 Kamehameha Hwy, Kāneʻohe, HI 96744 (Hawaiʻi DLNR State Parks listing)
 - Map pin at 21.43972, -157.80889 (Wikipedia's coordinates for the park). The map couldn't load from my test environment, so check that the pin lands in the right spot once the site is live
-- "Kealohi Point" spelling. The rental agreement writes "Ke'alohi"; the venue's own domain is kealohipoint.com
 - The view across Kāneʻohe Bay toward Mokuoloʻe (Coconut Island)
 - Drive times: 30 to 45 minutes from HNL, 35 to 45 minutes from Waikīkī (travel guides; traffic varies)
 - Sunset about 6:45 pm HST on September 5, 2027 (solar calculation for the park's location)
