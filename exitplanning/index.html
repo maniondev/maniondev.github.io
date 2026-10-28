@@ -3,61 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#FAF6EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1C1008" media="(prefers-color-scheme: dark)">
-<title>Exit Planning Program</title>
 <meta name="robots" content="noindex, nofollow">
+<title>Exit Planning Program</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="app.css?v=10">
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #FAF6EE; color: #1F1A14; }
+  main { max-width: 420px; margin: 18vh auto 0; padding: 0 16px; text-align: center; line-height: 1.6; }
+  a { color: #8A5528; }
+  @media (prefers-color-scheme: dark) { body { background: #1C1008; color: #FFE4C0; } a { color: #E3A66A; } }
+</style>
 </head>
 <body>
-
-<!-- APP -->
-<div id="app">
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brandmark" href="#/" aria-label="Program home" title="Program home"><svg class="jm" viewBox="45 37 216 280" width="22" height="28" style="width:22px;height:28px;flex-shrink:0;display:block" aria-hidden="true"><path d="M100 112 V262 Q100 296 66 296 M100 150 Q100 112 135 112 Q170 112 170 150 V232 M170 150 Q170 112 205 112 Q240 112 240 150 V232" fill="none" stroke="currentColor" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><rect x="81" y="45" width="38" height="38" rx="12" fill="#C4303F"/></svg></a>
-      <nav class="nav" id="nav">
-        <a href="#/" data-nav="home">Home</a>
-        <a href="#/roadmap" data-nav="roadmap">Roadmap</a>
-        <a href="#/review" data-nav="review">Review<span class="badge" id="dueBadge" hidden></span></a>
-        <a href="#/glossary" data-nav="glossary">Glossary</a>
-        <a href="#/saved" data-nav="saved">Saved</a>
-        <a href="#/library" data-nav="library">Library</a>
-        <a href="#/role" data-nav="role">The Role</a>
-        <a href="#/settings" data-nav="settings" class="navsync" title="Sync and settings"><span class="syncdot" id="syncdot"></span>Sync</a>
-      </nav>
-    </div>
-  </header>
-  <main id="view" class="view" tabindex="-1"></main>
-  <footer class="foot"><div class="wrap">Private study program. Tax and legal figures reflect the author's understanding as of 2026; confirm current numbers with specialists before relying on them with a client.</div></footer>
-</div>
-
-<script src="content/curriculum.js"></script>
-<script src="content/m01.js"></script>
-<script src="content/m02.js"></script>
-<script src="content/m03.js"></script>
-<script src="content/m04.js"></script>
-<script src="content/m05.js"></script>
-<script src="content/m06.js"></script>
-<script src="content/m07.js"></script>
-<script src="content/m08.js"></script>
-<script src="content/m09.js"></script>
-<script src="content/m10.js"></script>
-<script src="content/m11.js"></script>
-<script src="content/m12.js"></script>
-<script src="content/m13.js"></script>
-<script src="content/m14.js"></script>
-<script src="content/m15.js"></script>
-<script src="content/m16.js"></script>
-<script src="content/m17.js"></script>
-<script src="content/m18.js"></script>
-<script src="content/m19.js"></script>
-<script src="app.js?v=10"></script>
+<main>
+  <p>The exit planning program has moved to <a id="go" href="https://furvival.com/exitplanning/">furvival.com/exitplanning</a>. Taking you there now.</p>
+</main>
+<script>
+/* Hands progress, saved passages and sync settings stored on this domain to the new address,
+   in the URL hash (never sent to a server). The new page reads it, removes it from the address bar, and merges it. */
+(function(){
+  var NEW = 'https://furvival.com/exitplanning/';
+  var to = location.hash && location.hash.charAt(1) === '/' ? location.hash : '#/';
+  var link = document.getElementById('go'); link.href = NEW + to;
+  function go(h){ location.replace(NEW + h); }
+  function get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function parse(v){ try{ return v ? JSON.parse(v) : null; }catch(e){ return null; } }
+  if(get('fbe.movedAt')) return go(to);
+  var st = parse(get('fbe.state.v1')), sc = parse(get('fbe.sync.v1')), th = get('fbe.theme');
+  if(!st && !(sc && sc.token)) return go(to);
+  var payload = JSON.stringify({s: st, c: sc && sc.token ? {token: sc.token, gistId: sc.gistId || null} : null, th: th});
+  function b64url(bytes){
+    var bin = '', CH = 0x8000;
+    for(var i = 0; i < bytes.length; i += CH) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + CH));
+    return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+  var raw = new TextEncoder().encode(payload);
+  var packed = typeof CompressionStream === 'function'
+    ? new Response(new Blob([raw]).stream().pipeThrough(new CompressionStream('deflate-raw'))).arrayBuffer().then(function(b){ return {d: b64url(new Uint8Array(b)), z: 1}; })
+    : Promise.resolve({d: b64url(raw), z: 0});
+  packed.then(function(p){
+    try{ localStorage.setItem('fbe.movedAt', String(Date.now())); }catch(e){}
+    go('#move=' + p.d + '&z=' + p.z + '&to=' + encodeURIComponent(to));
+  }).catch(function(){ go(to); });
+})();
+</script>
 </body>
 </html>
